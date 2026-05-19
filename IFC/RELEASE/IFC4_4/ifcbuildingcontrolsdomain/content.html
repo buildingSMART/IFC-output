@@ -264,335 +264,47 @@
 <li>unitary control element</li>
 </ul>
 <p>Elements that perform the control action such as valves and dampers are principally types of distribution flow element and are located in the <em>IfcHvacDomain</em> and <em>IfcElectricalDomain</em> schemas.</p>
-<p>Occurrences of control elements capture design information, while realtime device state is captured on <em><a href="../lexical/IfcPerformanceHistory.html">IfcPerformanceHistory</a></em>, for which control elements may be assigned. Various standard property sets are defined for performance history to capture direct control data.</p>
-<p>Control elements are identified within control systems using <em><a href="../lexical/IfcRelAssociatesClassification.html">IfcRelAssociatesClassification</a></em> to indicate URLs of gateways and addresses of devices and data points.</p>
-<p>To support multiple lifecycle stages, realtime control data (<em><a href="../lexical/IfcPerformanceHistory.html">IfcPerformanceHistory</a></em>) and design data (<em><a href="../lexical/IfcDistributionElement.html">IfcDistributionElement</a></em> subtypes) are separate such that each may be used independently without the existence of the other, however both may be related via <em><a href="../lexical/IfcRelAssignsToControl.html">IfcRelAssignsToControl</a></em>. If device addressing is known at the time of design where classification is applied to occurrence entities, then upon connecting to a control system the control element occurrences can be assigned to realtime device data (<em><a href="../lexical/IfcPerformanceHistory.html">IfcPerformanceHistory</a></em>) automatically according to matching classification.</p>
-<p>To connect control elements to physical flow elements measured or controlled, the <em><a href="../lexical/IfcRelFlowControlElements.html">IfcRelFlowControlElements</a></em> relationship is used. For example, such relationship may map an actuator to a damper, or a temperature sensor to an evaporator coil. Performance data for <em><a href="../lexical/IfcDistributionFlowElement.html">IfcDistributionFlowElement</a></em> entities may be derived by traversing such relationships.</p>
+<p>Occurrences of control elements capture design information, while realtime device state is captured on <em>IfcPerformanceHistory</em>, for which control elements may be assigned. Various standard property sets are defined for performance history to capture direct control data.</p>
+<p>Control elements are identified within control systems using <em>IfcRelAssociatesClassification</em> to indicate URLs of gateways and addresses of devices and data points.</p>
+<p>To support multiple lifecycle stages, realtime control data (<em>IfcPerformanceHistory</em>) and design data (<em>IfcDistributionElement</em> subtypes) are separate such that each may be used independently without the existence of the other, however both may be related via <em>IfcRelAssignsToControl</em>. If device addressing is known at the time of design where classification is applied to occurrence entities, then upon connecting to a control system the control element occurrences can be assigned to realtime device data (<em>IfcPerformanceHistory</em>) automatically according to matching classification.</p>
+<p>To connect control elements to physical flow elements measured or controlled, the <em>IfcRelFlowControlElements</em> relationship is used. For example, such relationship may map an actuator to a damper, or a temperature sensor to an evaporator coil. Performance data for <em>IfcDistributionFlowElement</em> entities may be derived by traversing such relationships.</p>
 <p>The <em>IfcBuildingControlsDomain</em> schema does not specify building automation protocols, but may be mapped to standard protocols or vendor implementations for commissioning and operations interoperability. Common applicable entities are described as follows:</p>
 <ul>
-<li><em><a href="../lexical/IfcPerformanceHistory.html">IfcPerformanceHistory</a></em>: Captures realtime device data in the form of property sets.</li>
-<li><em><a href="../lexical/IfcPropertySet.html">IfcPropertySet</a></em>: Captures a set of realtime device data, either using predefined data structures or custom information.</li>
-<li><em><a href="../lexical/IfcPropertySetTemplate.html">IfcPropertySetTemplate</a></em>: Captures metadata about custom properties, such as names, descriptions, data types, units, and ranges.</li>
-<li><em><a href="../lexical/IfcRelAssociatesClassification.html">IfcRelAssociatesClassification</a></em>: Associates addresses of devices and control points to uniquely identify within a control system.</li>
-<li><em><a href="../lexical/IfcController.html">IfcController</a></em>: Captures non-realtime occurrence information for hardware or software-based arbitrary analog and digital data.</li>
-<li><em><a href="../lexical/IfcAlarm.html">IfcAlarm</a></em>: Captures non-realtime occurrence information for hardware or software-based alarm sources.</li>
-<li><em><a href="../lexical/IfcEvent.html">IfcEvent</a></em>: Captures alarm event handling information.</li>
-<li><em><a href="../lexical/IfcProcedure.html">IfcProcedure</a></em>: Captures device procedures that may be run arbitrarily or in response to events.</li>
-<li><em><a href="../lexical/IfcTask.html">IfcTask</a></em>: Captures device programs that may be scheduled at various times.</li>
+<li><em>IfcPerformanceHistory</em>: Captures realtime device data in the form of property sets.</li>
+<li><em>IfcPropertySet</em>: Captures a set of realtime device data, either using predefined data structures or custom information.</li>
+<li><em>IfcPropertySetTemplate</em>: Captures metadata about custom properties, such as names, descriptions, data types, units, and ranges.</li>
+<li><em>IfcRelAssociatesClassification</em>: Associates addresses of devices and control points to uniquely identify within a control system.</li>
+<li><em>IfcController</em>: Captures non-realtime occurrence information for hardware or software-based arbitrary analog and digital data.</li>
+<li><em>IfcAlarm</em>: Captures non-realtime occurrence information for hardware or software-based alarm sources.</li>
+<li><em>IfcEvent</em>: Captures alarm event handling information.</li>
+<li><em>IfcProcedure</em>: Captures device procedures that may be run arbitrarily or in response to events.</li>
+<li><em>IfcTask</em>: Captures device programs that may be scheduled at various times.</li>
 </ul>
 <aside class="aside-history"><mark>HISTORY</mark>  New schema in IFC2x2.</aside>
 <h2><a class="anchor" id="7.2.2-Types"></a>
     7.2.2 Types
 <a class="link" href="#7.2.2-Types"><i data-feather="link"></i></a></h2>
-<ol class="referenced-list">
-<li number="7.2.2.1">
-<a href="../lexical/IfcActuatorTypeEnum.html">
-            IfcActuatorTypeEnum
-        </a>
-</li><li number="7.2.2.2">
-<a href="../lexical/IfcAlarmTypeEnum.html">
-            IfcAlarmTypeEnum
-        </a>
-</li><li number="7.2.2.3">
-<a href="../lexical/IfcControllerTypeEnum.html">
-            IfcControllerTypeEnum
-        </a>
-</li><li number="7.2.2.4">
-<a href="../lexical/IfcFlowInstrumentTypeEnum.html">
-            IfcFlowInstrumentTypeEnum
-        </a>
-</li><li number="7.2.2.5">
-<a href="../lexical/IfcSensorTypeEnum.html">
-            IfcSensorTypeEnum
-        </a>
-</li><li number="7.2.2.6">
-<a href="../lexical/IfcUnitaryControlElementTypeEnum.html">
-            IfcUnitaryControlElementTypeEnum
-        </a>
-</li></ol>
+<p class="search-skip">
+    No resources are available in this category.
+</p>
 <h2><a class="anchor" id="7.2.3-Entities"></a>
     7.2.3 Entities
 <a class="link" href="#7.2.3-Entities"><i data-feather="link"></i></a></h2>
-<ol class="referenced-list">
-<li number="7.2.3.1">
-<a href="../lexical/IfcActuator.html">
-            IfcActuator
-        </a>
-</li><li number="7.2.3.2">
-<a href="../lexical/IfcActuatorType.html">
-            IfcActuatorType
-        </a>
-</li><li number="7.2.3.3">
-<a href="../lexical/IfcAlarm.html">
-            IfcAlarm
-        </a>
-</li><li number="7.2.3.4">
-<a href="../lexical/IfcAlarmType.html">
-            IfcAlarmType
-        </a>
-</li><li number="7.2.3.5">
-<a href="../lexical/IfcController.html">
-            IfcController
-        </a>
-</li><li number="7.2.3.6">
-<a href="../lexical/IfcControllerType.html">
-            IfcControllerType
-        </a>
-</li><li number="7.2.3.7">
-<a href="../lexical/IfcFlowInstrument.html">
-            IfcFlowInstrument
-        </a>
-</li><li number="7.2.3.8">
-<a href="../lexical/IfcFlowInstrumentType.html">
-            IfcFlowInstrumentType
-        </a>
-</li><li number="7.2.3.9">
-<a href="../lexical/IfcSensor.html">
-            IfcSensor
-        </a>
-</li><li number="7.2.3.10">
-<a href="../lexical/IfcSensorType.html">
-            IfcSensorType
-        </a>
-</li><li number="7.2.3.11">
-<a href="../lexical/IfcUnitaryControlElement.html">
-            IfcUnitaryControlElement
-        </a>
-</li><li number="7.2.3.12">
-<a href="../lexical/IfcUnitaryControlElementType.html">
-            IfcUnitaryControlElementType
-        </a>
-</li></ol>
+<p class="search-skip">
+    No resources are available in this category.
+</p>
 <h2><a class="anchor" id="7.2.4-Property-Sets"></a>
     7.2.4 Property Sets
 <a class="link" href="#7.2.4-Property-Sets"><i data-feather="link"></i></a></h2>
-<ol class="referenced-list">
-<li number="7.2.4.1">
-<a href="../lexical/Pset_ActuatorPHistory.html">
-            Pset_ActuatorPHistory
-        </a>
-</li><li number="7.2.4.2">
-<a href="../lexical/Pset_ActuatorTypeCommon.html">
-            Pset_ActuatorTypeCommon
-        </a>
-</li><li number="7.2.4.3">
-<a href="../lexical/Pset_ActuatorTypeElectricActuator.html">
-            Pset_ActuatorTypeElectricActuator
-        </a>
-</li><li number="7.2.4.4">
-<a href="../lexical/Pset_ActuatorTypeHydraulicActuator.html">
-            Pset_ActuatorTypeHydraulicActuator
-        </a>
-</li><li number="7.2.4.5">
-<a href="../lexical/Pset_ActuatorTypeLinearActuation.html">
-            Pset_ActuatorTypeLinearActuation
-        </a>
-</li><li number="7.2.4.6">
-<a href="../lexical/Pset_ActuatorTypePneumaticActuator.html">
-            Pset_ActuatorTypePneumaticActuator
-        </a>
-</li><li number="7.2.4.7">
-<a href="../lexical/Pset_ActuatorTypeRotationalActuation.html">
-            Pset_ActuatorTypeRotationalActuation
-        </a>
-</li><li number="7.2.4.8">
-<a href="../lexical/Pset_AlarmPHistory.html">
-            Pset_AlarmPHistory
-        </a>
-</li><li number="7.2.4.9">
-<a href="../lexical/Pset_AlarmTypeCommon.html">
-            Pset_AlarmTypeCommon
-        </a>
-</li><li number="7.2.4.10">
-<a href="../lexical/Pset_ControllerPHistory.html">
-            Pset_ControllerPHistory
-        </a>
-</li><li number="7.2.4.11">
-<a href="../lexical/Pset_ControllerTypeCommon.html">
-            Pset_ControllerTypeCommon
-        </a>
-</li><li number="7.2.4.12">
-<a href="../lexical/Pset_ControllerTypeFloating.html">
-            Pset_ControllerTypeFloating
-        </a>
-</li><li number="7.2.4.13">
-<a href="../lexical/Pset_ControllerTypeMultiPosition.html">
-            Pset_ControllerTypeMultiPosition
-        </a>
-</li><li number="7.2.4.14">
-<a href="../lexical/Pset_ControllerTypeProgrammable.html">
-            Pset_ControllerTypeProgrammable
-        </a>
-</li><li number="7.2.4.15">
-<a href="../lexical/Pset_ControllerTypeProportional.html">
-            Pset_ControllerTypeProportional
-        </a>
-</li><li number="7.2.4.16">
-<a href="../lexical/Pset_ControllerTypeTwoPosition.html">
-            Pset_ControllerTypeTwoPosition
-        </a>
-</li><li number="7.2.4.17">
-<a href="../lexical/Pset_FlowInstrumentPHistory.html">
-            Pset_FlowInstrumentPHistory
-        </a>
-</li><li number="7.2.4.18">
-<a href="../lexical/Pset_FlowInstrumentTypeCommon.html">
-            Pset_FlowInstrumentTypeCommon
-        </a>
-</li><li number="7.2.4.19">
-<a href="../lexical/Pset_FlowInstrumentTypePressureGauge.html">
-            Pset_FlowInstrumentTypePressureGauge
-        </a>
-</li><li number="7.2.4.20">
-<a href="../lexical/Pset_FlowInstrumentTypeThermometer.html">
-            Pset_FlowInstrumentTypeThermometer
-        </a>
-</li><li number="7.2.4.21">
-<a href="../lexical/Pset_SensorPHistory.html">
-            Pset_SensorPHistory
-        </a>
-</li><li number="7.2.4.22">
-<a href="../lexical/Pset_SensorTypeCO2Sensor.html">
-            Pset_SensorTypeCO2Sensor
-        </a>
-</li><li number="7.2.4.23">
-<a href="../lexical/Pset_SensorTypeCommon.html">
-            Pset_SensorTypeCommon
-        </a>
-</li><li number="7.2.4.24">
-<a href="../lexical/Pset_SensorTypeConductanceSensor.html">
-            Pset_SensorTypeConductanceSensor
-        </a>
-</li><li number="7.2.4.25">
-<a href="../lexical/Pset_SensorTypeContactSensor.html">
-            Pset_SensorTypeContactSensor
-        </a>
-</li><li number="7.2.4.26">
-<a href="../lexical/Pset_SensorTypeFireSensor.html">
-            Pset_SensorTypeFireSensor
-        </a>
-</li><li number="7.2.4.27">
-<a href="../lexical/Pset_SensorTypeFlowSensor.html">
-            Pset_SensorTypeFlowSensor
-        </a>
-</li><li number="7.2.4.28">
-<a href="../lexical/Pset_SensorTypeFrostSensor.html">
-            Pset_SensorTypeFrostSensor
-        </a>
-</li><li number="7.2.4.29">
-<a href="../lexical/Pset_SensorTypeGasSensor.html">
-            Pset_SensorTypeGasSensor
-        </a>
-</li><li number="7.2.4.30">
-<a href="../lexical/Pset_SensorTypeHeatSensor.html">
-            Pset_SensorTypeHeatSensor
-        </a>
-</li><li number="7.2.4.31">
-<a href="../lexical/Pset_SensorTypeHumiditySensor.html">
-            Pset_SensorTypeHumiditySensor
-        </a>
-</li><li number="7.2.4.32">
-<a href="../lexical/Pset_SensorTypeIdentifierSensor.html">
-            Pset_SensorTypeIdentifierSensor
-        </a>
-</li><li number="7.2.4.33">
-<a href="../lexical/Pset_SensorTypeIonConcentrationSensor.html">
-            Pset_SensorTypeIonConcentrationSensor
-        </a>
-</li><li number="7.2.4.34">
-<a href="../lexical/Pset_SensorTypeLevelSensor.html">
-            Pset_SensorTypeLevelSensor
-        </a>
-</li><li number="7.2.4.35">
-<a href="../lexical/Pset_SensorTypeLightSensor.html">
-            Pset_SensorTypeLightSensor
-        </a>
-</li><li number="7.2.4.36">
-<a href="../lexical/Pset_SensorTypeMoistureSensor.html">
-            Pset_SensorTypeMoistureSensor
-        </a>
-</li><li number="7.2.4.37">
-<a href="../lexical/Pset_SensorTypeMovementSensor.html">
-            Pset_SensorTypeMovementSensor
-        </a>
-</li><li number="7.2.4.38">
-<a href="../lexical/Pset_SensorTypePHSensor.html">
-            Pset_SensorTypePHSensor
-        </a>
-</li><li number="7.2.4.39">
-<a href="../lexical/Pset_SensorTypePressureSensor.html">
-            Pset_SensorTypePressureSensor
-        </a>
-</li><li number="7.2.4.40">
-<a href="../lexical/Pset_SensorTypeRadiationSensor.html">
-            Pset_SensorTypeRadiationSensor
-        </a>
-</li><li number="7.2.4.41">
-<a href="../lexical/Pset_SensorTypeRadioactivitySensor.html">
-            Pset_SensorTypeRadioactivitySensor
-        </a>
-</li><li number="7.2.4.42">
-<a href="../lexical/Pset_SensorTypeSmokeSensor.html">
-            Pset_SensorTypeSmokeSensor
-        </a>
-</li><li number="7.2.4.43">
-<a href="../lexical/Pset_SensorTypeSoundSensor.html">
-            Pset_SensorTypeSoundSensor
-        </a>
-</li><li number="7.2.4.44">
-<a href="../lexical/Pset_SensorTypeTemperatureSensor.html">
-            Pset_SensorTypeTemperatureSensor
-        </a>
-</li><li number="7.2.4.45">
-<a href="../lexical/Pset_SensorTypeWindSensor.html">
-            Pset_SensorTypeWindSensor
-        </a>
-</li><li number="7.2.4.46">
-<a href="../lexical/Pset_UnitaryControlElementPHistory.html">
-            Pset_UnitaryControlElementPHistory
-        </a>
-</li><li number="7.2.4.47">
-<a href="../lexical/Pset_UnitaryControlElementTypeCommon.html">
-            Pset_UnitaryControlElementTypeCommon
-        </a>
-</li><li number="7.2.4.48">
-<a href="../lexical/Pset_UnitaryControlElementTypeIndicatorPanel.html">
-            Pset_UnitaryControlElementTypeIndicatorPanel
-        </a>
-</li><li number="7.2.4.49">
-<a href="../lexical/Pset_UnitaryControlElementTypeThermostat.html">
-            Pset_UnitaryControlElementTypeThermostat
-        </a>
-</li></ol>
+<p class="search-skip">
+    No resources are available in this category.
+</p>
 <h2><a class="anchor" id="7.2.5-Quantity-Sets"></a>
     7.2.5 Quantity Sets
 <a class="link" href="#7.2.5-Quantity-Sets"><i data-feather="link"></i></a></h2>
-<ol class="referenced-list">
-<li number="7.2.5.1">
-<a href="../lexical/Qto_ActuatorBaseQuantities.html">
-            Qto_ActuatorBaseQuantities
-        </a>
-</li><li number="7.2.5.2">
-<a href="../lexical/Qto_AlarmBaseQuantities.html">
-            Qto_AlarmBaseQuantities
-        </a>
-</li><li number="7.2.5.3">
-<a href="../lexical/Qto_ControllerBaseQuantities.html">
-            Qto_ControllerBaseQuantities
-        </a>
-</li><li number="7.2.5.4">
-<a href="../lexical/Qto_FlowInstrumentBaseQuantities.html">
-            Qto_FlowInstrumentBaseQuantities
-        </a>
-</li><li number="7.2.5.5">
-<a href="../lexical/Qto_SensorBaseQuantities.html">
-            Qto_SensorBaseQuantities
-        </a>
-</li><li number="7.2.5.6">
-<a href="../lexical/Qto_UnitaryControlElementBaseQuantities.html">
-            Qto_UnitaryControlElementBaseQuantities
-        </a>
-</li></ol>
+<p class="search-skip">
+    No resources are available in this category.
+</p>
 <h2><a class="anchor" id="7.2.6-Functions"></a>
     7.2.6 Functions
 <a class="link" href="#7.2.6-Functions"><i data-feather="link"></i></a></h2>
@@ -608,68 +320,9 @@
 <h2><a class="anchor" id="7.2.8-PropertyEnumerations"></a>
     7.2.8 PropertyEnumerations
 <a class="link" href="#7.2.8-PropertyEnumerations"><i data-feather="link"></i></a></h2>
-<ol class="referenced-list">
-<li number="7.2.8.1">
-<a href="../lexical/PEnum_ActuatorApplication.html">
-            PEnum_ActuatorApplication
-        </a>
-</li><li number="7.2.8.2">
-<a href="../lexical/PEnum_ControllerApplication.html">
-            PEnum_ControllerApplication
-        </a>
-</li><li number="7.2.8.3">
-<a href="../lexical/PEnum_ControllerMultiPositionType.html">
-            PEnum_ControllerMultiPositionType
-        </a>
-</li><li number="7.2.8.4">
-<a href="../lexical/PEnum_ControllerProportionalType.html">
-            PEnum_ControllerProportionalType
-        </a>
-</li><li number="7.2.8.5">
-<a href="../lexical/PEnum_ControllerTwoPositionType.html">
-            PEnum_ControllerTwoPositionType
-        </a>
-</li><li number="7.2.8.6">
-<a href="../lexical/PEnum_ControllerTypeFloating.html">
-            PEnum_ControllerTypeFloating
-        </a>
-</li><li number="7.2.8.7">
-<a href="../lexical/PEnum_ControllerTypeProgrammable.html">
-            PEnum_ControllerTypeProgrammable
-        </a>
-</li><li number="7.2.8.8">
-<a href="../lexical/PEnum_ElectricActuatorType.html">
-            PEnum_ElectricActuatorType
-        </a>
-</li><li number="7.2.8.9">
-<a href="../lexical/PEnum_FailPosition.html">
-            PEnum_FailPosition
-        </a>
-</li><li number="7.2.8.10">
-<a href="../lexical/PEnum_MovementSensingType.html">
-            PEnum_MovementSensingType
-        </a>
-</li><li number="7.2.8.11">
-<a href="../lexical/PEnum_PressureGaugeType.html">
-            PEnum_PressureGaugeType
-        </a>
-</li><li number="7.2.8.12">
-<a href="../lexical/PEnum_TemperatureSensorType.html">
-            PEnum_TemperatureSensorType
-        </a>
-</li><li number="7.2.8.13">
-<a href="../lexical/PEnum_ThermometerType.html">
-            PEnum_ThermometerType
-        </a>
-</li><li number="7.2.8.14">
-<a href="../lexical/PEnum_UnitaryControlElementApplication.html">
-            PEnum_UnitaryControlElementApplication
-        </a>
-</li><li number="7.2.8.15">
-<a href="../lexical/PEnum_WindSensorType.html">
-            PEnum_WindSensorType
-        </a>
-</li></ol>
+<p class="search-skip">
+    No resources are available in this category.
+</p>
 </div>
 <div class="col-md-2 rightpanel">
 <div class="card fluid shadowed">

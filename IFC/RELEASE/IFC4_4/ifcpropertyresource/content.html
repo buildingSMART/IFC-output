@@ -283,91 +283,29 @@
 <h2><a class="anchor" id="8.16.1-Schema-definition"></a>
     8.16.1 Schema definition
 <a class="link" href="#8.16.1-Schema-definition"><i data-feather="link"></i></a></h2>
-<p>The <em>IfcPropertyResource</em> defines a basic set of property types that can be associated with occurrence objects (subtypes of <em><a href="../lexical/IfcObject.html">IfcObject</a></em>) and type objects (subtypes of <em><a href="../lexical/IfcTypeObject.html">IfcTypeObject</a></em>) through the <em><a href="../lexical/IfcPropertySet.html">IfcPropertySet</a></em> (defined in the <em>IfcKernel</em> schema). These properties are used to assign property definitions that are semantically defined by a name string and are extensible in terms of their definitions.</p>
+<p>The <em>IfcPropertyResource</em> defines a basic set of property types that can be associated with occurrence objects (subtypes of <em>IfcObject</em>) and type objects (subtypes of <em>IfcTypeObject</em>) through the <em>IfcPropertySet</em> (defined in the <em>IfcKernel</em> schema). These properties are used to assign property definitions that are semantically defined by a name string and are extensible in terms of their definitions.</p>
 <aside class="aside-note"><mark>NOTE</mark>  Frequently, there is a need to extend the attributes that are attached to an individual object or group of objects. Yet it may not be necessary to extend the attributes for every object within the same class. Using the same capabilities as for types of an element, it is possible to define such sets of attributes and associate them with individual objects.</aside>
 <p>The association of attributes to objects can be defined by two different ways:</p>
 <ul>
-<li>by defining a type object (<em><a href="../lexical/IfcTypeObject.html">IfcTypeObject</a></em>) which defines a specific object information (including the relevant properties) that is assigned to all instances (or occurrences) of the type object (via the <em><a href="../lexical/IfcRelDefinesByType.html">IfcRelDefinesByType</a></em> relationship).</li>
-<li>by defining a property set (<em><a href="../lexical/IfcPropertySet.html">IfcPropertySet</a></em>, a logical grouping of related properties) which defines the common property information for an individual instance (or occurrence), this is done via the <em><a href="../lexical/IfcRelDefinesByProperties.html">IfcRelDefinesByProperties</a></em> relationship.</li>
+<li>by defining a type object (<em>IfcTypeObject</em>) which defines a specific object information (including the relevant properties) that is assigned to all instances (or occurrences) of the type object (via the <em>IfcRelDefinesByType</em> relationship).</li>
+<li>by defining a property set (<em>IfcPropertySet</em>, a logical grouping of related properties) which defines the common property information for an individual instance (or occurrence), this is done via the <em>IfcRelDefinesByProperties</em> relationship.</li>
 </ul>
 <p>The semantic information of what an individual property denotes has to be given by the <em>Name</em> attribute. The <em>Name</em> is human interpretable and can also be computer interpretable by convention. This convention has to be established by implementers' agreements.</p>
 <aside class="aside-note"><mark>NOTE</mark>  The IFC specification defines a set of property sets, which provides a recommended usage of property sets for objects in the IFC model. In addition to the IFC property set specification also regional or project specific definitions of property sets are possible. Thereby property sets provide an mechanism to localize IFC definitions.</aside>
-<p>All subtypes of <em><a href="../lexical/IfcProperty.html">IfcProperty</a></em> are referenced later by the <em><a href="../lexical/IfcPropertySet.html">IfcPropertySet</a></em>. Thereby the <em><a href="../lexical/IfcPropertySet.html">IfcPropertySet</a></em> establishes a tree of property definitions through the <em><a href="../lexical/IfcSimpleProperty.html">IfcSimpleProperty</a></em> (and its subtypes) and <em><a href="../lexical/IfcComplexProperty.html">IfcComplexProperty</a></em>. Any instance of <em><a href="../lexical/IfcSimpleProperty.html">IfcSimpleProperty</a></em> within this tree shall only be referenced once (by either <em><a href="../lexical/IfcPropertySet.html">IfcPropertySet</a></em> or <em><a href="../lexical/IfcComplexProperty.html">IfcComplexProperty</a></em>).</p>
-<aside class="aside-note"><mark>NOTE</mark>  The property set attached to an object shall have a tree structure, therefore all properties (either <em><a href="../lexical/IfcSimpleProperty.html">IfcSimpleProperty</a></em> -and subtypes- or <em><a href="../lexical/IfcComplexProperty.html">IfcComplexProperty</a></em>) shall be used only once within that structure.</aside>
+<p>All subtypes of <em>IfcProperty</em> are referenced later by the <em>IfcPropertySet</em>. Thereby the <em>IfcPropertySet</em> establishes a tree of property definitions through the <em>IfcSimpleProperty</em> (and its subtypes) and <em>IfcComplexProperty</em>. Any instance of <em>IfcSimpleProperty</em> within this tree shall only be referenced once (by either <em>IfcPropertySet</em> or <em>IfcComplexProperty</em>).</p>
+<aside class="aside-note"><mark>NOTE</mark>  The property set attached to an object shall have a tree structure, therefore all properties (either <em>IfcSimpleProperty</em> -and subtypes- or <em>IfcComplexProperty</em>) shall be used only once within that structure.</aside>
 <h2><a class="anchor" id="8.16.2-Types"></a>
     8.16.2 Types
 <a class="link" href="#8.16.2-Types"><i data-feather="link"></i></a></h2>
-<ol class="referenced-list">
-<li number="8.16.2.1">
-<a href="../lexical/IfcCurveInterpolationEnum.html">
-            IfcCurveInterpolationEnum
-        </a>
-</li><li number="8.16.2.2">
-<a href="../lexical/IfcObjectReferenceSelect.html">
-            IfcObjectReferenceSelect
-        </a>
-</li></ol>
+<p class="search-skip">
+    No resources are available in this category.
+</p>
 <h2><a class="anchor" id="8.16.3-Entities"></a>
     8.16.3 Entities
 <a class="link" href="#8.16.3-Entities"><i data-feather="link"></i></a></h2>
-<ol class="referenced-list">
-<li number="8.16.3.1">
-<a href="../lexical/IfcComplexProperty.html">
-            IfcComplexProperty
-        </a>
-</li><li number="8.16.3.2">
-<a href="../lexical/IfcExtendedProperties.html">
-            IfcExtendedProperties
-        </a>
-</li><li number="8.16.3.3">
-<a href="../lexical/IfcPreDefinedProperties.html">
-            IfcPreDefinedProperties
-        </a>
-</li><li number="8.16.3.4">
-<a href="../lexical/IfcProperty.html">
-            IfcProperty
-        </a>
-</li><li number="8.16.3.5">
-<a href="../lexical/IfcPropertyAbstraction.html">
-            IfcPropertyAbstraction
-        </a>
-</li><li number="8.16.3.6">
-<a href="../lexical/IfcPropertyBoundedValue.html">
-            IfcPropertyBoundedValue
-        </a>
-</li><li number="8.16.3.7">
-<a href="../lexical/IfcPropertyDependencyRelationship.html">
-            IfcPropertyDependencyRelationship
-        </a>
-</li><li number="8.16.3.8">
-<a href="../lexical/IfcPropertyEnumeratedValue.html">
-            IfcPropertyEnumeratedValue
-        </a>
-</li><li number="8.16.3.9">
-<a href="../lexical/IfcPropertyEnumeration.html">
-            IfcPropertyEnumeration
-        </a>
-</li><li number="8.16.3.10">
-<a href="../lexical/IfcPropertyListValue.html">
-            IfcPropertyListValue
-        </a>
-</li><li number="8.16.3.11">
-<a href="../lexical/IfcPropertyReferenceValue.html">
-            IfcPropertyReferenceValue
-        </a>
-</li><li number="8.16.3.12">
-<a href="../lexical/IfcPropertySingleValue.html">
-            IfcPropertySingleValue
-        </a>
-</li><li number="8.16.3.13">
-<a href="../lexical/IfcPropertyTableValue.html">
-            IfcPropertyTableValue
-        </a>
-</li><li number="8.16.3.14">
-<a href="../lexical/IfcSimpleProperty.html">
-            IfcSimpleProperty
-        </a>
-</li></ol>
+<p class="search-skip">
+    No resources are available in this category.
+</p>
 <h2><a class="anchor" id="8.16.4-Property-Sets"></a>
     8.16.4 Property Sets
 <a class="link" href="#8.16.4-Property-Sets"><i data-feather="link"></i></a></h2>

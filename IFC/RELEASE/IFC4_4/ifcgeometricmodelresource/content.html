@@ -296,227 +296,21 @@
 <li>geometric sets.</li>
 </ul>
 <aside class="aside-note"><mark>NOTE</mark>  Many definitions of this schema are adapted from definitions defined within <a href="../content/bibliography.htm#iso-10303-42">ISO 10303-42</a>. The <em>IfcGeometricModelResource</em> refers to the clause 6, "Geometric Model" of <a href="../content/bibliography.htm#iso-10303-42">ISO 10303-42</a>. The definitions of geometric and topological representation, when quoted from <a href="../content/bibliography.htm#iso-10303-42">ISO 10303-42</a>, are explicitly excluded from the copyright of this specification.</aside><aside class="aside-reference"><mark>REFERENCE</mark>  Definition according to ISO 10303-42</aside>
-<p>The constructive solid geometry models are represented by their component primitives and the sequence of Boolean operations (union, intersection, or difference) used in their construction. The entity which communicates the logical sequence of Boolean operations is the boolean result (<em><a href="../lexical/IfcBooleanResult.html">IfcBooleanResult</a></em>) which identifies an operator and two operands. Since the operands can themselves be Boolean results thus enabling nested operations. Swept solids and half-space solids are permissible Boolean operands. The swept solids are the solid of revolution and the solid of linear extrusion. The swept solids are obtained by extruding or sweeping a planar face which may contain holes. The half space solid is essentially defined as a semi-infinite solid on one side of a surface; it may be limited by a box domain.</p>
+<p>The constructive solid geometry models are represented by their component primitives and the sequence of Boolean operations (union, intersection, or difference) used in their construction. The entity which communicates the logical sequence of Boolean operations is the boolean result (<em>IfcBooleanResult</em>) which identifies an operator and two operands. Since the operands can themselves be Boolean results thus enabling nested operations. Swept solids and half-space solids are permissible Boolean operands. The swept solids are the solid of revolution and the solid of linear extrusion. The swept solids are obtained by extruding or sweeping a planar face which may contain holes. The half space solid is essentially defined as a semi-infinite solid on one side of a surface; it may be limited by a box domain.</p>
 <aside class="aside-reference"><mark>REFERENCE</mark>  Definition according to ISO 10303-42</aside>
 <p>Brep models are represented by the set of shells defining the exterior or interior boundaries. The faceted brep is restricted to represent breps in which all faces are planar and every loop is a poly loop. For such a solid this entity provides a more efficient form of representation. The shell based surface model, the face based surface model and the geometric set entities do not enforce the integrity checks of the manifold solid brep and can be used for the communication of incomplete models (including two-dimensional models).</p>
 <h2><a class="anchor" id="8.8.2-Types"></a>
     8.8.2 Types
 <a class="link" href="#8.8.2-Types"><i data-feather="link"></i></a></h2>
-<ol class="referenced-list">
-<li number="8.8.2.1">
-<a href="../lexical/IfcBooleanOperand.html">
-            IfcBooleanOperand
-        </a>
-</li><li number="8.8.2.2">
-<a href="../lexical/IfcBooleanOperator.html">
-            IfcBooleanOperator
-        </a>
-</li><li number="8.8.2.3">
-<a href="../lexical/IfcCsgSelect.html">
-            IfcCsgSelect
-        </a>
-</li><li number="8.8.2.4">
-<a href="../lexical/IfcGeometricSetSelect.html">
-            IfcGeometricSetSelect
-        </a>
-</li></ol>
+<p class="search-skip">
+    No resources are available in this category.
+</p>
 <h2><a class="anchor" id="8.8.3-Entities"></a>
     8.8.3 Entities
 <a class="link" href="#8.8.3-Entities"><i data-feather="link"></i></a></h2>
-<ol class="referenced-list">
-<li number="8.8.3.1">
-<a href="../lexical/IfcAdvancedBrep.html">
-            IfcAdvancedBrep
-        </a>
-</li><li number="8.8.3.2">
-<a href="../lexical/IfcAdvancedBrepWithVoids.html">
-            IfcAdvancedBrepWithVoids
-        </a>
-</li><li number="8.8.3.3">
-<a href="../lexical/IfcBlock.html">
-            IfcBlock
-        </a>
-</li><li number="8.8.3.4">
-<a href="../lexical/IfcBooleanClippingResult.html">
-            IfcBooleanClippingResult
-        </a>
-</li><li number="8.8.3.5">
-<a href="../lexical/IfcBooleanResult.html">
-            IfcBooleanResult
-        </a>
-</li><li number="8.8.3.6">
-<a href="../lexical/IfcBoundingBox.html">
-            IfcBoundingBox
-        </a>
-</li><li number="8.8.3.7">
-<a href="../lexical/IfcBoxedHalfSpace.html">
-            IfcBoxedHalfSpace
-        </a>
-</li><li number="8.8.3.8">
-<a href="../lexical/IfcCartesianPointList.html">
-            IfcCartesianPointList
-        </a>
-</li><li number="8.8.3.9">
-<a href="../lexical/IfcCartesianPointList2D.html">
-            IfcCartesianPointList2D
-        </a>
-</li><li number="8.8.3.10">
-<a href="../lexical/IfcCartesianPointList3D.html">
-            IfcCartesianPointList3D
-        </a>
-</li><li number="8.8.3.11">
-<a href="../lexical/IfcCsgPrimitive3D.html">
-            IfcCsgPrimitive3D
-        </a>
-</li><li number="8.8.3.12">
-<a href="../lexical/IfcCsgSolid.html">
-            IfcCsgSolid
-        </a>
-</li><li number="8.8.3.13">
-<a href="../lexical/IfcDirectrixCurveSweptAreaSolid.html">
-            IfcDirectrixCurveSweptAreaSolid
-        </a>
-</li><li number="8.8.3.14">
-<a href="../lexical/IfcDirectrixDerivedReferenceSweptAreaSolid.html">
-            IfcDirectrixDerivedReferenceSweptAreaSolid
-        </a>
-</li><li number="8.8.3.15">
-<a href="../lexical/IfcExtrudedAreaSolid.html">
-            IfcExtrudedAreaSolid
-        </a>
-</li><li number="8.8.3.16">
-<a href="../lexical/IfcExtrudedAreaSolidTapered.html">
-            IfcExtrudedAreaSolidTapered
-        </a>
-</li><li number="8.8.3.17">
-<a href="../lexical/IfcFaceBasedSurfaceModel.html">
-            IfcFaceBasedSurfaceModel
-        </a>
-</li><li number="8.8.3.18">
-<a href="../lexical/IfcFacetedBrep.html">
-            IfcFacetedBrep
-        </a>
-</li><li number="8.8.3.19">
-<a href="../lexical/IfcFacetedBrepWithVoids.html">
-            IfcFacetedBrepWithVoids
-        </a>
-</li><li number="8.8.3.20">
-<a href="../lexical/IfcFixedReferenceSweptAreaSolid.html">
-            IfcFixedReferenceSweptAreaSolid
-        </a>
-</li><li number="8.8.3.21">
-<a href="../lexical/IfcGeometricCurveSet.html">
-            IfcGeometricCurveSet
-        </a>
-</li><li number="8.8.3.22">
-<a href="../lexical/IfcGeometricSet.html">
-            IfcGeometricSet
-        </a>
-</li><li number="8.8.3.23">
-<a href="../lexical/IfcHalfSpaceSolid.html">
-            IfcHalfSpaceSolid
-        </a>
-</li><li number="8.8.3.24">
-<a href="../lexical/IfcIndexedPolygonalFace.html">
-            IfcIndexedPolygonalFace
-        </a>
-</li><li number="8.8.3.25">
-<a href="../lexical/IfcIndexedPolygonalFaceWithVoids.html">
-            IfcIndexedPolygonalFaceWithVoids
-        </a>
-</li><li number="8.8.3.26">
-<a href="../lexical/IfcManifoldSolidBrep.html">
-            IfcManifoldSolidBrep
-        </a>
-</li><li number="8.8.3.27">
-<a href="../lexical/IfcPolygonalBoundedHalfSpace.html">
-            IfcPolygonalBoundedHalfSpace
-        </a>
-</li><li number="8.8.3.28">
-<a href="../lexical/IfcPolygonalFaceSet.html">
-            IfcPolygonalFaceSet
-        </a>
-</li><li number="8.8.3.29">
-<a href="../lexical/IfcRectangularPyramid.html">
-            IfcRectangularPyramid
-        </a>
-</li><li number="8.8.3.30">
-<a href="../lexical/IfcRevolvedAreaSolid.html">
-            IfcRevolvedAreaSolid
-        </a>
-</li><li number="8.8.3.31">
-<a href="../lexical/IfcRevolvedAreaSolidTapered.html">
-            IfcRevolvedAreaSolidTapered
-        </a>
-</li><li number="8.8.3.32">
-<a href="../lexical/IfcRightCircularCone.html">
-            IfcRightCircularCone
-        </a>
-</li><li number="8.8.3.33">
-<a href="../lexical/IfcRightCircularCylinder.html">
-            IfcRightCircularCylinder
-        </a>
-</li><li number="8.8.3.34">
-<a href="../lexical/IfcSectionedSolid.html">
-            IfcSectionedSolid
-        </a>
-</li><li number="8.8.3.35">
-<a href="../lexical/IfcSectionedSolidHorizontal.html">
-            IfcSectionedSolidHorizontal
-        </a>
-</li><li number="8.8.3.36">
-<a href="../lexical/IfcSectionedSpine.html">
-            IfcSectionedSpine
-        </a>
-</li><li number="8.8.3.37">
-<a href="../lexical/IfcSectionedSurface.html">
-            IfcSectionedSurface
-        </a>
-</li><li number="8.8.3.38">
-<a href="../lexical/IfcShellBasedSurfaceModel.html">
-            IfcShellBasedSurfaceModel
-        </a>
-</li><li number="8.8.3.39">
-<a href="../lexical/IfcSolidModel.html">
-            IfcSolidModel
-        </a>
-</li><li number="8.8.3.40">
-<a href="../lexical/IfcSphere.html">
-            IfcSphere
-        </a>
-</li><li number="8.8.3.41">
-<a href="../lexical/IfcSurfaceCurveSweptAreaSolid.html">
-            IfcSurfaceCurveSweptAreaSolid
-        </a>
-</li><li number="8.8.3.42">
-<a href="../lexical/IfcSweptAreaSolid.html">
-            IfcSweptAreaSolid
-        </a>
-</li><li number="8.8.3.43">
-<a href="../lexical/IfcSweptDiskSolid.html">
-            IfcSweptDiskSolid
-        </a>
-</li><li number="8.8.3.44">
-<a href="../lexical/IfcSweptDiskSolidPolygonal.html">
-            IfcSweptDiskSolidPolygonal
-        </a>
-</li><li number="8.8.3.45">
-<a href="../lexical/IfcTessellatedFaceSet.html">
-            IfcTessellatedFaceSet
-        </a>
-</li><li number="8.8.3.46">
-<a href="../lexical/IfcTessellatedItem.html">
-            IfcTessellatedItem
-        </a>
-</li><li number="8.8.3.47">
-<a href="../lexical/IfcTriangulatedFaceSet.html">
-            IfcTriangulatedFaceSet
-        </a>
-</li><li number="8.8.3.48">
-<a href="../lexical/IfcTriangulatedIrregularNetwork.html">
-            IfcTriangulatedIrregularNetwork
-        </a>
-</li></ol>
+<p class="search-skip">
+    No resources are available in this category.
+</p>
 <h2><a class="anchor" id="8.8.4-Property-Sets"></a>
     8.8.4 Property Sets
 <a class="link" href="#8.8.4-Property-Sets"><i data-feather="link"></i></a></h2>
@@ -532,16 +326,9 @@
 <h2><a class="anchor" id="8.8.6-Functions"></a>
     8.8.6 Functions
 <a class="link" href="#8.8.6-Functions"><i data-feather="link"></i></a></h2>
-<ol class="referenced-list">
-<li number="8.8.6.1">
-<a href="../lexical/IfcPointListDim.html">
-            IfcPointListDim
-        </a>
-</li><li number="8.8.6.2">
-<a href="../lexical/IfcTaperedSweptAreaProfiles.html">
-            IfcTaperedSweptAreaProfiles
-        </a>
-</li></ol>
+<p class="search-skip">
+    No resources are available in this category.
+</p>
 <h2><a class="anchor" id="8.8.7-Rules"></a>
     8.8.7 Rules
 <a class="link" href="#8.8.7-Rules"><i data-feather="link"></i></a></h2>

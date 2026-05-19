@@ -283,64 +283,26 @@
 <h2><a class="anchor" id="8.3.1-Schema-definition"></a>
     8.3.1 Schema definition
 <a class="link" href="#8.3.1-Schema-definition"><i data-feather="link"></i></a></h2>
-<p>The <em>IfcConstraintResource</em> schema provides for the specification of constraints (<em><a href="../lexical/IfcConstraint.html">IfcConstraint</a></em>) that may be applied to any object that is a subtype of <em><a href="../lexical/IfcObjectDefinition.html">IfcObjectDefinition</a></em> or <em><a href="../lexical/IfcPropertyDefinition.html">IfcPropertyDefinition</a></em> (through the provision of the relationship class <em><a href="../lexical/IfcRelAssociatesConstraint.html">IfcRelAssociatesConstraint</a></em>). Also, constraints may be applied to specific resource objects, such as an <em><a href="../lexical/IfcProperty.html">IfcProperty</a></em> (through the provision of the relationship class <em><a href="../lexical/IfcResourceConstraintRelationship.html">IfcResourceConstraintRelationship</a></em>).</p>
+<p>The <em>IfcConstraintResource</em> schema provides for the specification of constraints (<em>IfcConstraint</em>) that may be applied to any object that is a subtype of <em>IfcObjectDefinition</em> or <em>IfcPropertyDefinition</em> (through the provision of the relationship class <em>IfcRelAssociatesConstraint</em>). Also, constraints may be applied to specific resource objects, such as an <em>IfcProperty</em> (through the provision of the relationship class <em>IfcResourceConstraintRelationship</em>).</p>
 <p>A grade may be set for the constraint that establishes whether it is a hard constraint (must be satisfied), a soft constraint (should be satisfied) or simply advisory.</p>
 <p>A constraint must be named and may optionally have one or more sources within which it is defined or from which it is taken. Additionally, a constraint may optionally be assigned a creating actor, creation date and a description.</p>
 <p>Constraints may be either qualitative (an objective constraint) or quantitative (a measured constraint or metric). A qualifier can be applied to an objective constraint that determines the purpose for which it is applied. It may be applied to define the constraining values beyond which building codes may be violated or to limit the selectable range of values as in a specification (for example, value of A must be greater than A but less than B). Several possible purposes are provided through an enumeration.</p>
 <p>A measured constraint or metric defines the actual value or values of a constraint. Values can be defined in terms of a benchmark requirement which sets the intent of the constraint, for example, whether the benchmark is greater than (&gt;), or less than (&lt;). The value of a constraint may be defined according to a number of data types that are available through a select mechanism.</p>
 <aside class="aside-example"><mark>EXAMPLE</mark>  A constraint advised by a manufacturer beyond which maintenance must be undertaken on a pump might be qualified as a 'TriggerCondition', named 'PumpMaintenanceCondition', have as its source 'ManufacturerData' and be graded as 'Advisory'. It could have as a single value 10\^-2 / sec as the frequency of vibration and have a benchmark of 'GreaterThanOrEqualTo'.</aside><aside class="aside-history"><mark>HISTORY</mark>  New schema in IFC2x.</aside>
 <p>{ .change-ifc2x4}</p>
-<aside class="aside-ifc4"><mark>IFC4-CHANGE</mark>  The classification of constraints shall not be done using <em>IfcConstraintClassificationRelationship</em> anymore (entity deleted); the capability of associating external references to constraints has been introduced by <em><a href="../lexical/IfcExternalReferenceRelationship.html">IfcExternalReferenceRelationship</a></em> in <em>IfcExternalReferenceResource</em> schema and should be used instead. The aggregation of constraints shall not be done using <em>IfcConstraintAggregationRelationship</em> anymore (entity deleted); the capability of associating aggregated constraints is now handled by an attribute at <em><a href="../lexical/IfcObjective.html">IfcObjective</a></em>.</aside>
+<aside class="aside-ifc4"><mark>IFC4-CHANGE</mark>  The classification of constraints shall not be done using <em>IfcConstraintClassificationRelationship</em> anymore (entity deleted); the capability of associating external references to constraints has been introduced by <em>IfcExternalReferenceRelationship</em> in <em>IfcExternalReferenceResource</em> schema and should be used instead. The aggregation of constraints shall not be done using <em>IfcConstraintAggregationRelationship</em> anymore (entity deleted); the capability of associating aggregated constraints is now handled by an attribute at <em>IfcObjective</em>.</aside>
 <h2><a class="anchor" id="8.3.2-Types"></a>
     8.3.2 Types
 <a class="link" href="#8.3.2-Types"><i data-feather="link"></i></a></h2>
-<ol class="referenced-list">
-<li number="8.3.2.1">
-<a href="../lexical/IfcBenchmarkEnum.html">
-            IfcBenchmarkEnum
-        </a>
-</li><li number="8.3.2.2">
-<a href="../lexical/IfcConstraintEnum.html">
-            IfcConstraintEnum
-        </a>
-</li><li number="8.3.2.3">
-<a href="../lexical/IfcLogicalOperatorEnum.html">
-            IfcLogicalOperatorEnum
-        </a>
-</li><li number="8.3.2.4">
-<a href="../lexical/IfcMetricValueSelect.html">
-            IfcMetricValueSelect
-        </a>
-</li><li number="8.3.2.5">
-<a href="../lexical/IfcObjectiveEnum.html">
-            IfcObjectiveEnum
-        </a>
-</li></ol>
+<p class="search-skip">
+    No resources are available in this category.
+</p>
 <h2><a class="anchor" id="8.3.3-Entities"></a>
     8.3.3 Entities
 <a class="link" href="#8.3.3-Entities"><i data-feather="link"></i></a></h2>
-<ol class="referenced-list">
-<li number="8.3.3.1">
-<a href="../lexical/IfcConstraint.html">
-            IfcConstraint
-        </a>
-</li><li number="8.3.3.2">
-<a href="../lexical/IfcMetric.html">
-            IfcMetric
-        </a>
-</li><li number="8.3.3.3">
-<a href="../lexical/IfcObjective.html">
-            IfcObjective
-        </a>
-</li><li number="8.3.3.4">
-<a href="../lexical/IfcReference.html">
-            IfcReference
-        </a>
-</li><li number="8.3.3.5">
-<a href="../lexical/IfcResourceConstraintRelationship.html">
-            IfcResourceConstraintRelationship
-        </a>
-</li></ol>
+<p class="search-skip">
+    No resources are available in this category.
+</p>
 <h2><a class="anchor" id="8.3.4-Property-Sets"></a>
     8.3.4 Property Sets
 <a class="link" href="#8.3.4-Property-Sets"><i data-feather="link"></i></a></h2>
