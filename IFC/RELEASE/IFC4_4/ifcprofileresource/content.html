@@ -18,7 +18,7 @@
                         padding-top: 0px;
                         float: left;
                     " width="100"/>
-<p style="display: inline-block; vertical-align: top;">IFC 4.4.0.20260519 (IFC4X4)
+<p style="display: inline-block; vertical-align: top;">IFC 4.4.0.20260520 (IFC4X4)
                             <small>under development</small>
 </p>
 <ul>
@@ -301,14 +301,14 @@
 <li>sectioned spines</li>
 </ul>
 <aside class="aside-note"><mark>NOTE</mark>  The use of profile definitions is the preferred way to define prismatic shapes to represent products.</aside>
-<p>The profile definition (<em>IfcProfileDef</em>) can be instantiated by the various subtypes. There are four different groups of profile definitions:</p>
+<p>The profile definition (<em><a href="../lexical/IfcProfileDef.html">IfcProfileDef</a></em>) can be instantiated by the various subtypes. There are four different groups of profile definitions:</p>
 <ul>
 <li>parametrically defined profiles, these profiles are defined by a 2D position coordinate system and dimension parameters to generate a 2D form.</li>
 <li>explicitly defined profiles, these profiles are defined by a (single or multiple) 2D curve(s) defined in the parent coordinate system.</li>
 <li>derived profiles, these profiles are created by a Cartesian transformation of a parent profile.</li>
 <li>composite profiles, these profiles are compositions of other profiles</li>
 </ul>
-<p>When used as the curve or area to be swept into a surface or solid, the 2D coordinate system of the profile is mapped into the xy plane of the 3D coordinate system of the swept surface (subtypes of <em>IfcSweptSurface</em>), the swept area solid (subtypes of <em>IfcSweptAreaSolid</em>), or the sectioned spine (<em>IfcSectionedSpine</em>). The extrusion direction is along the z axis of the 3D coordinate system (or an extrusion vector being not perpendicular to the z axis, or a rotation that has a tangent into the z axis at the point of origin).</p>
+<p>When used as the curve or area to be swept into a surface or solid, the 2D coordinate system of the profile is mapped into the xy plane of the 3D coordinate system of the swept surface (subtypes of <em><a href="../lexical/IfcSweptSurface.html">IfcSweptSurface</a></em>), the swept area solid (subtypes of <em><a href="../lexical/IfcSweptAreaSolid.html">IfcSweptAreaSolid</a></em>), or the sectioned spine (<em><a href="../lexical/IfcSectionedSpine.html">IfcSectionedSpine</a></em>). The extrusion direction is along the z axis of the 3D coordinate system (or an extrusion vector being not perpendicular to the z axis, or a rotation that has a tangent into the z axis at the point of origin).</p>
 <p>The use of coordinate axes in IFC is not identical with the general convention for the use of coordinate axes in structural analysis. The following conversion should be used, as shown in Table B:</p>
 <figure><a class="anchor" id="Table-B-Axis-conversions"></a><table>
 <thead>
@@ -338,21 +338,158 @@
 <h2><a class="anchor" id="8.15.2-Types"></a>
     8.15.2 Types
 <a class="link" href="#8.15.2-Types"><i data-feather="link"></i></a></h2>
-<p class="search-skip">
-    No resources are available in this category.
-</p>
+<ol class="referenced-list">
+<li number="8.15.2.1">
+<a href="../lexical/IfcProfileTypeEnum.html">
+            IfcProfileTypeEnum
+        </a>
+</li><li number="8.15.2.2">
+<a href="../lexical/IfcReinforcingBarRoleEnum.html">
+            IfcReinforcingBarRoleEnum
+        </a>
+</li><li number="8.15.2.3">
+<a href="../lexical/IfcReinforcingBarSurfaceEnum.html">
+            IfcReinforcingBarSurfaceEnum
+        </a>
+</li><li number="8.15.2.4">
+<a href="../lexical/IfcSectionTypeEnum.html">
+            IfcSectionTypeEnum
+        </a>
+</li></ol>
 <h2><a class="anchor" id="8.15.3-Entities"></a>
     8.15.3 Entities
 <a class="link" href="#8.15.3-Entities"><i data-feather="link"></i></a></h2>
-<p class="search-skip">
-    No resources are available in this category.
-</p>
+<ol class="referenced-list">
+<li number="8.15.3.1">
+<a href="../lexical/IfcArbitraryClosedProfileDef.html">
+            IfcArbitraryClosedProfileDef
+        </a>
+</li><li number="8.15.3.2">
+<a href="../lexical/IfcArbitraryOpenProfileDef.html">
+            IfcArbitraryOpenProfileDef
+        </a>
+</li><li number="8.15.3.3">
+<a href="../lexical/IfcArbitraryProfileDefWithVoids.html">
+            IfcArbitraryProfileDefWithVoids
+        </a>
+</li><li number="8.15.3.4">
+<a href="../lexical/IfcAsymmetricIShapeProfileDef.html">
+            IfcAsymmetricIShapeProfileDef
+        </a>
+</li><li number="8.15.3.5">
+<a href="../lexical/IfcCShapeProfileDef.html">
+            IfcCShapeProfileDef
+        </a>
+</li><li number="8.15.3.6">
+<a href="../lexical/IfcCenterLineProfileDef.html">
+            IfcCenterLineProfileDef
+        </a>
+</li><li number="8.15.3.7">
+<a href="../lexical/IfcCircleHollowProfileDef.html">
+            IfcCircleHollowProfileDef
+        </a>
+</li><li number="8.15.3.8">
+<a href="../lexical/IfcCircleProfileDef.html">
+            IfcCircleProfileDef
+        </a>
+</li><li number="8.15.3.9">
+<a href="../lexical/IfcCompositeProfileDef.html">
+            IfcCompositeProfileDef
+        </a>
+</li><li number="8.15.3.10">
+<a href="../lexical/IfcDerivedProfileDef.html">
+            IfcDerivedProfileDef
+        </a>
+</li><li number="8.15.3.11">
+<a href="../lexical/IfcEllipseProfileDef.html">
+            IfcEllipseProfileDef
+        </a>
+</li><li number="8.15.3.12">
+<a href="../lexical/IfcIShapeProfileDef.html">
+            IfcIShapeProfileDef
+        </a>
+</li><li number="8.15.3.13">
+<a href="../lexical/IfcLShapeProfileDef.html">
+            IfcLShapeProfileDef
+        </a>
+</li><li number="8.15.3.14">
+<a href="../lexical/IfcMirroredProfileDef.html">
+            IfcMirroredProfileDef
+        </a>
+</li><li number="8.15.3.15">
+<a href="../lexical/IfcOpenCrossProfileDef.html">
+            IfcOpenCrossProfileDef
+        </a>
+</li><li number="8.15.3.16">
+<a href="../lexical/IfcParameterizedProfileDef.html">
+            IfcParameterizedProfileDef
+        </a>
+</li><li number="8.15.3.17">
+<a href="../lexical/IfcProfileDef.html">
+            IfcProfileDef
+        </a>
+</li><li number="8.15.3.18">
+<a href="../lexical/IfcProfileProperties.html">
+            IfcProfileProperties
+        </a>
+</li><li number="8.15.3.19">
+<a href="../lexical/IfcRectangleHollowProfileDef.html">
+            IfcRectangleHollowProfileDef
+        </a>
+</li><li number="8.15.3.20">
+<a href="../lexical/IfcRectangleProfileDef.html">
+            IfcRectangleProfileDef
+        </a>
+</li><li number="8.15.3.21">
+<a href="../lexical/IfcReinforcementBarProperties.html">
+            IfcReinforcementBarProperties
+        </a>
+</li><li number="8.15.3.22">
+<a href="../lexical/IfcRoundedRectangleProfileDef.html">
+            IfcRoundedRectangleProfileDef
+        </a>
+</li><li number="8.15.3.23">
+<a href="../lexical/IfcSectionProperties.html">
+            IfcSectionProperties
+        </a>
+</li><li number="8.15.3.24">
+<a href="../lexical/IfcSectionReinforcementProperties.html">
+            IfcSectionReinforcementProperties
+        </a>
+</li><li number="8.15.3.25">
+<a href="../lexical/IfcTShapeProfileDef.html">
+            IfcTShapeProfileDef
+        </a>
+</li><li number="8.15.3.26">
+<a href="../lexical/IfcTrapeziumProfileDef.html">
+            IfcTrapeziumProfileDef
+        </a>
+</li><li number="8.15.3.27">
+<a href="../lexical/IfcUShapeProfileDef.html">
+            IfcUShapeProfileDef
+        </a>
+</li><li number="8.15.3.28">
+<a href="../lexical/IfcZShapeProfileDef.html">
+            IfcZShapeProfileDef
+        </a>
+</li></ol>
 <h2><a class="anchor" id="8.15.4-Property-Sets"></a>
     8.15.4 Property Sets
 <a class="link" href="#8.15.4-Property-Sets"><i data-feather="link"></i></a></h2>
-<p class="search-skip">
-    No resources are available in this category.
-</p>
+<ol class="referenced-list">
+<li number="8.15.4.1">
+<a href="../lexical/Pset_ProfileArbitraryDoubleT.html">
+            Pset_ProfileArbitraryDoubleT
+        </a>
+</li><li number="8.15.4.2">
+<a href="../lexical/Pset_ProfileArbitraryHollowCore.html">
+            Pset_ProfileArbitraryHollowCore
+        </a>
+</li><li number="8.15.4.3">
+<a href="../lexical/Pset_ProfileMechanical.html">
+            Pset_ProfileMechanical
+        </a>
+</li></ol>
 <h2><a class="anchor" id="8.15.5-Quantity-Sets"></a>
     8.15.5 Quantity Sets
 <a class="link" href="#8.15.5-Quantity-Sets"><i data-feather="link"></i></a></h2>

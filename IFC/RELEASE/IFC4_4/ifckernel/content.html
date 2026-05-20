@@ -18,7 +18,7 @@
                         padding-top: 0px;
                         float: left;
                     " width="100"/>
-<p style="display: inline-block; vertical-align: top;">IFC 4.4.0.20260519 (IFC4X4)
+<p style="display: inline-block; vertical-align: top;">IFC 4.4.0.20260520 (IFC4X4)
                             <small>under development</small>
 </p>
 <ul>
@@ -241,30 +241,30 @@
 <li>property set template definitions.</li>
 </ul>
 <h4><a class="anchor" id="5.1.1.1-Root-definition"></a>5.1.1.1 Root definition<a class="link" href="#5.1.1.1-Root-definition"><i data-feather="link"></i></a></h4>
-<p>Each entity defined outside of the Resource layer of the schema architecture inherits directly or indirectly from the <em>IfcRoot</em> entity. <em>IfcRoot</em> provides for the fundamental capabilities of:</p>
+<p>Each entity defined outside of the Resource layer of the schema architecture inherits directly or indirectly from the <em><a href="../lexical/IfcRoot.html">IfcRoot</a></em> entity. <em><a href="../lexical/IfcRoot.html">IfcRoot</a></em> provides for the fundamental capabilities of:</p>
 <ul>
 <li>identification - assigning a globally unique identifier (the GUID)</li>
 <li>optional ownership and change information</li>
 <li>optional name and description attribution</li>
 </ul>
-<p>There are three fundamental entity types in the IFC model, which are all derived from <em>IfcRoot</em>. They form the first level of specialization within the entity hierarchy.</p>
+<p>There are three fundamental entity types in the IFC model, which are all derived from <em><a href="../lexical/IfcRoot.html">IfcRoot</a></em>. They form the first level of specialization within the entity hierarchy.</p>
 <ul>
 <li>object definitions are the generalization of any semantically treated thing (or item) within the IFC model.</li>
 <li>relationships are the generalization of all relationships among things (or items) that are treated as objectified relationships between different entities</li>
 <li>property definitions are the generalization of all characteristics that may be assigned to object definitions.</li>
 </ul>
 <h4><a class="anchor" id="5.1.1.2-Object-definitions"></a>5.1.1.2 Object definitions<a class="link" href="#5.1.1.2-Object-definitions"><i data-feather="link"></i></a></h4>
-<p>An object definition is the abstract supertype, <em>IfcObjectDefinition</em>, and stands for all physically tangible items, such as wall, beam or covering, physically existing items, such as spaces, or conceptual items, such as grids or virtual boundaries. It also stands for processes such as work tasks, for controls such as cost items, for resources such as labor resource, or for actors such as persons involved in the design process.</p>
-<p>Object definitions are specialized into object occurrences, <em>IfcObject</em>, indicating any individual object in space, time or another representation context, into object types, <em>IfcTypeObject</em> indicating the common definitions as a type, or article that are identical for all object occurrences, and basic project or library context, <em>IfcContext</em>.</p>
+<p>An object definition is the abstract supertype, <em><a href="../lexical/IfcObjectDefinition.html">IfcObjectDefinition</a></em>, and stands for all physically tangible items, such as wall, beam or covering, physically existing items, such as spaces, or conceptual items, such as grids or virtual boundaries. It also stands for processes such as work tasks, for controls such as cost items, for resources such as labor resource, or for actors such as persons involved in the design process.</p>
+<p>Object definitions are specialized into object occurrences, <em><a href="../lexical/IfcObject.html">IfcObject</a></em>, indicating any individual object in space, time or another representation context, into object types, <em><a href="../lexical/IfcTypeObject.html">IfcTypeObject</a></em> indicating the common definitions as a type, or article that are identical for all object occurrences, and basic project or library context, <em><a href="../lexical/IfcContext.html">IfcContext</a></em>.</p>
 <p>An object and object type gets its information from the relationships in which it is involved. This includes the definition relationship to property information, or the typing relationship to assign an underlying object type to an object.</p>
 <h4><a class="anchor" id="5.1.1.3-Relationship-definitions"></a>5.1.1.3 Relationship definitions<a class="link" href="#5.1.1.3-Relationship-definitions"><i data-feather="link"></i></a></h4>
-<p>Relationships are predominately being defined as the objectified relationship, <em>IfcRelationship</em>. The objectified relationship handles relationships among objects. This allows to keep relationship specific properties directly at the relationship object and to uncouple the relationship semantics from the object attributes.</p>
+<p>Relationships are predominately being defined as the objectified relationship, <em><a href="../lexical/IfcRelationship.html">IfcRelationship</a></em>. The objectified relationship handles relationships among objects. This allows to keep relationship specific properties directly at the relationship object and to uncouple the relationship semantics from the object attributes.</p>
 <p>The introduction of the objectified relationships also allows the development of a separate subtype tree for relationship semantics.</p>
 <h4><a class="anchor" id="5.1.1.4-Property-definition"></a>5.1.1.4 Property definition<a class="link" href="#5.1.1.4-Property-definition"><i data-feather="link"></i></a></h4>
-<p>The property definition, <em>IfcPropertyDefinition</em>, is the generalization of all characteristics of objects. Shared among multiple object instances, it reflects the specific information of an object type, but it may also represent the occurrence information of the actual object in the project context, if it is assigned only to a single object instance.</p>
+<p>The property definition, <em><a href="../lexical/IfcPropertyDefinition.html">IfcPropertyDefinition</a></em>, is the generalization of all characteristics of objects. Shared among multiple object instances, it reflects the specific information of an object type, but it may also represent the occurrence information of the actual object in the project context, if it is assigned only to a single object instance.</p>
 <p>The property definition gets applied to the objects using the concept of relationships.</p>
 <h4><a class="anchor" id="5.1.1.5-Object-entity-subtype-tree"></a>5.1.1.5 Object entity subtype tree<a class="link" href="#5.1.1.5-Object-entity-subtype-tree"><i data-feather="link"></i></a></h4>
-<p>There are six fundamental entity types in the IFC model, which are all derived from <em>IfcObject</em>.</p>
+<p>There are six fundamental entity types in the IFC model, which are all derived from <em><a href="../lexical/IfcObject.html">IfcObject</a></em>.</p>
 <ul>
 <li>products - are physical object (manufactured, supplied or created) for incorporation into a project. They may be physically existing or tangible. Products may be defined by shape representations and have a location in the coordinate space.</li>
 <li>processes - are actions taking place in a project with the intent of acquiring, constructing, or maintaining objects. Processes are placed in sequence in time.</li>
@@ -274,7 +274,7 @@
 <li>groups - are arbitrary collections of objects.</li>
 </ul>
 <h4><a class="anchor" id="5.1.1.6-Relationship-entity-subtype-tree"></a>5.1.1.6 Relationship entity subtype tree<a class="link" href="#5.1.1.6-Relationship-entity-subtype-tree"><i data-feather="link"></i></a></h4>
-<p>There are six fundamental relationship types in the IFC model, which are all derived from <em>IfcRelationship</em>. A relationship may have an informal purpose descriptor assigned, which denotes a particular purpose of applying this relationship.</p>
+<p>There are six fundamental relationship types in the IFC model, which are all derived from <em><a href="../lexical/IfcRelationship.html">IfcRelationship</a></em>. A relationship may have an informal purpose descriptor assigned, which denotes a particular purpose of applying this relationship.</p>
 <ul>
 <li>assignment - is a generalization of "link" relationships among instances of objects and its various subtypes. A link denotes the specific association through which one object (the client) applies the services of other objects (the suppliers), or through which one object may navigate to other objects.</li>
 <li>association - refers to external sources of information (most notably a classification, library or document) and associates it to objects or property definitions.</li>
@@ -284,7 +284,7 @@
 <li>declaration - handles the link between object definitions and property definitions and the declaring context.</li>
 </ul>
 <h4><a class="anchor" id="5.1.1.7-Property-definition-entity-subtype-tree"></a>5.1.1.7 Property definition entity subtype tree<a class="link" href="#5.1.1.7-Property-definition-entity-subtype-tree"><i data-feather="link"></i></a></h4>
-<p>There are two fundamental concepts of property definition types, which are all derived from <em>IfcPropertyDefinition</em>.</p>
+<p>There are two fundamental concepts of property definition types, which are all derived from <em><a href="../lexical/IfcPropertyDefinition.html">IfcPropertyDefinition</a></em>.</p>
 <ul>
 <li>property and property set template - defines the syntax and data types for property sets and individual properties.</li>
 <li>property set occurrence - defines shareable and extensible property sets attachable to occurrences of objects. The property set is regarded as a partial type information as it establishes a subset of common shared property information among occurrence objects.</li>
@@ -293,45 +293,310 @@
 <h2><a class="anchor" id="5.1.2-Types"></a>
     5.1.2 Types
 <a class="link" href="#5.1.2-Types"><i data-feather="link"></i></a></h2>
-<p class="search-skip">
-    No resources are available in this category.
-</p>
+<ol class="referenced-list">
+<li number="5.1.2.1">
+<a href="../lexical/IfcComplexPropertyTemplateTypeEnum.html">
+            IfcComplexPropertyTemplateTypeEnum
+        </a>
+</li><li number="5.1.2.2">
+<a href="../lexical/IfcDefinitionSelect.html">
+            IfcDefinitionSelect
+        </a>
+</li><li number="5.1.2.3">
+<a href="../lexical/IfcProcessSelect.html">
+            IfcProcessSelect
+        </a>
+</li><li number="5.1.2.4">
+<a href="../lexical/IfcProductSelect.html">
+            IfcProductSelect
+        </a>
+</li><li number="5.1.2.5">
+<a href="../lexical/IfcPropertySetDefinitionSelect.html">
+            IfcPropertySetDefinitionSelect
+        </a>
+</li><li number="5.1.2.6">
+<a href="../lexical/IfcPropertySetDefinitionSet.html">
+            IfcPropertySetDefinitionSet
+        </a>
+</li><li number="5.1.2.7">
+<a href="../lexical/IfcPropertySetTemplateTypeEnum.html">
+            IfcPropertySetTemplateTypeEnum
+        </a>
+</li><li number="5.1.2.8">
+<a href="../lexical/IfcResourceSelect.html">
+            IfcResourceSelect
+        </a>
+</li><li number="5.1.2.9">
+<a href="../lexical/IfcSimplePropertyTemplateTypeEnum.html">
+            IfcSimplePropertyTemplateTypeEnum
+        </a>
+</li><li number="5.1.2.10">
+<a href="../lexical/IfcStrippedOptional.html">
+            IfcStrippedOptional
+        </a>
+</li></ol>
 <h2><a class="anchor" id="5.1.3-Entities"></a>
     5.1.3 Entities
 <a class="link" href="#5.1.3-Entities"><i data-feather="link"></i></a></h2>
-<p class="search-skip">
-    No resources are available in this category.
-</p>
+<ol class="referenced-list">
+<li number="5.1.3.1">
+<a href="../lexical/IfcActor.html">
+            IfcActor
+        </a>
+</li><li number="5.1.3.2">
+<a href="../lexical/IfcComplexPropertyTemplate.html">
+            IfcComplexPropertyTemplate
+        </a>
+</li><li number="5.1.3.3">
+<a href="../lexical/IfcContext.html">
+            IfcContext
+        </a>
+</li><li number="5.1.3.4">
+<a href="../lexical/IfcControl.html">
+            IfcControl
+        </a>
+</li><li number="5.1.3.5">
+<a href="../lexical/IfcGroup.html">
+            IfcGroup
+        </a>
+</li><li number="5.1.3.6">
+<a href="../lexical/IfcObject.html">
+            IfcObject
+        </a>
+</li><li number="5.1.3.7">
+<a href="../lexical/IfcObjectDefinition.html">
+            IfcObjectDefinition
+        </a>
+</li><li number="5.1.3.8">
+<a href="../lexical/IfcPreDefinedPropertySet.html">
+            IfcPreDefinedPropertySet
+        </a>
+</li><li number="5.1.3.9">
+<a href="../lexical/IfcProcess.html">
+            IfcProcess
+        </a>
+</li><li number="5.1.3.10">
+<a href="../lexical/IfcProduct.html">
+            IfcProduct
+        </a>
+</li><li number="5.1.3.11">
+<a href="../lexical/IfcProject.html">
+            IfcProject
+        </a>
+</li><li number="5.1.3.12">
+<a href="../lexical/IfcProjectLibrary.html">
+            IfcProjectLibrary
+        </a>
+</li><li number="5.1.3.13">
+<a href="../lexical/IfcPropertyDefinition.html">
+            IfcPropertyDefinition
+        </a>
+</li><li number="5.1.3.14">
+<a href="../lexical/IfcPropertySet.html">
+            IfcPropertySet
+        </a>
+</li><li number="5.1.3.15">
+<a href="../lexical/IfcPropertySetDefinition.html">
+            IfcPropertySetDefinition
+        </a>
+</li><li number="5.1.3.16">
+<a href="../lexical/IfcPropertySetTemplate.html">
+            IfcPropertySetTemplate
+        </a>
+</li><li number="5.1.3.17">
+<a href="../lexical/IfcPropertyTemplate.html">
+            IfcPropertyTemplate
+        </a>
+</li><li number="5.1.3.18">
+<a href="../lexical/IfcPropertyTemplateDefinition.html">
+            IfcPropertyTemplateDefinition
+        </a>
+</li><li number="5.1.3.19">
+<a href="../lexical/IfcQuantitySet.html">
+            IfcQuantitySet
+        </a>
+</li><li number="5.1.3.20">
+<a href="../lexical/IfcRelAggregates.html">
+            IfcRelAggregates
+        </a>
+</li><li number="5.1.3.21">
+<a href="../lexical/IfcRelAssigns.html">
+            IfcRelAssigns
+        </a>
+</li><li number="5.1.3.22">
+<a href="../lexical/IfcRelAssignsToActor.html">
+            IfcRelAssignsToActor
+        </a>
+</li><li number="5.1.3.23">
+<a href="../lexical/IfcRelAssignsToControl.html">
+            IfcRelAssignsToControl
+        </a>
+</li><li number="5.1.3.24">
+<a href="../lexical/IfcRelAssignsToGroup.html">
+            IfcRelAssignsToGroup
+        </a>
+</li><li number="5.1.3.25">
+<a href="../lexical/IfcRelAssignsToGroupByFactor.html">
+            IfcRelAssignsToGroupByFactor
+        </a>
+</li><li number="5.1.3.26">
+<a href="../lexical/IfcRelAssignsToProcess.html">
+            IfcRelAssignsToProcess
+        </a>
+</li><li number="5.1.3.27">
+<a href="../lexical/IfcRelAssignsToProduct.html">
+            IfcRelAssignsToProduct
+        </a>
+</li><li number="5.1.3.28">
+<a href="../lexical/IfcRelAssignsToResource.html">
+            IfcRelAssignsToResource
+        </a>
+</li><li number="5.1.3.29">
+<a href="../lexical/IfcRelAssociates.html">
+            IfcRelAssociates
+        </a>
+</li><li number="5.1.3.30">
+<a href="../lexical/IfcRelAssociatesClassification.html">
+            IfcRelAssociatesClassification
+        </a>
+</li><li number="5.1.3.31">
+<a href="../lexical/IfcRelAssociatesDocument.html">
+            IfcRelAssociatesDocument
+        </a>
+</li><li number="5.1.3.32">
+<a href="../lexical/IfcRelAssociatesLibrary.html">
+            IfcRelAssociatesLibrary
+        </a>
+</li><li number="5.1.3.33">
+<a href="../lexical/IfcRelConnects.html">
+            IfcRelConnects
+        </a>
+</li><li number="5.1.3.34">
+<a href="../lexical/IfcRelDeclares.html">
+            IfcRelDeclares
+        </a>
+</li><li number="5.1.3.35">
+<a href="../lexical/IfcRelDecomposes.html">
+            IfcRelDecomposes
+        </a>
+</li><li number="5.1.3.36">
+<a href="../lexical/IfcRelDefines.html">
+            IfcRelDefines
+        </a>
+</li><li number="5.1.3.37">
+<a href="../lexical/IfcRelDefinesByObject.html">
+            IfcRelDefinesByObject
+        </a>
+</li><li number="5.1.3.38">
+<a href="../lexical/IfcRelDefinesByProperties.html">
+            IfcRelDefinesByProperties
+        </a>
+</li><li number="5.1.3.39">
+<a href="../lexical/IfcRelDefinesByTemplate.html">
+            IfcRelDefinesByTemplate
+        </a>
+</li><li number="5.1.3.40">
+<a href="../lexical/IfcRelDefinesByType.html">
+            IfcRelDefinesByType
+        </a>
+</li><li number="5.1.3.41">
+<a href="../lexical/IfcRelNests.html">
+            IfcRelNests
+        </a>
+</li><li number="5.1.3.42">
+<a href="../lexical/IfcRelationship.html">
+            IfcRelationship
+        </a>
+</li><li number="5.1.3.43">
+<a href="../lexical/IfcResource.html">
+            IfcResource
+        </a>
+</li><li number="5.1.3.44">
+<a href="../lexical/IfcRoot.html">
+            IfcRoot
+        </a>
+</li><li number="5.1.3.45">
+<a href="../lexical/IfcSimplePropertyTemplate.html">
+            IfcSimplePropertyTemplate
+        </a>
+</li><li number="5.1.3.46">
+<a href="../lexical/IfcTypeObject.html">
+            IfcTypeObject
+        </a>
+</li><li number="5.1.3.47">
+<a href="../lexical/IfcTypeProcess.html">
+            IfcTypeProcess
+        </a>
+</li><li number="5.1.3.48">
+<a href="../lexical/IfcTypeProduct.html">
+            IfcTypeProduct
+        </a>
+</li><li number="5.1.3.49">
+<a href="../lexical/IfcTypeResource.html">
+            IfcTypeResource
+        </a>
+</li></ol>
 <h2><a class="anchor" id="5.1.4-Property-Sets"></a>
     5.1.4 Property Sets
 <a class="link" href="#5.1.4-Property-Sets"><i data-feather="link"></i></a></h2>
-<p class="search-skip">
-    No resources are available in this category.
-</p>
+<ol class="referenced-list">
+<li number="5.1.4.1">
+<a href="../lexical/Pset_ActorCommon.html">
+            Pset_ActorCommon
+        </a>
+</li><li number="5.1.4.2">
+<a href="../lexical/Pset_ProjectCommon.html">
+            Pset_ProjectCommon
+        </a>
+</li></ol>
 <h2><a class="anchor" id="5.1.5-Quantity-Sets"></a>
     5.1.5 Quantity Sets
 <a class="link" href="#5.1.5-Quantity-Sets"><i data-feather="link"></i></a></h2>
-<p class="search-skip">
-    No resources are available in this category.
-</p>
+<ol class="referenced-list">
+<li number="5.1.5.1">
+<a href="../lexical/Qto_BodyGeometryValidation.html">
+            Qto_BodyGeometryValidation
+        </a>
+</li></ol>
 <h2><a class="anchor" id="5.1.6-Functions"></a>
     5.1.6 Functions
 <a class="link" href="#5.1.6-Functions"><i data-feather="link"></i></a></h2>
-<p class="search-skip">
-    No resources are available in this category.
-</p>
+<ol class="referenced-list">
+<li number="5.1.6.1">
+<a href="../lexical/IfcUniqueDefinitionNames.html">
+            IfcUniqueDefinitionNames
+        </a>
+</li><li number="5.1.6.2">
+<a href="../lexical/IfcUniquePropertyName.html">
+            IfcUniquePropertyName
+        </a>
+</li><li number="5.1.6.3">
+<a href="../lexical/IfcUniquePropertySetNames.html">
+            IfcUniquePropertySetNames
+        </a>
+</li><li number="5.1.6.4">
+<a href="../lexical/IfcUniquePropertyTemplateNames.html">
+            IfcUniquePropertyTemplateNames
+        </a>
+</li></ol>
 <h2><a class="anchor" id="5.1.7-Rules"></a>
     5.1.7 Rules
 <a class="link" href="#5.1.7-Rules"><i data-feather="link"></i></a></h2>
-<p class="search-skip">
-    No resources are available in this category.
-</p>
+<ol class="referenced-list">
+<li number="5.1.7.1">
+<a href="../lexical/IfcSingleProjectInstance.html">
+            IfcSingleProjectInstance
+        </a>
+</li></ol>
 <h2><a class="anchor" id="5.1.8-PropertyEnumerations"></a>
     5.1.8 PropertyEnumerations
 <a class="link" href="#5.1.8-PropertyEnumerations"><i data-feather="link"></i></a></h2>
-<p class="search-skip">
-    No resources are available in this category.
-</p>
+<ol class="referenced-list">
+<li number="5.1.8.1">
+<a href="../lexical/PEnum_ProjectType.html">
+            PEnum_ProjectType
+        </a>
+</li></ol>
 </div>
 <div class="col-md-2 rightpanel">
 <div class="card fluid shadowed">

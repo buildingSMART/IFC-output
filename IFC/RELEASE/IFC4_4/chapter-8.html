@@ -18,7 +18,7 @@
                         padding-top: 0px;
                         float: left;
                     " width="100"/>
-<p style="display: inline-block; vertical-align: top;">IFC 4.4.0.20260519 (IFC4X4)
+<p style="display: inline-block; vertical-align: top;">IFC 4.4.0.20260520 (IFC4X4)
                             <small>under development</small>
 </p>
 <ul>
@@ -218,8 +218,8 @@
 <div class="col-md-8" id="main-content">
 <h1>8 Resource definition data schemas</h1>
 <p>The resource definition data schemas consist of supporting data structures as shown below. Entities and types defined in this layer can be referenced by all entities in the layers below.</p>
-<p>Unlike entities in other layers, resource definition data structures cannot exist independently, but can only exist if referenced (directly or indirectly) by one or more entities deriving from IfcRoot. As resource definitions do not have a concept of identity (such as a GUID), multiple objects referencing the same instance of a resource entity does not imply a relationship. For example, two polylines (IfcPolyline) sharing the same instance for a point (IfcCartesianPoint), and two polylines using different instances for identical points (such as both having cordinates 0,0,0) are semantically equivalent. It is recommended (but not required) for applications to minimize file size by sharing identical resource definition instances where possible.</p>
-<p>NOTE  The resource definition layer should not be confused with construction resource entities (IfcResource subtypes). While the terms are similar, they are unrelated concepts.</p>
+<p>Unlike entities in other layers, resource definition data structures cannot exist independently, but can only exist if referenced (directly or indirectly) by one or more entities deriving from <a href="lexical/IfcRoot.html">IfcRoot</a>. As resource definitions do not have a concept of identity (such as a GUID), multiple objects referencing the same instance of a resource entity does not imply a relationship. For example, two polylines (<a href="lexical/IfcPolyline.html">IfcPolyline</a>) sharing the same instance for a point (<a href="lexical/IfcCartesianPoint.html">IfcCartesianPoint</a>), and two polylines using different instances for identical points (such as both having cordinates 0,0,0) are semantically equivalent. It is recommended (but not required) for applications to minimize file size by sharing identical resource definition instances where possible.</p>
+<p>NOTE  The resource definition layer should not be confused with construction resource entities (<a href="lexical/IfcResource.html">IfcResource</a> subtypes). While the terms are similar, they are unrelated concepts.</p>
 <ol class="referenced-list">
 <li number="8.1">
 <a href="ifcactorresource/content.html">
