@@ -749,43 +749,9 @@
 </tr>
 </tbody>
 </table><figcaption>Table A<a class="link" href="#Table-A"><i data-feather="link"></i></a></figcaption></figure>
-<h2><a class="anchor" id="5.1.3.1.4-Property-sets"></a>
-    5.1.3.1.4 Property sets
-<a class="link" href="#5.1.3.1.4-Property-sets"><i data-feather="link"></i></a></h2>
-<ul class="psets">
-<li>
-            <a href="Pset_ActorCommon.html">Pset_ActorCommon</a>
-            <ul>
-<li>NumberOfActors</li>
-<li>ActorCategory</li>
-<li>SkillLevel</li>
-</ul>
-</li>
-<li>
-            <a href="Pset_Address.html">Pset_Address</a>
-            <ul>
-<li>Purpose</li>
-<li>Description</li>
-<li>UserDefinedPurpose</li>
-<li>InternalLocation</li>
-<li>AddressLines</li>
-<li>PostalBox</li>
-<li>Town</li>
-<li>Region</li>
-<li>PostalCode</li>
-<li>Country</li>
-<li>TelephoneNumbers</li>
-<li>FacsimileNumbers</li>
-<li>PagerNumber</li>
-<li>ElectronicMailAddresses</li>
-<li>WWWHomePageURL</li>
-<li>MessagingIDs</li>
-</ul>
-</li>
-</ul>
-<h2><a class="anchor" id="5.1.3.1.5-Concept-usage"></a>
-    5.1.3.1.5 Concept usage
-<a class="link" href="#5.1.3.1.5-Concept-usage"><i data-feather="link"></i></a></h2>
+<h2><a class="anchor" id="5.1.3.1.4-Concept-usage"></a>
+    5.1.3.1.4 Concept usage
+<a class="link" href="#5.1.3.1.4-Concept-usage"><i data-feather="link"></i></a></h2>
 <figure><a class="anchor" id="Table-B"></a><table class="striped grouped concepts">
 <thead>
 <tr>
@@ -1030,7 +996,7 @@
 <tr class="group">
 <td colspan="3">
                 <a href="IfcActor.html">IfcActor</a>
-                <small>(2)</small>
+                <small>(1)</small>
 </td>
 </tr>
 <tr>
@@ -1066,30 +1032,11 @@
 </ul>
 </td>
 </tr>
-<tr>
-<td data-label="Name">
-<a href="../concepts/Object_Definition/Property_Sets/Property_Sets_for_Objects/content.html">Property Sets for Objects</a>
-</td>
-<td data-label="Usage">
-                General
-            </td>
-<td data-label="Description">
-<p class="search-skip">This concept can be applied to the following resources:</p>
-<ul>
-<li>
-                        <a href="Pset_ActorCommon.html">Pset_ActorCommon</a>
-                    </li>
-<li>
-                        <a href="Pset_Address.html">Pset_Address</a>
-                    </li>
-</ul>
-</td>
-</tr>
 </tbody>
 </table><figcaption>Table B<a class="link" href="#Table-B"><i data-feather="link"></i></a></figcaption></figure>
-<h2><a class="anchor" id="5.1.3.1.6-Formal-representation"></a>
-    5.1.3.1.6 Formal representation
-<a class="link" href="#5.1.3.1.6-Formal-representation"><i data-feather="link"></i></a></h2>
+<h2><a class="anchor" id="5.1.3.1.5-Formal-representation"></a>
+    5.1.3.1.5 Formal representation
+<a class="link" href="#5.1.3.1.5-Formal-representation"><i data-feather="link"></i></a></h2>
 <pre><code class="language-express pygments" data-highlighted="generator"><span class="tok-kd">ENTITY</span> <a href="IfcActor.html"><span class="tok-nc">IfcActor</span></a>
 <span class="tok-k">SUPERTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><span class="tok-nb">ONEOF</span>
 <span class="tok-p">(</span><a href="IfcOccupant.html"><span class="tok-nc">IfcOccupant</span></a><span class="tok-p">)</span><span class="tok-p">)</span>
@@ -1098,9 +1045,9 @@
 <span class="tok-k">INVERSE</span>
 <span class="tok-n">IsActingUpon</span> <span class="tok-o">:</span> <span class="tok-nb">SET</span> <span class="tok-p">[</span><span class="tok-m">0</span><span class="tok-o">:</span><span class="tok-err">?</span><span class="tok-p">]</span> <span class="tok-k">OF</span> <a href="IfcRelAssignsToActor.html"><span class="tok-nc">IfcRelAssignsToActor</span></a> <span class="tok-k">FOR</span> <span class="tok-n">RelatingActor</span><span class="tok-p">;</span>
 <span class="tok-kd">END_ENTITY</span><span class="tok-p">;</span></code></pre>
-<h2><a class="anchor" id="5.1.3.1.7-References"></a>
-    5.1.3.1.7 References
-<a class="link" href="#5.1.3.1.7-References"><i data-feather="link"></i></a></h2>
+<h2><a class="anchor" id="5.1.3.1.6-References"></a>
+    5.1.3.1.6 References
+<a class="link" href="#5.1.3.1.6-References"><i data-feather="link"></i></a></h2>
 <ul class="references">
 <li><i data-feather="paperclip"></i><a href="IfcObject.html">IfcObject</a></li>
 <li><i data-feather="paperclip"></i><a href="IfcOccupant.html">IfcOccupant</a></li>

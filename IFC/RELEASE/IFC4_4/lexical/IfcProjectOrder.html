@@ -820,61 +820,9 @@
 </tr>
 </tbody>
 </table><figcaption>Table A<a class="link" href="#Table-A"><i data-feather="link"></i></a></figcaption></figure>
-<h2><a class="anchor" id="6.5.3.5.4-Property-sets"></a>
-    6.5.3.5.4 Property sets
-<a class="link" href="#6.5.3.5.4-Property-sets"><i data-feather="link"></i></a></h2>
-<ul class="psets">
-<li>
-            <a href="Pset_ProjectOrderChangeOrder.html">Pset_ProjectOrderChangeOrder</a>
-            <code>CHANGEORDER</code>
-<ul>
-<li>ReasonForChange</li>
-<li>BudgetSource</li>
-</ul>
-</li>
-<li>
-            <a href="Pset_ProjectOrderMaintenanceWorkOrder.html">Pset_ProjectOrderMaintenanceWorkOrder</a>
-            <code>MAINTENANCEWORKORDER</code>
-<ul>
-<li>ProductDescription</li>
-<li>WorkTypeRequested</li>
-<li>ContractualType</li>
-<li>IfNotAccomplished</li>
-<li>MaintenanceType</li>
-<li>FaultPriorityType</li>
-<li>LocationPriorityType</li>
-<li>ScheduledFrequency</li>
-</ul>
-</li>
-<li>
-            <a href="Pset_ProjectOrderMoveOrder.html">Pset_ProjectOrderMoveOrder</a>
-            <code>MOVEORDER</code>
-<ul>
-<li>SpecialInstructions</li>
-</ul>
-</li>
-<li>
-            <a href="Pset_ProjectOrderPurchaseOrder.html">Pset_ProjectOrderPurchaseOrder</a>
-            <code>PURCHASEORDER</code>
-<ul>
-<li>IsFOB</li>
-<li>ShipMethod</li>
-</ul>
-</li>
-<li>
-            <a href="Pset_ProjectOrderWorkOrder.html">Pset_ProjectOrderWorkOrder</a>
-            <code>WORKORDER</code>
-<ul>
-<li>ProductDescription</li>
-<li>WorkTypeRequested</li>
-<li>ContractualType</li>
-<li>IfNotAccomplished</li>
-</ul>
-</li>
-</ul>
-<h2><a class="anchor" id="6.5.3.5.5-Concept-usage"></a>
-    6.5.3.5.5 Concept usage
-<a class="link" href="#6.5.3.5.5-Concept-usage"><i data-feather="link"></i></a></h2>
+<h2><a class="anchor" id="6.5.3.5.4-Concept-usage"></a>
+    6.5.3.5.4 Concept usage
+<a class="link" href="#6.5.3.5.4-Concept-usage"><i data-feather="link"></i></a></h2>
 <figure><a class="anchor" id="Table-B"></a><table class="striped grouped concepts">
 <thead>
 <tr>
@@ -1142,7 +1090,7 @@
 <tr class="group">
 <td colspan="3">
                 <a href="IfcProjectOrder.html">IfcProjectOrder</a>
-                <small>(5)</small>
+                <small>(4)</small>
 </td>
 </tr>
 <tr>
@@ -1233,53 +1181,20 @@ Figure D — Project order assignment<a class="link" href="#Figure-D-Project-ord
 </ul>
 </td>
 </tr>
-<tr>
-<td data-label="Name">
-<a href="../concepts/Object_Definition/Property_Sets/Property_Sets_for_Objects/content.html">Property Sets for Objects</a>
-</td>
-<td data-label="Usage">
-                General
-            </td>
-<td data-label="Description">
-<p class="search-skip">This concept can be applied to the following resources:</p>
-<ul>
-<li>
-                        <a href="Pset_ProjectOrderChangeOrder.html">Pset_ProjectOrderChangeOrder</a>
-                        (only applies to <code>CHANGEORDER)
-                    </code></li>
-<li>
-                        <a href="Pset_ProjectOrderMaintenanceWorkOrder.html">Pset_ProjectOrderMaintenanceWorkOrder</a>
-                        (only applies to <code>MAINTENANCEWORKORDER)
-                    </code></li>
-<li>
-                        <a href="Pset_ProjectOrderMoveOrder.html">Pset_ProjectOrderMoveOrder</a>
-                        (only applies to <code>MOVEORDER)
-                    </code></li>
-<li>
-                        <a href="Pset_ProjectOrderPurchaseOrder.html">Pset_ProjectOrderPurchaseOrder</a>
-                        (only applies to <code>PURCHASEORDER)
-                    </code></li>
-<li>
-                        <a href="Pset_ProjectOrderWorkOrder.html">Pset_ProjectOrderWorkOrder</a>
-                        (only applies to <code>WORKORDER)
-                    </code></li>
-</ul>
-</td>
-</tr>
 </tbody>
 </table><figcaption>Table B<a class="link" href="#Table-B"><i data-feather="link"></i></a></figcaption></figure>
-<h2><a class="anchor" id="6.5.3.5.6-Formal-representation"></a>
-    6.5.3.5.6 Formal representation
-<a class="link" href="#6.5.3.5.6-Formal-representation"><i data-feather="link"></i></a></h2>
+<h2><a class="anchor" id="6.5.3.5.5-Formal-representation"></a>
+    6.5.3.5.5 Formal representation
+<a class="link" href="#6.5.3.5.5-Formal-representation"><i data-feather="link"></i></a></h2>
 <pre><code class="language-express pygments" data-highlighted="generator"><span class="tok-kd">ENTITY</span> <a href="IfcProjectOrder.html"><span class="tok-nc">IfcProjectOrder</span></a>
 <span class="tok-k">SUBTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><a href="IfcControl.html"><span class="tok-nc">IfcControl</span></a><span class="tok-p">)</span><span class="tok-p">;</span>
 <span class="tok-n">PredefinedType</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <a href="IfcProjectOrderTypeEnum.html"><span class="tok-nc">IfcProjectOrderTypeEnum</span></a><span class="tok-p">;</span>
 <span class="tok-n">Status</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <a href="IfcLabel.html"><span class="tok-nc">IfcLabel</span></a><span class="tok-p">;</span>
 <span class="tok-n">LongDescription</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <a href="IfcText.html"><span class="tok-nc">IfcText</span></a><span class="tok-p">;</span>
 <span class="tok-kd">END_ENTITY</span><span class="tok-p">;</span></code></pre>
-<h2><a class="anchor" id="6.5.3.5.7-References"></a>
-    6.5.3.5.7 References
-<a class="link" href="#6.5.3.5.7-References"><i data-feather="link"></i></a></h2>
+<h2><a class="anchor" id="6.5.3.5.6-References"></a>
+    6.5.3.5.6 References
+<a class="link" href="#6.5.3.5.6-References"><i data-feather="link"></i></a></h2>
 <ul class="references">
 <li><i data-feather="paperclip"></i><a href="IfcControl.html">IfcControl</a></li>
 </ul>

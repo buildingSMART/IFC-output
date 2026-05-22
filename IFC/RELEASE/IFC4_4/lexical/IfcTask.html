@@ -919,44 +919,9 @@
 </tr>
 </tbody>
 </table><figcaption>Table B<a class="link" href="#Table-B"><i data-feather="link"></i></a></figcaption></figure>
-<h2><a class="anchor" id="5.3.3.6.5-Property-sets"></a>
-    5.3.3.6.5 Property sets
-<a class="link" href="#5.3.3.6.5-Property-sets"><i data-feather="link"></i></a></h2>
-<ul class="psets">
-<li>
-            <a href="Pset_PackingInstructions.html">Pset_PackingInstructions</a>
-            <code>MOVE</code>
-<ul>
-<li>PackingCareType</li>
-<li>WrappingMaterial</li>
-<li>ContainerMaterial</li>
-<li>SpecialInstructions</li>
-</ul>
-</li>
-<li>
-            <a href="Pset_Risk.html">Pset_Risk</a>
-            <ul>
-<li>RiskName</li>
-<li>RiskType</li>
-<li>NatureOfRisk</li>
-<li>RiskAssessmentMethodology</li>
-<li>UnmitigatedRiskLikelihood</li>
-<li>UnmitigatedRiskConsequence</li>
-<li>UnmitigatedRiskSignificance</li>
-<li>MitigationPlanned</li>
-<li>MitigatedRiskLikelihood</li>
-<li>MitigatedRiskConsequence</li>
-<li>MitigatedRiskSignificance</li>
-<li>MitigationProposed</li>
-<li>AssociatedProduct</li>
-<li>AssociatedActivity</li>
-<li>AssociatedLocation</li>
-</ul>
-</li>
-</ul>
-<h2><a class="anchor" id="5.3.3.6.6-Concept-usage"></a>
-    5.3.3.6.6 Concept usage
-<a class="link" href="#5.3.3.6.6-Concept-usage"><i data-feather="link"></i></a></h2>
+<h2><a class="anchor" id="5.3.3.6.5-Concept-usage"></a>
+    5.3.3.6.5 Concept usage
+<a class="link" href="#5.3.3.6.5-Concept-usage"><i data-feather="link"></i></a></h2>
 <figure><a class="anchor" id="Table-C"></a><table class="striped grouped concepts">
 <thead>
 <tr>
@@ -1189,23 +1154,7 @@
 <tr class="group-inherited">
 <td colspan="3">
                 <a href="IfcProcess.html">IfcProcess</a>
-                <small>(4)</small>
-</td>
-</tr>
-<tr class="inherited" data-type="concept">
-<td data-label="Name">
-<a href="../concepts/Object_Definition/Property_Sets/Property_Sets_for_Objects/content.html">Property Sets for Objects</a>
-</td>
-<td data-label="Usage">
-                General
-            </td>
-<td data-label="Description">
-<p class="search-skip">This concept can be applied to the following resources:</p>
-<ul>
-<li>
-                        <a href="Pset_Risk.html">Pset_Risk</a>
-                    </li>
-</ul>
+                <small>(3)</small>
 </td>
 </tr>
 <tr class="inherited" data-type="concept">
@@ -1260,18 +1209,18 @@
 <td colspan="4">
 <small class="show-inherited" data-type="concept">
 <i data-feather="eye-off"></i>
-                    Click to show 20 hidden inherited concepts
+                    Click to show 19 hidden inherited concepts
                 </small>
 <small class="hide-inherited" data-type="concept">
 <i data-feather="eye-off"></i>
-                    Click to hide 20 inherited concepts
+                    Click to hide 19 inherited concepts
                 </small>
 </td>
 </tr>
 <tr class="group">
 <td colspan="3">
                 <a href="IfcTask.html">IfcTask</a>
-                <small>(7)</small>
+                <small>(6)</small>
 </td>
 </tr>
 <tr>
@@ -1770,29 +1719,6 @@
 </tr>
 <tr>
 <td data-label="Name">
-<a href="../concepts/Object_Definition/Property_Sets/Property_Sets_for_Objects/content.html">Property Sets for Objects</a>
-</td>
-<td data-label="Usage">
-                General
-            </td>
-<td data-label="Description">
-<aside class="inherited search-skip">
-<small>
-<i data-feather="paperclip"></i>
-                        This is a further elaboration on an inherited concept.
-                    </small>
-</aside>
-<p class="search-skip">This concept can be applied to the following resources:</p>
-<ul>
-<li>
-                        <a href="Pset_PackingInstructions.html">Pset_PackingInstructions</a>
-                        (only applies to <code>MOVE)
-                    </code></li>
-</ul>
-</td>
-</tr>
-<tr>
-<td data-label="Name">
 <a href="../concepts/Object_Connectivity/Sequential_Connectivity/content.html">Sequential Connectivity</a>
 </td>
 <td data-label="Usage">
@@ -1810,9 +1736,9 @@
 </tr>
 </tbody>
 </table><figcaption>Table C<a class="link" href="#Table-C"><i data-feather="link"></i></a></figcaption></figure>
-<h2><a class="anchor" id="5.3.3.6.7-Formal-representation"></a>
-    5.3.3.6.7 Formal representation
-<a class="link" href="#5.3.3.6.7-Formal-representation"><i data-feather="link"></i></a></h2>
+<h2><a class="anchor" id="5.3.3.6.6-Formal-representation"></a>
+    5.3.3.6.6 Formal representation
+<a class="link" href="#5.3.3.6.6-Formal-representation"><i data-feather="link"></i></a></h2>
 <pre><code class="language-express pygments" data-highlighted="generator"><span class="tok-kd">ENTITY</span> <a href="IfcTask.html"><span class="tok-nc">IfcTask</span></a>
 <span class="tok-k">SUBTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><a href="IfcProcess.html"><span class="tok-nc">IfcProcess</span></a><span class="tok-p">)</span><span class="tok-p">;</span>
 <span class="tok-n">Status</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <a href="IfcLabel.html"><span class="tok-nc">IfcLabel</span></a><span class="tok-p">;</span>
@@ -1827,9 +1753,9 @@
 <span class="tok-p">(</span><span class="tok-p">(</span><span class="tok-n">PredefinedType</span> <span class="tok-o">=</span> <a href="IfcTaskTypeEnum.html"><span class="tok-nc">IfcTaskTypeEnum</span></a><span class="tok-p">.</span><span class="tok-n">USERDEFINED</span><span class="tok-p">)</span> <span class="tok-nb">AND</span> <span class="tok-nb">EXISTS</span> <span class="tok-p">(</span><span class="tok-nb">SELF</span><span class="tok-o">\</span><a href="IfcObject.html"><span class="tok-nc">IfcObject</span></a><span class="tok-p">.</span><span class="tok-n">ObjectType</span><span class="tok-p">)</span><span class="tok-p">)</span><span class="tok-p">;</span>
 <span class="tok-n">HasName</span> <span class="tok-o">:</span> <span class="tok-nb">EXISTS</span><span class="tok-p">(</span><span class="tok-nb">SELF</span><span class="tok-o">\</span><a href="IfcRoot.html"><span class="tok-nc">IfcRoot</span></a><span class="tok-p">.</span><span class="tok-n">Name</span><span class="tok-p">)</span><span class="tok-p">;</span>
 <span class="tok-kd">END_ENTITY</span><span class="tok-p">;</span></code></pre>
-<h2><a class="anchor" id="5.3.3.6.8-References"></a>
-    5.3.3.6.8 References
-<a class="link" href="#5.3.3.6.8-References"><i data-feather="link"></i></a></h2>
+<h2><a class="anchor" id="5.3.3.6.7-References"></a>
+    5.3.3.6.7 References
+<a class="link" href="#5.3.3.6.7-References"><i data-feather="link"></i></a></h2>
 <ul class="references">
 <li><i data-feather="paperclip"></i><a href="IfcProcess.html">IfcProcess</a></li>
 </ul>
