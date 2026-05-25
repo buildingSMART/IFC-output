@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='ASCII'?>
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ifc="https://standards.buildingsmart.org/IFC/RELEASE/IFC4/3/DEV/d3d01bf" targetNamespace="https://standards.buildingsmart.org/IFC/RELEASE/IFC4/3/DEV/d3d01bf" elementFormDefault="qualified" attributeFormDefault="unqualified">
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ifc="https://standards.buildingsmart.org/IFC/RELEASE/IFC4/3/DEV/7ca12e4" targetNamespace="https://standards.buildingsmart.org/IFC/RELEASE/IFC4/3/DEV/7ca12e4" elementFormDefault="qualified" attributeFormDefault="unqualified">
 	<xs:element name="uos" type="ifc:uos" abstract="true"/>
 	<xs:simpleType name="Seq-anyURI">
 		<xs:list itemType="xs:anyURI"/>
@@ -10566,6 +10566,7 @@
 			<xs:element ref="ifc:IfcElectricCurrentMeasure-wrapper"/>
 			<xs:element ref="ifc:IfcElectricResistanceMeasure-wrapper"/>
 			<xs:element ref="ifc:IfcElectricVoltageMeasure-wrapper"/>
+			<xs:element ref="ifc:IfcElectricalResistivityMeasure-wrapper"/>
 			<xs:element ref="ifc:IfcEnergyMeasure-wrapper"/>
 			<xs:element ref="ifc:IfcForceMeasure-wrapper"/>
 			<xs:element ref="ifc:IfcFrequencyMeasure-wrapper"/>
@@ -10764,6 +10765,7 @@
 			<xs:element ref="ifc:IfcElectricConductanceMeasure-wrapper"/>
 			<xs:element ref="ifc:IfcElectricResistanceMeasure-wrapper"/>
 			<xs:element ref="ifc:IfcElectricVoltageMeasure-wrapper"/>
+			<xs:element ref="ifc:IfcElectricalResistivityMeasure-wrapper"/>
 			<xs:element ref="ifc:IfcEnergyMeasure-wrapper"/>
 			<xs:element ref="ifc:IfcForceMeasure-wrapper"/>
 			<xs:element ref="ifc:IfcFrequencyMeasure-wrapper"/>
@@ -10944,6 +10946,7 @@
 			<xs:element ref="ifc:IfcElectricCurrentMeasure-wrapper"/>
 			<xs:element ref="ifc:IfcElectricResistanceMeasure-wrapper"/>
 			<xs:element ref="ifc:IfcElectricVoltageMeasure-wrapper"/>
+			<xs:element ref="ifc:IfcElectricalResistivityMeasure-wrapper"/>
 			<xs:element ref="ifc:IfcEnergyMeasure-wrapper"/>
 			<xs:element ref="ifc:IfcForceMeasure-wrapper"/>
 			<xs:element ref="ifc:IfcFrequencyMeasure-wrapper"/>
@@ -11273,6 +11276,7 @@
 			<xs:element ref="ifc:IfcElectricCurrentMeasure-wrapper"/>
 			<xs:element ref="ifc:IfcElectricResistanceMeasure-wrapper"/>
 			<xs:element ref="ifc:IfcElectricVoltageMeasure-wrapper"/>
+			<xs:element ref="ifc:IfcElectricalResistivityMeasure-wrapper"/>
 			<xs:element ref="ifc:IfcEnergyMeasure-wrapper"/>
 			<xs:element ref="ifc:IfcForceMeasure-wrapper"/>
 			<xs:element ref="ifc:IfcFrequencyMeasure-wrapper"/>
@@ -14600,6 +14604,9 @@
 	<xs:simpleType name="IfcElectricVoltageMeasure">
 		<xs:restriction base="xs:double"/>
 	</xs:simpleType>
+	<xs:simpleType name="IfcElectricalResistivityMeasure">
+		<xs:restriction base="xs:double"/>
+	</xs:simpleType>
 	<xs:simpleType name="IfcEnergyMeasure">
 		<xs:restriction base="xs:double"/>
 	</xs:simpleType>
@@ -15232,6 +15239,15 @@
 		<xs:complexType>
 			<xs:simpleContent>
 				<xs:extension base="ifc:IfcElectricVoltageMeasure">
+					<xs:attributeGroup ref="ifc:instanceAttributes"/>
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="IfcElectricalResistivityMeasure-wrapper" nillable="true">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="ifc:IfcElectricalResistivityMeasure">
 					<xs:attributeGroup ref="ifc:instanceAttributes"/>
 				</xs:extension>
 			</xs:simpleContent>
