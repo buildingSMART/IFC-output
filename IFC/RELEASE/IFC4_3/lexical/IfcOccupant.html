@@ -18,7 +18,7 @@
                         padding-top: 0px;
                         float: left;
                     " width="100"/>
-<p style="display: inline-block; vertical-align: top;">IFC 4.3.2.20260428 (IFC4X3_ADD2)
+<p style="display: inline-block; vertical-align: top;">IFC 4.3.2.20260526 (IFC4X3_ADD2)
                             <small>under development</small>
 </p>
 <ul>
@@ -804,9 +804,371 @@
 </tr>
 </tbody>
 </table><figcaption>Table B<a class="link" href="#Table-B"><i data-feather="link"></i></a></figcaption></figure>
-<h2><a class="anchor" id="6.4.3.5.5-Formal-representation"></a>
-    6.4.3.5.5 Formal representation
-<a class="link" href="#6.4.3.5.5-Formal-representation"><i data-feather="link"></i></a></h2>
+<h2><a class="anchor" id="6.4.3.5.5-Property-sets"></a>
+    6.4.3.5.5 Property sets
+<a class="link" href="#6.4.3.5.5-Property-sets"><i data-feather="link"></i></a></h2>
+<ul class="psets">
+<li>
+            <a href="Pset_ActorCommon.html">Pset_ActorCommon</a>
+            <ul>
+<li>NumberOfActors</li>
+<li>ActorCategory</li>
+<li>SkillLevel</li>
+</ul>
+</li>
+<li>
+            <a href="Pset_Address.html">Pset_Address</a>
+            <ul>
+<li>Purpose</li>
+<li>Description</li>
+<li>UserDefinedPurpose</li>
+<li>InternalLocation</li>
+<li>AddressLines</li>
+<li>PostalBox</li>
+<li>Town</li>
+<li>Region</li>
+<li>PostalCode</li>
+<li>Country</li>
+<li>TelephoneNumbers</li>
+<li>FacsimileNumbers</li>
+<li>PagerNumber</li>
+<li>ElectronicMailAddresses</li>
+<li>WWWHomePageURL</li>
+<li>MessagingIDs</li>
+</ul>
+</li>
+</ul>
+<h2><a class="anchor" id="6.4.3.5.6-Concept-usage"></a>
+    6.4.3.5.6 Concept usage
+<a class="link" href="#6.4.3.5.6-Concept-usage"><i data-feather="link"></i></a></h2>
+<figure><a class="anchor" id="Table-C"></a><table class="striped grouped concepts">
+<thead>
+<tr>
+<th>Concept</th>
+<th>Usage</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="group-inherited">
+<td colspan="3">
+                <a href="IfcRoot.html">IfcRoot</a>
+                <small>(2)</small>
+</td>
+</tr>
+<tr class="inherited" data-type="concept">
+<td data-label="Name">
+<a href="../concepts/Object_Attributes/Revision_Control/content.html">Revision Control</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<p>Ownership, history, and merge state is captured using <a href="IfcOwnerHistory.html">IfcOwnerHistory</a>.</p>
+</td>
+</tr>
+<tr class="inherited" data-type="concept">
+<td data-label="Name">
+<a href="../concepts/Object_Attributes/Software_Identity/content.html">Software Identity</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<p><a href="IfcRoot.html">IfcRoot</a> assigns the globally unique ID. In addition, it may also provide a name and description for the concept.</p>
+</td>
+</tr>
+<tr class="group-inherited">
+<td colspan="3">
+                <a href="IfcObjectDefinition.html">IfcObjectDefinition</a>
+                <small>(9)</small>
+</td>
+</tr>
+<tr class="inherited" data-type="concept">
+<td data-label="Name">
+<a href="../concepts/Object_Association/Classification_Association/content.html">Classification Association</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<p>Any object occurrence or object type can have a reference to a specific classification reference, i.e. to a particular facet within a classification system.</p>
+</td>
+</tr>
+<tr class="inherited" data-type="concept">
+<td data-label="Name">
+<a href="../concepts/Object_Composition/Aggregation/content.html">Aggregation</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<p class="search-skip">
+<em>No description available.</em>
+</p>
+</td>
+</tr>
+<tr class="inherited" data-type="concept">
+<td data-label="Name">
+<a href="../concepts/Object_Association/Approval_Association/content.html">Approval Association</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<p class="search-skip">
+<em>No description available.</em>
+</p>
+</td>
+</tr>
+<tr class="inherited" data-type="concept">
+<td data-label="Name">
+<a href="../concepts/Object_Association/Constraint_Association/content.html">Constraint Association</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<p class="search-skip">
+<em>No description available.</em>
+</p>
+</td>
+</tr>
+<tr class="inherited" data-type="concept">
+<td data-label="Name">
+<a href="../concepts/Object_Association/Document_Association/content.html">Document Association</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<p class="search-skip">
+<em>No description available.</em>
+</p>
+</td>
+</tr>
+<tr class="inherited" data-type="concept">
+<td data-label="Name">
+<a href="../concepts/Object_Association/Library_Association/content.html">Library Association</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<p class="search-skip">
+<em>No description available.</em>
+</p>
+</td>
+</tr>
+<tr class="inherited" data-type="concept">
+<td data-label="Name">
+<a href="../concepts/Object_Association/Material_Association/content.html">Material Association</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<p class="search-skip">
+<em>No description available.</em>
+</p>
+</td>
+</tr>
+<tr class="inherited" data-type="concept">
+<td data-label="Name">
+<a href="../concepts/Object_Association/Material_Association/Material_Single/content.html">Material Single</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<p class="search-skip">
+<em>No description available.</em>
+</p>
+</td>
+</tr>
+<tr class="inherited" data-type="concept">
+<td data-label="Name">
+<a href="../concepts/Object_Composition/Nesting/content.html">Nesting</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<p class="search-skip">
+<em>No description available.</em>
+</p>
+</td>
+</tr>
+<tr class="group-inherited">
+<td colspan="3">
+                <a href="IfcObject.html">IfcObject</a>
+                <small>(5)</small>
+</td>
+</tr>
+<tr class="inherited" data-type="concept">
+<td data-label="Name">
+<a href="../concepts/Object_Attributes/Object_Predefined_Type/content.html">Object Predefined Type</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<p class="search-skip">
+<em>No description available.</em>
+</p>
+</td>
+</tr>
+<tr class="inherited" data-type="concept">
+<td data-label="Name">
+<a href="../concepts/Object_Definition/Object_Typing/content.html">Object Typing</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<p>Any object occurrence can be typed by being assigned to a common object type utilizing this concept. A particular rule, restricting the applicable subtypes of <em><a href="IfcTypeObject.html">IfcTypeObject</a></em> that can be assigned, is introduced by overriding this concept at the level of subtypes of <em><a href="IfcObject.html">IfcObject</a></em>.</p>
+<p class="search-skip">This concept can be applied to the following resources:</p>
+<ul>
+<li>
+                        <a href="IfcTypeObject.html">IfcTypeObject</a>
+                    </li>
+</ul>
+</td>
+</tr>
+<tr class="inherited" data-type="concept">
+<td data-label="Name">
+<a href="../concepts/Object_Attributes/Object_User_Identity/content.html">Object User Identity</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<p>An attribute <em>Name</em> and optionally <em>Description</em> can be used for all subypes of <em><a href="IfcObject.html">IfcObject</a></em>. For those subtypes, that have an object type definition, such as <em><a href="IfcBeam.html">IfcBeam</a></em> - <em><a href="IfcBeamType.html">IfcBeamType</a></em>, the common <em>Name</em> and optionally <em>Description</em> is associated with the object type.</p>
+</td>
+</tr>
+<tr class="inherited" data-type="concept">
+<td data-label="Name">
+<a href="../concepts/Object_Definition/Property_Sets/Property_Sets_for_Objects/Property_Sets_with_Override/content.html">Property Sets with Override</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<p>Any object occurrence can hold property sets, either directly at the object occurrence as element specific property sets, or at the object type, as type property sets. In this case, the properties that are provided to the object occurrence are the combinations of element specific and type properties. In case that the same property (within the same property set) is defined both in occurrence and type properties, the property value of the occurrence property overrides the property value of the type property.</p>
+</td>
+</tr>
+<tr class="inherited" data-type="concept">
+<td data-label="Name">
+<a href="../concepts/Object_Assignment/Assignment_to_Group/content.html">Assignment to Group</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<p class="search-skip">
+<em>No description available.</em>
+</p>
+</td>
+</tr>
+<tr class="group-inherited">
+<td colspan="3">
+                <a href="IfcActor.html">IfcActor</a>
+                <small>(2)</small>
+</td>
+</tr>
+<tr class="inherited" data-type="concept">
+<td data-label="Name">
+<a href="../concepts/Object_Assignment/Actor_Assignment/content.html">Actor Assignment</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<p class="search-skip">This concept can be applied to the following resources:</p>
+<ul>
+<li>
+                        <a href="IfcControl.html">IfcControl</a>
+                    </li>
+<li>
+                        <a href="IfcGroup.html">IfcGroup</a>
+                    </li>
+<li>
+                        <a href="IfcProduct.html">IfcProduct</a>
+                    </li>
+<li>
+                        <a href="IfcProcess.html">IfcProcess</a>
+                    </li>
+<li>
+                        <a href="IfcResource.html">IfcResource</a>
+                    </li>
+</ul>
+</td>
+</tr>
+<tr class="inherited" data-type="concept">
+<td data-label="Name">
+<a href="../concepts/Object_Definition/Property_Sets/Property_Sets_for_Objects/content.html">Property Sets for Objects</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<p class="search-skip">This concept can be applied to the following resources:</p>
+<ul>
+<li>
+                        <a href="Pset_ActorCommon.html">Pset_ActorCommon</a>
+                    </li>
+<li>
+                        <a href="Pset_Address.html">Pset_Address</a>
+                    </li>
+</ul>
+</td>
+</tr>
+<tr class="preview">
+<td colspan="4">
+<small class="show-inherited" data-type="concept">
+<i data-feather="eye-off"></i>
+                    Click to show 18 hidden inherited concepts
+                </small>
+<small class="hide-inherited" data-type="concept">
+<i data-feather="eye-off"></i>
+                    Click to hide 18 inherited concepts
+                </small>
+</td>
+</tr>
+<tr class="group">
+<td colspan="3">
+                <a href="IfcOccupant.html">IfcOccupant</a>
+                <small>(1)</small>
+</td>
+</tr>
+<tr>
+<td data-label="Name">
+<a href="../concepts/Object_Assignment/Actor_Assignment/content.html">Actor Assignment</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<aside class="inherited search-skip">
+<small>
+<i data-feather="paperclip"></i>
+                        This is a further elaboration on an inherited concept.
+                    </small>
+</aside>
+<p class="search-skip">This concept can be applied to the following resources:</p>
+<ul>
+<li>
+                        <a href="IfcSpatialStructureElement.html">IfcSpatialStructureElement</a>
+                         - Indicates the property to be occupied. Particular details of the agreement relating to the occupancy of a property are dealt within the <a href="Pset_PropertyAgreement.html">Pset_PropertyAgreement</a> that is defined for the instance of <a href="IfcSpatialStructureElement.html">IfcSpatialStructureElement</a>. This means that an occupant may be related to a site, building, building storey or space through the <a href="IfcSpatialStructureElement.html">IfcSpatialStructureElement</a>.ElementComposition attribute. For instance, if the property concerned is several office spaces on a building storey, it might be appropriate to reference <a href="IfcBuildingStorey.html">IfcBuildingStorey</a>.ElementComposition=PARTIAL. Occupants of a property may be considered to be the parties to an agreement. The roles that the occupant may play in respect to an agreement are defined in the <a href="IfcOccupantTypeEnum.html">IfcOccupantTypeEnum</a> enumeration. If the role is not specified by the predefined contents of this enumeration, the value USERDEFINED may be set and the ObjectType attribute asserted.
+                    </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table><figcaption>Table C<a class="link" href="#Table-C"><i data-feather="link"></i></a></figcaption></figure>
+<h2><a class="anchor" id="6.4.3.5.7-Formal-representation"></a>
+    6.4.3.5.7 Formal representation
+<a class="link" href="#6.4.3.5.7-Formal-representation"><i data-feather="link"></i></a></h2>
 <pre><code class="language-express pygments" data-highlighted="generator"><span class="tok-kd">ENTITY</span> <a href="IfcOccupant.html"><span class="tok-nc">IfcOccupant</span></a>
 <span class="tok-k">SUBTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><a href="IfcActor.html"><span class="tok-nc">IfcActor</span></a><span class="tok-p">)</span><span class="tok-p">;</span>
 <span class="tok-n">PredefinedType</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <a href="IfcOccupantTypeEnum.html"><span class="tok-nc">IfcOccupantTypeEnum</span></a><span class="tok-p">;</span>
@@ -814,9 +1176,9 @@
 <span class="tok-n">WR31</span> <span class="tok-o">:</span> <span class="tok-nb">NOT</span><span class="tok-p">(</span><span class="tok-n">PredefinedType</span> <span class="tok-o">=</span> <a href="IfcOccupantTypeEnum.html"><span class="tok-nc">IfcOccupantTypeEnum</span></a><span class="tok-p">.</span><span class="tok-n">USERDEFINED</span><span class="tok-p">)</span>
 <span class="tok-nb">OR</span> <span class="tok-nb">EXISTS</span><span class="tok-p">(</span><span class="tok-nb">SELF</span><span class="tok-o">\</span><a href="IfcObject.html"><span class="tok-nc">IfcObject</span></a><span class="tok-p">.</span><span class="tok-n">ObjectType</span><span class="tok-p">)</span><span class="tok-p">;</span>
 <span class="tok-kd">END_ENTITY</span><span class="tok-p">;</span></code></pre>
-<h2><a class="anchor" id="6.4.3.5.6-References"></a>
-    6.4.3.5.6 References
-<a class="link" href="#6.4.3.5.6-References"><i data-feather="link"></i></a></h2>
+<h2><a class="anchor" id="6.4.3.5.8-References"></a>
+    6.4.3.5.8 References
+<a class="link" href="#6.4.3.5.8-References"><i data-feather="link"></i></a></h2>
 <ul class="references">
 <li><i data-feather="paperclip"></i><a href="IfcActor.html">IfcActor</a></li>
 </ul>

@@ -18,7 +18,7 @@
                         padding-top: 0px;
                         float: left;
                     " width="100"/>
-<p style="display: inline-block; vertical-align: top;">IFC 4.3.2.20260428 (IFC4X3_ADD2)
+<p style="display: inline-block; vertical-align: top;">IFC 4.3.2.20260526 (IFC4X3_ADD2)
                             <small>under development</small>
 </p>
 <ul>
@@ -906,9 +906,658 @@
 </tr>
 </tbody>
 </table><figcaption>Table B<a class="link" href="#Table-B"><i data-feather="link"></i></a></figcaption></figure>
-<h2><a class="anchor" id="7.3.3.13.5-Formal-representation"></a>
-    7.3.3.13.5 Formal representation
-<a class="link" href="#7.3.3.13.5-Formal-representation"><i data-feather="link"></i></a></h2>
+<h2><a class="anchor" id="7.3.3.13.5-Property-sets"></a>
+    7.3.3.13.5 Property sets
+<a class="link" href="#7.3.3.13.5-Property-sets"><i data-feather="link"></i></a></h2>
+<ul class="psets">
+<li>
+            <a href="Pset_ConstructionResource.html">Pset_ConstructionResource</a>
+            <ul>
+<li>ScheduleWorkProgression</li>
+<li>ActualWorkTime</li>
+<li>RemainingWorkProgression</li>
+<li>ScheduleCost</li>
+<li>ActualCost</li>
+<li>RemainingCost</li>
+<li>ScheduleCompletion</li>
+<li>ActualCompletion</li>
+</ul>
+</li>
+</ul>
+<h2><a class="anchor" id="7.3.3.13.6-Concept-usage"></a>
+    7.3.3.13.6 Concept usage
+<a class="link" href="#7.3.3.13.6-Concept-usage"><i data-feather="link"></i></a></h2>
+<figure><a class="anchor" id="Table-C"></a><table class="striped grouped concepts">
+<thead>
+<tr>
+<th>Concept</th>
+<th>Usage</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="group-inherited">
+<td colspan="3">
+                <a href="IfcRoot.html">IfcRoot</a>
+                <small>(2)</small>
+</td>
+</tr>
+<tr class="inherited" data-type="concept">
+<td data-label="Name">
+<a href="../concepts/Object_Attributes/Revision_Control/content.html">Revision Control</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<p>Ownership, history, and merge state is captured using <a href="IfcOwnerHistory.html">IfcOwnerHistory</a>.</p>
+</td>
+</tr>
+<tr class="inherited" data-type="concept">
+<td data-label="Name">
+<a href="../concepts/Object_Attributes/Software_Identity/content.html">Software Identity</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<p><a href="IfcRoot.html">IfcRoot</a> assigns the globally unique ID. In addition, it may also provide a name and description for the concept.</p>
+</td>
+</tr>
+<tr class="group-inherited">
+<td colspan="3">
+                <a href="IfcObjectDefinition.html">IfcObjectDefinition</a>
+                <small>(9)</small>
+</td>
+</tr>
+<tr class="inherited" data-type="concept">
+<td data-label="Name">
+<a href="../concepts/Object_Association/Classification_Association/content.html">Classification Association</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<p>Any object occurrence or object type can have a reference to a specific classification reference, i.e. to a particular facet within a classification system.</p>
+</td>
+</tr>
+<tr class="inherited" data-type="concept">
+<td data-label="Name">
+<a href="../concepts/Object_Composition/Aggregation/content.html">Aggregation</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<p class="search-skip">
+<em>No description available.</em>
+</p>
+</td>
+</tr>
+<tr class="inherited" data-type="concept">
+<td data-label="Name">
+<a href="../concepts/Object_Association/Approval_Association/content.html">Approval Association</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<p class="search-skip">
+<em>No description available.</em>
+</p>
+</td>
+</tr>
+<tr class="inherited" data-type="concept">
+<td data-label="Name">
+<a href="../concepts/Object_Association/Constraint_Association/content.html">Constraint Association</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<p class="search-skip">
+<em>No description available.</em>
+</p>
+</td>
+</tr>
+<tr class="inherited" data-type="concept">
+<td data-label="Name">
+<a href="../concepts/Object_Association/Document_Association/content.html">Document Association</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<p class="search-skip">
+<em>No description available.</em>
+</p>
+</td>
+</tr>
+<tr class="inherited" data-type="concept">
+<td data-label="Name">
+<a href="../concepts/Object_Association/Library_Association/content.html">Library Association</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<p class="search-skip">
+<em>No description available.</em>
+</p>
+</td>
+</tr>
+<tr class="inherited" data-type="concept">
+<td data-label="Name">
+<a href="../concepts/Object_Association/Material_Association/content.html">Material Association</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<p class="search-skip">
+<em>No description available.</em>
+</p>
+</td>
+</tr>
+<tr class="inherited" data-type="concept">
+<td data-label="Name">
+<a href="../concepts/Object_Association/Material_Association/Material_Single/content.html">Material Single</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<p class="search-skip">
+<em>No description available.</em>
+</p>
+</td>
+</tr>
+<tr class="inherited" data-type="concept">
+<td data-label="Name">
+<a href="../concepts/Object_Composition/Nesting/content.html">Nesting</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<p class="search-skip">
+<em>No description available.</em>
+</p>
+</td>
+</tr>
+<tr class="group-inherited">
+<td colspan="3">
+                <a href="IfcObject.html">IfcObject</a>
+                <small>(5)</small>
+</td>
+</tr>
+<tr class="inherited" data-type="concept">
+<td data-label="Name">
+<a href="../concepts/Object_Attributes/Object_Predefined_Type/content.html">Object Predefined Type</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<p class="search-skip">
+<em>No description available.</em>
+</p>
+</td>
+</tr>
+<tr class="inherited" data-type="concept">
+<td data-label="Name">
+<a href="../concepts/Object_Definition/Object_Typing/content.html">Object Typing</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<p>Any object occurrence can be typed by being assigned to a common object type utilizing this concept. A particular rule, restricting the applicable subtypes of <em><a href="IfcTypeObject.html">IfcTypeObject</a></em> that can be assigned, is introduced by overriding this concept at the level of subtypes of <em><a href="IfcObject.html">IfcObject</a></em>.</p>
+<p class="search-skip">This concept can be applied to the following resources:</p>
+<ul>
+<li>
+                        <a href="IfcTypeObject.html">IfcTypeObject</a>
+                    </li>
+</ul>
+</td>
+</tr>
+<tr class="inherited" data-type="concept">
+<td data-label="Name">
+<a href="../concepts/Object_Attributes/Object_User_Identity/content.html">Object User Identity</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<p>An attribute <em>Name</em> and optionally <em>Description</em> can be used for all subypes of <em><a href="IfcObject.html">IfcObject</a></em>. For those subtypes, that have an object type definition, such as <em><a href="IfcBeam.html">IfcBeam</a></em> - <em><a href="IfcBeamType.html">IfcBeamType</a></em>, the common <em>Name</em> and optionally <em>Description</em> is associated with the object type.</p>
+</td>
+</tr>
+<tr class="inherited" data-type="concept">
+<td data-label="Name">
+<a href="../concepts/Object_Definition/Property_Sets/Property_Sets_for_Objects/Property_Sets_with_Override/content.html">Property Sets with Override</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<p>Any object occurrence can hold property sets, either directly at the object occurrence as element specific property sets, or at the object type, as type property sets. In this case, the properties that are provided to the object occurrence are the combinations of element specific and type properties. In case that the same property (within the same property set) is defined both in occurrence and type properties, the property value of the occurrence property overrides the property value of the type property.</p>
+</td>
+</tr>
+<tr class="inherited" data-type="concept">
+<td data-label="Name">
+<a href="../concepts/Object_Assignment/Assignment_to_Group/content.html">Assignment to Group</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<p class="search-skip">
+<em>No description available.</em>
+</p>
+</td>
+</tr>
+<tr class="group-inherited">
+<td colspan="3">
+                <a href="IfcResource.html">IfcResource</a>
+                <small>(1)</small>
+</td>
+</tr>
+<tr class="inherited" data-type="concept">
+<td data-label="Name">
+<a href="../concepts/Object_Definition/Object_Typing/content.html">Object Typing</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<aside class="inherited search-skip">
+<small>
+<i data-feather="paperclip"></i>
+                        This is a further elaboration on an inherited concept.
+                    </small>
+</aside>
+<p class="search-skip">This concept can be applied to the following resources:</p>
+<ul>
+<li>
+                        <a href="IfcTypeResource.html">IfcTypeResource</a>
+                    </li>
+</ul>
+</td>
+</tr>
+<tr class="group-inherited">
+<td colspan="3">
+                <a href="IfcConstructionResource.html">IfcConstructionResource</a>
+                <small>(5)</small>
+</td>
+</tr>
+<tr class="inherited" data-type="concept">
+<td data-label="Name">
+<a href="../concepts/Object_Association/Constraint_Association/content.html">Constraint Association</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<aside class="inherited search-skip">
+<small>
+<i data-feather="paperclip"></i>
+                        This is a further elaboration on an inherited concept.
+                    </small>
+</aside>
+<p>Constraints may be applied to a resource to indicate fixed work (such as total person-hours) or fixed usage (such as simultaneous workers).</p>
+<p>Figure D indicates fixed usage (such as simultaneous workers) such that changes to ScheduleWork should impact the assigned <a href="IfcTask.html">IfcTask</a>.TaskTime.ScheduleDuration and vice-versa.</p>
+<figure><a class="anchor" id="Figure-D-A-fixed-constraint-on-the-schedule-usage."></a><svg height="279px" viewbox="0.00 0.00 629.50 279.00" width="630px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g class="graph" id="graph0" transform="scale(1 1) rotate(0) translate(4 275)">
+<title>dot_neato</title>
+<polygon fill="transparent" points="-4,4 -4,-275 625.5,-275 625.5,4 -4,4" stroke="transparent"></polygon>
+<!-- IfcLaborResource -->
+<g class="node" id="node1">
+<title>IfcLaborResource</title>
+<g id="a_node1"><a xlink:href="/lexical/IfcLaborResource.html" xlink:title="IfcLaborResource">
+<polygon fill="#1976d2" points="160,-251.5 16,-251.5 16,-215.5 160,-215.5 160,-251.5" stroke="#000000" stroke-width="0.2"></polygon>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="88" y="-229.8">IfcLaborResource</text>
+</a>
+</g>
+</g>
+<!-- IfcResourceTime -->
+<g class="node" id="node2">
+<title>IfcResourceTime</title>
+<polygon fill="#1976d2" points="0,-133 0,-194 176,-194 176,-133 0,-133" stroke="#000000" stroke-width="0.2"></polygon>
+<text font-family="Times,serif" font-size="14.00" text-anchor="start" x="28" y="-178.8">IfcResourceTime</text>
+<polyline fill="none" points="0,-171 176,-171 " stroke="#000000" stroke-width="0.2"></polyline>
+<text font-family="Times,serif" font-size="14.00" text-anchor="start" x="8" y="-155.8">ScheduleWork: PT16H</text>
+<text font-family="Times,serif" font-size="14.00" text-anchor="start" x="23.5" y="-140.8">ScheduleUsage: 1</text>
+</g>
+<!-- IfcLaborResource&#45;&gt;IfcResourceTime -->
+<g class="edge" id="edge1">
+<title>IfcLaborResource-&gt;IfcResourceTime</title>
+<path d="M88,-215.47C88,-210.21 88,-204.26 88,-198.33" fill="none" stroke="black"></path>
+<ellipse cx="88" cy="-196.23" fill="black" rx="2" ry="2" stroke="black"></ellipse>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="65" y="-195.7">Usage</text>
+</g>
+<!-- IfcRelAssociatesConstraint -->
+<g class="node" id="node3">
+<title>IfcRelAssociatesConstraint</title>
+<polygon fill="#e9d758" points="360,-252.5 216,-252.5 216,-214.5 360,-214.5 360,-252.5" stroke="#000000" stroke-width="0.2"></polygon>
+<text font-family="Times,serif" font-size="14.00" text-anchor="start" x="229.5" y="-237.3">IfcRelAssociates</text>
+<text font-family="Times,serif" font-size="14.00" text-anchor="start" x="250" y="-222.3">Constraint</text>
+</g>
+<!-- IfcRelAssociatesConstraint&#45;&gt;IfcLaborResource -->
+<g class="edge" id="edge2">
+<title>IfcRelAssociatesConstraint-&gt;IfcLaborResource</title>
+<path d="M215.8,-233.5C199.09,-233.5 181.25,-233.5 164.37,-233.5" fill="none" stroke="black"></path>
+<ellipse cx="162.1" cy="-233.5" fill="black" rx="2" ry="2" stroke="black"></ellipse>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="160.1" y="-259.8">RelatedObjects[1]</text>
+</g>
+<!-- IfcObjective -->
+<g class="node" id="node4">
+<title>IfcObjective</title>
+<polygon fill="#1976d2" points="364,-210.5 364,-256.5 612,-256.5 612,-210.5 364,-210.5" stroke="#000000" stroke-width="0.2"></polygon>
+<text font-family="Times,serif" font-size="14.00" text-anchor="start" x="445" y="-241.3">IfcObjective</text>
+<polyline fill="none" points="364,-233.5 612,-233.5 " stroke="#000000" stroke-width="0.2"></polyline>
+<text font-family="Times,serif" font-size="14.00" text-anchor="start" x="372" y="-218.3">ObjectiveQualifier: PARAMETER</text>
+</g>
+<!-- IfcRelAssociatesConstraint&#45;&gt;IfcObjective -->
+<g class="edge" id="edge3">
+<title>IfcRelAssociatesConstraint-&gt;IfcObjective</title>
+<path d="M360.2,-233.5C360.36,-233.5 360.51,-233.5 360.67,-233.5" fill="none" stroke="black"></path>
+<ellipse cx="361.91" cy="-233.5" fill="black" rx="2" ry="2" stroke="black"></ellipse>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="360.2" y="-259.8">RelatingConstraint</text>
+</g>
+<!-- IfcMetric -->
+<g class="node" id="node5">
+<title>IfcMetric</title>
+<polygon fill="#1976d2" points="394,-133 394,-194 582,-194 582,-133 394,-133" stroke="#000000" stroke-width="0.2"></polygon>
+<text font-family="Times,serif" font-size="14.00" text-anchor="start" x="455" y="-178.8">IfcMetric</text>
+<polyline fill="none" points="394,-171 582,-171 " stroke="#000000" stroke-width="0.2"></polyline>
+<text font-family="Times,serif" font-size="14.00" text-anchor="start" x="402" y="-155.8">ConstraintGrade: HARD</text>
+<text font-family="Times,serif" font-size="14.00" text-anchor="start" x="407" y="-140.8">Benchmark: EQUALTO</text>
+</g>
+<!-- IfcObjective&#45;&gt;IfcMetric -->
+<g class="edge" id="edge4">
+<title>IfcObjective-&gt;IfcMetric</title>
+<path d="M488,-210.19C488,-206.37 488,-202.35 488,-198.32" fill="none" stroke="black"></path>
+<ellipse cx="488" cy="-196.3" fill="black" rx="2" ry="2" stroke="black"></ellipse>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="414" y="-198.1">BenchmarkValues[1]</text>
+</g>
+<!-- IfcReference -->
+<g class="node" id="node6">
+<title>IfcReference</title>
+<polygon fill="#1976d2" points="387,-70.5 387,-116.5 589,-116.5 589,-70.5 387,-70.5" stroke="#000000" stroke-width="0.2"></polygon>
+<text font-family="Times,serif" font-size="14.00" text-anchor="start" x="442.5" y="-101.3">IfcReference</text>
+<polyline fill="none" points="387,-93.5 589,-93.5 " stroke="#000000" stroke-width="0.2"></polyline>
+<text font-family="Times,serif" font-size="14.00" text-anchor="start" x="395" y="-78.3">AttributeIdentifier: Usage</text>
+</g>
+<!-- IfcMetric&#45;&gt;IfcReference -->
+<g class="edge" id="edge5">
+<title>IfcMetric-&gt;IfcReference</title>
+<path d="M488,-132.59C488,-128.8 488,-124.95 488,-121.21" fill="none" stroke="black"></path>
+<ellipse cx="488" cy="-118.88" fill="black" rx="2" ry="2" stroke="black"></ellipse>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="435.5" y="-120.68">ReferencePath</text>
+</g>
+<!-- IfcReference2 -->
+<g class="node" id="node7">
+<title>IfcReference2</title>
+<polygon fill="#1976d2" points="354.5,-0.5 354.5,-46.5 621.5,-46.5 621.5,-0.5 354.5,-0.5" stroke="#000000" stroke-width="0.2"></polygon>
+<text font-family="Times,serif" font-size="14.00" text-anchor="start" x="442.5" y="-31.3">IfcReference</text>
+<polyline fill="none" points="354.5,-23.5 621.5,-23.5 " stroke="#000000" stroke-width="0.2"></polyline>
+<text font-family="Times,serif" font-size="14.00" text-anchor="start" x="362.5" y="-8.3">AttributeIdentifier: ScheduleUsage</text>
+</g>
+<!-- IfcReference&#45;&gt;IfcReference2 -->
+<g class="edge" id="edge6">
+<title>IfcReference-&gt;IfcReference2</title>
+<path d="M488,-70.19C488,-64.12 488,-57.51 488,-51.23" fill="none" stroke="black"></path>
+<ellipse cx="488" cy="-48.95" fill="black" rx="2" ry="2" stroke="black"></ellipse>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="432.5" y="-50.75">InnerReference</text>
+</g>
+</g>
+</svg><figcaption>Figure D — A fixed constraint on the schedule usage.<a class="link" href="#Figure-D-A-fixed-constraint-on-the-schedule-usage."><i data-feather="link"></i></a></figcaption></figure>
+
+<p>Figure E indicates fixed work (such as total person-hours) such that changes to ScheduleUsage should impact the assigned <a href="IfcTask.html">IfcTask</a>.TaskTime.ScheduleDuration and vice-versa.</p>
+<figure><a class="anchor" id="Figure-E-A-fixed-constraint-on-the-schedule-work."></a><svg height="279px" viewbox="0.00 0.00 625.50 279.00" width="626px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g class="graph" id="graph0" transform="scale(1 1) rotate(0) translate(4 275)">
+<title>dot_neato</title>
+<polygon fill="transparent" points="-4,4 -4,-275 621.5,-275 621.5,4 -4,4" stroke="transparent"></polygon>
+<!-- IfcLaborResource -->
+<g class="node" id="node1">
+<title>IfcLaborResource</title>
+<g id="a_node1"><a xlink:href="/lexical/IfcLaborResource.html" xlink:title="IfcLaborResource">
+<polygon fill="#1976d2" points="160,-251.5 16,-251.5 16,-215.5 160,-215.5 160,-251.5" stroke="#000000" stroke-width="0.2"></polygon>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="88" y="-229.8">IfcLaborResource</text>
+</a>
+</g>
+</g>
+<!-- IfcResourceTime -->
+<g class="node" id="node2">
+<title>IfcResourceTime</title>
+<polygon fill="#1976d2" points="0,-133 0,-194 176,-194 176,-133 0,-133" stroke="#000000" stroke-width="0.2"></polygon>
+<text font-family="Times,serif" font-size="14.00" text-anchor="start" x="28" y="-178.8">IfcResourceTime</text>
+<polyline fill="none" points="0,-171 176,-171 " stroke="#000000" stroke-width="0.2"></polyline>
+<text font-family="Times,serif" font-size="14.00" text-anchor="start" x="8" y="-155.8">ScheduleWork: PT16H</text>
+<text font-family="Times,serif" font-size="14.00" text-anchor="start" x="23.5" y="-140.8">ScheduleUsage: 1</text>
+</g>
+<!-- IfcLaborResource&#45;&gt;IfcResourceTime -->
+<g class="edge" id="edge1">
+<title>IfcLaborResource-&gt;IfcResourceTime</title>
+<path d="M88,-215.47C88,-210.21 88,-204.26 88,-198.33" fill="none" stroke="black"></path>
+<ellipse cx="88" cy="-196.23" fill="black" rx="2" ry="2" stroke="black"></ellipse>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="65" y="-195.7">Usage</text>
+</g>
+<!-- IfcRelAssociatesConstraint -->
+<g class="node" id="node3">
+<title>IfcRelAssociatesConstraint</title>
+<polygon fill="#e9d758" points="360,-252.5 216,-252.5 216,-214.5 360,-214.5 360,-252.5" stroke="#000000" stroke-width="0.2"></polygon>
+<text font-family="Times,serif" font-size="14.00" text-anchor="start" x="229.5" y="-237.3">IfcRelAssociates</text>
+<text font-family="Times,serif" font-size="14.00" text-anchor="start" x="250" y="-222.3">Constraint</text>
+</g>
+<!-- IfcRelAssociatesConstraint&#45;&gt;IfcLaborResource -->
+<g class="edge" id="edge2">
+<title>IfcRelAssociatesConstraint-&gt;IfcLaborResource</title>
+<path d="M215.8,-233.5C199.09,-233.5 181.25,-233.5 164.37,-233.5" fill="none" stroke="black"></path>
+<ellipse cx="162.1" cy="-233.5" fill="black" rx="2" ry="2" stroke="black"></ellipse>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="160.1" y="-259.8">RelatedObjects[1]</text>
+</g>
+<!-- IfcObjective -->
+<g class="node" id="node4">
+<title>IfcObjective</title>
+<polygon fill="#1976d2" points="364,-210.5 364,-256.5 612,-256.5 612,-210.5 364,-210.5" stroke="#000000" stroke-width="0.2"></polygon>
+<text font-family="Times,serif" font-size="14.00" text-anchor="start" x="445" y="-241.3">IfcObjective</text>
+<polyline fill="none" points="364,-233.5 612,-233.5 " stroke="#000000" stroke-width="0.2"></polyline>
+<text font-family="Times,serif" font-size="14.00" text-anchor="start" x="372" y="-218.3">ObjectiveQualifier: PARAMETER</text>
+</g>
+<!-- IfcRelAssociatesConstraint&#45;&gt;IfcObjective -->
+<g class="edge" id="edge3">
+<title>IfcRelAssociatesConstraint-&gt;IfcObjective</title>
+<path d="M360.2,-233.5C360.36,-233.5 360.51,-233.5 360.67,-233.5" fill="none" stroke="black"></path>
+<ellipse cx="361.91" cy="-233.5" fill="black" rx="2" ry="2" stroke="black"></ellipse>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="360.2" y="-259.8">RelatingConstraint</text>
+</g>
+<!-- IfcMetric -->
+<g class="node" id="node5">
+<title>IfcMetric</title>
+<polygon fill="#1976d2" points="394,-133 394,-194 582,-194 582,-133 394,-133" stroke="#000000" stroke-width="0.2"></polygon>
+<text font-family="Times,serif" font-size="14.00" text-anchor="start" x="455" y="-178.8">IfcMetric</text>
+<polyline fill="none" points="394,-171 582,-171 " stroke="#000000" stroke-width="0.2"></polyline>
+<text font-family="Times,serif" font-size="14.00" text-anchor="start" x="402" y="-155.8">ConstraintGrade: HARD</text>
+<text font-family="Times,serif" font-size="14.00" text-anchor="start" x="407" y="-140.8">Benchmark: EQUALTO</text>
+</g>
+<!-- IfcObjective&#45;&gt;IfcMetric -->
+<g class="edge" id="edge4">
+<title>IfcObjective-&gt;IfcMetric</title>
+<path d="M488,-210.19C488,-206.37 488,-202.35 488,-198.32" fill="none" stroke="black"></path>
+<ellipse cx="488" cy="-196.3" fill="black" rx="2" ry="2" stroke="black"></ellipse>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="414" y="-198.1">BenchmarkValues[1]</text>
+</g>
+<!-- IfcReference -->
+<g class="node" id="node6">
+<title>IfcReference</title>
+<polygon fill="#1976d2" points="387,-70.5 387,-116.5 589,-116.5 589,-70.5 387,-70.5" stroke="#000000" stroke-width="0.2"></polygon>
+<text font-family="Times,serif" font-size="14.00" text-anchor="start" x="442.5" y="-101.3">IfcReference</text>
+<polyline fill="none" points="387,-93.5 589,-93.5 " stroke="#000000" stroke-width="0.2"></polyline>
+<text font-family="Times,serif" font-size="14.00" text-anchor="start" x="395" y="-78.3">AttributeIdentifier: Usage</text>
+</g>
+<!-- IfcMetric&#45;&gt;IfcReference -->
+<g class="edge" id="edge5">
+<title>IfcMetric-&gt;IfcReference</title>
+<path d="M488,-132.59C488,-128.8 488,-124.95 488,-121.21" fill="none" stroke="black"></path>
+<ellipse cx="488" cy="-118.88" fill="black" rx="2" ry="2" stroke="black"></ellipse>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="435.5" y="-120.68">ReferencePath</text>
+</g>
+<!-- IfcReference2 -->
+<g class="node" id="node7">
+<title>IfcReference2</title>
+<polygon fill="#1976d2" points="358.5,-0.5 358.5,-46.5 617.5,-46.5 617.5,-0.5 358.5,-0.5" stroke="#000000" stroke-width="0.2"></polygon>
+<text font-family="Times,serif" font-size="14.00" text-anchor="start" x="442.5" y="-31.3">IfcReference</text>
+<polyline fill="none" points="358.5,-23.5 617.5,-23.5 " stroke="#000000" stroke-width="0.2"></polyline>
+<text font-family="Times,serif" font-size="14.00" text-anchor="start" x="366.5" y="-8.3">AttributeIdentifier: ScheduleWork</text>
+</g>
+<!-- IfcReference&#45;&gt;IfcReference2 -->
+<g class="edge" id="edge6">
+<title>IfcReference-&gt;IfcReference2</title>
+<path d="M488,-70.19C488,-64.12 488,-57.51 488,-51.23" fill="none" stroke="black"></path>
+<ellipse cx="488" cy="-48.95" fill="black" rx="2" ry="2" stroke="black"></ellipse>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="432.5" y="-50.75">InnerReference</text>
+</g>
+</g>
+</svg><figcaption>Figure E — A fixed constraint on the schedule work.<a class="link" href="#Figure-E-A-fixed-constraint-on-the-schedule-work."><i data-feather="link"></i></a></figcaption></figure>
+
+</td>
+</tr>
+<tr class="inherited" data-type="concept">
+<td data-label="Name">
+<a href="../concepts/Object_Association/Document_Association/content.html">Document Association</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<aside class="inherited search-skip">
+<small>
+<i data-feather="paperclip"></i>
+                        This is a further elaboration on an inherited concept.
+                    </small>
+</aside>
+<p>Documents may be published for work plans consisting of schedules, calendars, tasks, and resources. The relationship <a href="IfcRelAssociatesDocument.html">IfcRelAssociatesDocument</a> may be used to preserve mappings to such document where RelatingDocument points to an <a href="IfcDocumentReference.html">IfcDocumentReference</a> and RelatedObjects includes the <a href="IfcConstructionResource.html">IfcConstructionResource</a> as shown in Figure F. <em><a href="IfcDocumentReference.html">IfcDocumentReference</a>.ItemReference</em> identifies the resource within the scope of the document, such as an integer or guid. The <em><a href="IfcDocumentReference.html">IfcDocumentReference</a>.ReferencedDocument</em> corresponds to the document which is uniquely identified by <em><a href="IfcDocumentInformation.html">IfcDocumentInformation</a>.DocumentId</em> and/or <em><a href="IfcDocumentInformation.html">IfcDocumentInformation</a>.PublicationLocation</em>. Such document mapping allows items in the document to be updated from the building information model and vice-versa.</p>
+<figure><a class="anchor" id="Figure-F-Construction-resource-document-use"></a><img alt="Document Use Definition" src="../figures/ifcconstructionresource-document.png" title="Figure 184 — Construction resource document use"/><figcaption>Figure F — Construction resource document use<a class="link" href="#Figure-F-Construction-resource-document-use"><i data-feather="link"></i></a></figcaption></figure>
+</td>
+</tr>
+<tr class="inherited" data-type="concept">
+<td data-label="Name">
+<a href="../concepts/Object_Composition/Nesting/Object_Nesting/content.html">Object Nesting</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<p>Resources may be decomposed into allocation pools using the <a href="IfcRelNests.html">IfcRelNests</a> relationship as shown in Figure G. For example, an <a href="IfcLaborResource.html">IfcLaborResource</a> for "Electrician" may be decomposed into three task-specific <a href="IfcLaborResource.html">IfcLaborResource</a> objects: "Electrical Rough-in", "First Floor Circuits", and "Second Floor Circuits". Both relating and related sides may represent the same <em>ResourceTime.ScheduleUsage</em> quantity (for example, 6 workers time-shared), or the related side may break out <em>ResourceTime.ScheduleUsage</em> quantities for reserved use (for example, 4 workers and 2 workers).</p>
+<p>A common scenario is two nesting levels where the first-level resources have no task assignments; while second-level resources have specific task assignments indicating that the resource is subdivided into allocations for specific tasks. While the model allows unlimited nesting of resources, implementer agreements may restrict to two nesting levels with task assignments specifically at the second level.</p>
+<figure><a class="anchor" id="Figure-G-Construction-resource-composition-use"></a><img alt="Composition Use Definition" src="../figures/ifcconstructionresource-composition.png" title="Figure 181 — Construction resource composition use"/><figcaption>Figure G — Construction resource composition use<a class="link" href="#Figure-G-Construction-resource-composition-use"><i data-feather="link"></i></a></figcaption></figure>
+<p class="search-skip">This concept can be applied to the following resources:</p>
+<ul>
+<li>
+                        <a href="IfcConstructionResource.html">IfcConstructionResource</a>
+                    </li>
+</ul>
+</td>
+</tr>
+<tr class="inherited" data-type="concept">
+<td data-label="Name">
+<a href="../concepts/Object_Definition/Object_Typing/content.html">Object Typing</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<p>The resource type may provide shared productivity and cost information, allowing tasks and resources to be selected according to lowest cost and/or shortest duration. Given an <a href="IfcProduct.html">IfcProduct</a> of a particular <a href="IfcTypeProduct.html">IfcTypeProduct</a> type, an <a href="IfcTypeProcess.html">IfcTypeProcess</a> may be selected from those assigned to the product type using <a href="IfcRelAssignsToProduct.html">IfcRelAssignsToProduct</a>, and an <a href="IfcTypeResource.html">IfcTypeResource</a> may be selected from those assigned to the process type using <a href="IfcRelAssignsToProcess.html">IfcRelAssignsToProcess</a>. Then <a href="IfcTask.html">IfcTask</a> and <a href="IfcConstructionResource.html">IfcConstructionResource</a> occurrences may be instantiated from the type definitions, applying productivitity and rate information to assigned quantities to calculate <em>ResourceTime.ScheduleWork</em>. Task durations can then be calculated by dividing <em>ResourceTime.ScheduleWork</em> by <em>ResourceTime.ScheduleUsage</em>.</p>
+<figure><a class="anchor" id="Figure-H-Construction-resource-type-use"></a><img alt="Type Use Definition" src="../figures/ifcconstructionresource-type.png" title="Figure 182 — Construction resource type use"/><figcaption>Figure H — Construction resource type use<a class="link" href="#Figure-H-Construction-resource-type-use"><i data-feather="link"></i></a></figcaption></figure>
+<p class="search-skip">This concept can be applied to the following resources:</p>
+<ul>
+<li>
+                        <a href="IfcConstructionResourceType.html">IfcConstructionResourceType</a>
+                    </li>
+</ul>
+</td>
+</tr>
+<tr class="inherited" data-type="concept">
+<td data-label="Name">
+<a href="../concepts/Object_Definition/Property_Sets/Property_Sets_for_Objects/content.html">Property Sets for Objects</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<p>For time series properties as shown in Figure I, each <a href="IfcTimeSeriesValue.html">IfcTimeSeriesValue</a> indicates a LIST of values, where the sequence of the value corresponds to the <a href="IfcCostValue.html">IfcCostValue</a> at <em><a href="IfcConstructionResource.html">IfcConstructionResource</a>.CostRatesConsumed</em>. For example, if CostRatesConsumed has two <a href="IfcCostValue.html">IfcCostValue</a> items in the LIST, "Standard" and "Overtime", then <em><a href="IfcTimeSeriesValue.html">IfcTimeSeriesValue</a>(<a href="IfcDuration.html">IfcDuration</a>('T8H0M0S'),<a href="IfcDuration.html">IfcDuration</a>('T2H0M0S'))</em> would indicate 8 hours at Standard rate and 2 hours at Overtime rate. If the list of values at <em><a href="IfcTimeSeriesValue.html">IfcTimeSeriesValue</a>.ListValues</em> is less than the size of CostRatesConsumed, then subsequent values are considered to be zero.</p>
+<figure><a class="anchor" id="Figure-I-Construction-resource-time-series-use"></a><img alt="Time Series Use Definition" src="../figures/ifcconstructionresource-timeseries.png" title="Figure 180 — Construction resource time series use"/><figcaption>Figure I — Construction resource time series use<a class="link" href="#Figure-I-Construction-resource-time-series-use"><i data-feather="link"></i></a></figcaption></figure>
+<p class="search-skip">This concept can be applied to the following resources:</p>
+<ul>
+<li>
+                        <a href="Pset_ConstructionResource.html">Pset_ConstructionResource</a>
+                    </li>
+</ul>
+</td>
+</tr>
+<tr class="preview">
+<td colspan="4">
+<small class="show-inherited" data-type="concept">
+<i data-feather="eye-off"></i>
+                    Click to show 22 hidden inherited concepts
+                </small>
+<small class="hide-inherited" data-type="concept">
+<i data-feather="eye-off"></i>
+                    Click to hide 22 inherited concepts
+                </small>
+</td>
+</tr>
+<tr class="group">
+<td colspan="3">
+                <a href="IfcSubContractResource.html">IfcSubContractResource</a>
+                <small>(2)</small>
+</td>
+</tr>
+<tr>
+<td data-label="Name">
+<a href="../concepts/Object_Definition/Object_Typing/content.html">Object Typing</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<aside class="inherited search-skip">
+<small>
+<i data-feather="paperclip"></i>
+                        This is a further elaboration on an inherited concept.
+                    </small>
+</aside>
+<p class="search-skip">This concept can be applied to the following resources:</p>
+<ul>
+<li>
+                        <a href="IfcSubContractResourceType.html">IfcSubContractResourceType</a>
+                    </li>
+</ul>
+</td>
+</tr>
+<tr>
+<td data-label="Name">
+<a href="../concepts/Object_Assignment/Resource_Assignment/content.html">Resource Assignment</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<p class="search-skip">This concept can be applied to the following resources:</p>
+<ul>
+<li>
+                        <a href="IfcActor.html">IfcActor</a>
+                         - Indicates a specific organization to be considered to fulfill the resource or invited to bid on the resource.
+                    </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table><figcaption>Table C<a class="link" href="#Table-C"><i data-feather="link"></i></a></figcaption></figure>
+<h2><a class="anchor" id="7.3.3.13.7-Formal-representation"></a>
+    7.3.3.13.7 Formal representation
+<a class="link" href="#7.3.3.13.7-Formal-representation"><i data-feather="link"></i></a></h2>
 <pre><code class="language-express pygments" data-highlighted="generator"><span class="tok-kd">ENTITY</span> <a href="IfcSubContractResource.html"><span class="tok-nc">IfcSubContractResource</span></a>
 <span class="tok-k">SUBTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><a href="IfcConstructionResource.html"><span class="tok-nc">IfcConstructionResource</span></a><span class="tok-p">)</span><span class="tok-p">;</span>
 <span class="tok-n">PredefinedType</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <a href="IfcSubContractResourceTypeEnum.html"><span class="tok-nc">IfcSubContractResourceTypeEnum</span></a><span class="tok-p">;</span>
@@ -917,9 +1566,9 @@
 <span class="tok-p">(</span><span class="tok-n">PredefinedType</span> <span class="tok-o">&lt;&gt;</span> <a href="IfcSubContractResourceTypeEnum.html"><span class="tok-nc">IfcSubContractResourceTypeEnum</span></a><span class="tok-p">.</span><span class="tok-n">USERDEFINED</span><span class="tok-p">)</span> <span class="tok-nb">OR</span>
 <span class="tok-p">(</span><span class="tok-p">(</span><span class="tok-n">PredefinedType</span> <span class="tok-o">=</span> <a href="IfcSubContractResourceTypeEnum.html"><span class="tok-nc">IfcSubContractResourceTypeEnum</span></a><span class="tok-p">.</span><span class="tok-n">USERDEFINED</span><span class="tok-p">)</span> <span class="tok-nb">AND</span> <span class="tok-nb">EXISTS</span> <span class="tok-p">(</span><span class="tok-nb">SELF</span><span class="tok-o">\</span><a href="IfcObject.html"><span class="tok-nc">IfcObject</span></a><span class="tok-p">.</span><span class="tok-n">ObjectType</span><span class="tok-p">)</span><span class="tok-p">)</span><span class="tok-p">;</span>
 <span class="tok-kd">END_ENTITY</span><span class="tok-p">;</span></code></pre>
-<h2><a class="anchor" id="7.3.3.13.6-References"></a>
-    7.3.3.13.6 References
-<a class="link" href="#7.3.3.13.6-References"><i data-feather="link"></i></a></h2>
+<h2><a class="anchor" id="7.3.3.13.8-References"></a>
+    7.3.3.13.8 References
+<a class="link" href="#7.3.3.13.8-References"><i data-feather="link"></i></a></h2>
 <ul class="references">
 <li><i data-feather="paperclip"></i><a href="IfcConstructionResource.html">IfcConstructionResource</a></li>
 </ul>

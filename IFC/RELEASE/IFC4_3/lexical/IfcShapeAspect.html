@@ -18,7 +18,7 @@
                         padding-top: 0px;
                         float: left;
                     " width="100"/>
-<p style="display: inline-block; vertical-align: top;">IFC 4.3.2.20260428 (IFC4X3_ADD2)
+<p style="display: inline-block; vertical-align: top;">IFC 4.3.2.20260526 (IFC4X3_ADD2)
                             <small>under development</small>
 </p>
 <ul>
@@ -611,9 +611,10 @@ A shape aspect is an identifiable element of the shape of an object.</aside><asi
             </td>
 <td data-label="Type"><a href="IfcLogical.html">IfcLogical</a></td>
 <td data-label="Description">
-<p class="search-skip">
-<em>No description available.</em>
-</p>
+<p>An indication that the shape aspect is on the physical boundary of the product definition shape.
+* TRUE: the shape aspect represents geometry that sits on (or forms) the physical outer boundary of the product's definition shape. Example: the glazing panel face of a window, or the top surface of a slab — geometry that is part of what defines the product's extent in space.
+* FALSE: the shape aspect represents geometry that does not form the physical boundary. Example: a centre line (e.g., of a beam or pipe), it is a useful reference geometry derived from the product, but it does not coincide with the product's physical surface.
+UNKNOWN: it cannot be asserted either way.</p>
 </td>
 </tr>
 <tr>
@@ -623,9 +624,8 @@ A shape aspect is an identifiable element of the shape of an object.</aside><asi
             </td>
 <td data-label="Type">OPTIONAL <a href="IfcProductRepresentationSelect.html">IfcProductRepresentationSelect</a></td>
 <td data-label="Description">
-<p class="search-skip">
-<em>No description available.</em>
-</p>
+<p>Reference to the <em><a href="IfcProductDefinitionShape.html">IfcProductDefinitionShape</a></em> or the <em><a href="IfcRepresentationMap.html">IfcRepresentationMap</a></em> of which this shape is an aspect.</p>
+<aside class="aside-ifc4"><mark>IFC4-CHANGE</mark> Data type modified to be <em><a href="IfcProductRepresentationSelect.html">IfcProductRepresentationSelect</a></em> allowing the assignment also to <em><a href="IfcRepresentationMap.html">IfcRepresentationMap</a></em>.</aside>
 </td>
 </tr>
 <tr>
@@ -635,9 +635,7 @@ A shape aspect is an identifiable element of the shape of an object.</aside><asi
 </td>
 <td data-label="Type">SET [0:?] OF <a href="IfcExternalReferenceRelationship.html">IfcExternalReferenceRelationship</a> FOR RelatedResourceObjects</td>
 <td data-label="Description">
-<p class="search-skip">
-<em>No description available.</em>
-</p>
+<p>External references (e.g. classification) associated with the shape aspect.</p>
 </td>
 </tr>
 </tbody>

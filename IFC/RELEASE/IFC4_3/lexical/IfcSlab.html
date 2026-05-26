@@ -18,7 +18,7 @@
                         padding-top: 0px;
                         float: left;
                     " width="100"/>
-<p style="display: inline-block; vertical-align: top;">IFC 4.3.2.20260428 (IFC4X3_ADD2)
+<p style="display: inline-block; vertical-align: top;">IFC 4.3.2.20260526 (IFC4X3_ADD2)
                             <small>under development</small>
 </p>
 <ul>
@@ -1012,14 +1012,2079 @@
 <tr>
 <td colspan="2">
 <pre><code class="language-express pygments" data-highlighted="generator"><span class="tok-p">(</span><span class="tok-nb">SIZEOF</span><span class="tok-p">(</span><span class="tok-n">IsTypedBy</span><span class="tok-p">)</span> <span class="tok-o">=</span> <span class="tok-m">0</span><span class="tok-p">)</span> <span class="tok-nb">OR</span>
-<span class="tok-p">(</span><span class="tok-s1">'IFC4X3_DEV_ef03d81.IFCSLABTYPE'</span> <span class="tok-nb">IN</span> <span class="tok-nb">TYPEOF</span><span class="tok-p">(</span><span class="tok-nb">SELF</span><span class="tok-o">\</span><a href="IfcObject.html"><span class="tok-nc">IfcObject</span></a><span class="tok-p">.</span><span class="tok-n">IsTypedBy</span><span class="tok-p">[</span><span class="tok-m">1</span><span class="tok-p">]</span><span class="tok-p">.</span><span class="tok-n">RelatingType</span><span class="tok-p">)</span><span class="tok-p">)</span></code></pre>
+<span class="tok-p">(</span><span class="tok-s1">'IFC4X3_DEV_2c1089c.IFCSLABTYPE'</span> <span class="tok-nb">IN</span> <span class="tok-nb">TYPEOF</span><span class="tok-p">(</span><span class="tok-nb">SELF</span><span class="tok-o">\</span><a href="IfcObject.html"><span class="tok-nc">IfcObject</span></a><span class="tok-p">.</span><span class="tok-n">IsTypedBy</span><span class="tok-p">[</span><span class="tok-m">1</span><span class="tok-p">]</span><span class="tok-p">.</span><span class="tok-n">RelatingType</span><span class="tok-p">)</span><span class="tok-p">)</span></code></pre>
 </td>
 </tr>
 </tbody>
 </table><figcaption>Table B<a class="link" href="#Table-B"><i data-feather="link"></i></a></figcaption></figure>
-<h2><a class="anchor" id="6.1.3.35.5-Formal-representation"></a>
-    6.1.3.35.5 Formal representation
-<a class="link" href="#6.1.3.35.5-Formal-representation"><i data-feather="link"></i></a></h2>
+<h2><a class="anchor" id="6.1.3.35.5-Property-sets"></a>
+    6.1.3.35.5 Property sets
+<a class="link" href="#6.1.3.35.5-Property-sets"><i data-feather="link"></i></a></h2>
+<ul class="psets">
+<li>
+            <a href="Pset_CessBetweenRails.html">Pset_CessBetweenRails</a>
+            <code>TRACKSLAB</code>
+<ul>
+<li>JointRelativePosition</li>
+<li>CheckRailType</li>
+<li>LoadCapacity</li>
+<li>UsagePurpose</li>
+</ul>
+</li>
+<li>
+            <a href="Pset_ConcreteElementGeneral.html">Pset_ConcreteElementGeneral</a>
+            <ul>
+<li>AssemblyPlace</li>
+<li>CastingMethod</li>
+<li>StructuralClass</li>
+<li>StrengthClass</li>
+<li>ExposureClass</li>
+<li>ReinforcementVolumeRatio</li>
+<li>ReinforcementAreaRatio</li>
+<li>DimensionalAccuracyClass</li>
+<li>ConstructionToleranceClass</li>
+<li>ConcreteCover</li>
+<li>ConcreteCoverAtMainBars</li>
+<li>ConcreteCoverAtLinks</li>
+<li>ReinforcementStrengthClass</li>
+</ul>
+</li>
+<li>
+            <a href="Pset_Condition.html">Pset_Condition</a>
+            <ul>
+<li>AssessmentDate</li>
+<li>AssessmentCondition</li>
+<li>AssessmentDescription</li>
+<li>AssessmentType</li>
+<li>AssessmentMethod</li>
+<li>LastAssessmentReport</li>
+<li>NextAssessmentDate</li>
+<li>AssessmentFrequency</li>
+</ul>
+</li>
+<li>
+            <a href="Pset_ConstructionAdministration.html">Pset_ConstructionAdministration</a>
+            <ul>
+<li>ProcurementMethod</li>
+<li>SpecificationSectionNumber</li>
+<li>SubmittalIdentifer</li>
+</ul>
+</li>
+<li>
+            <a href="Pset_ConstructionOccurence.html">Pset_ConstructionOccurence</a>
+            <ul>
+<li>InstallationDate</li>
+<li>ModelNumber</li>
+<li>TagNumber</li>
+<li>AssetIdentifier</li>
+</ul>
+</li>
+<li>
+            <a href="Pset_ElementKinematics.html">Pset_ElementKinematics</a>
+            <ul>
+<li>CyclicPath</li>
+<li>CyclicRange</li>
+<li>LinearPath</li>
+<li>LinearRange</li>
+<li>MaximumAngularVelocity</li>
+<li>MaximumConstantSpeed</li>
+<li>MinimumTime</li>
+</ul>
+</li>
+<li>
+            <a href="Pset_EmbeddedTrack.html">Pset_EmbeddedTrack</a>
+            <code>TRACKSLAB</code>
+<ul>
+<li>IsAccessibleByVehicle</li>
+<li>HasDrainage</li>
+<li>PermissibleRoadLoad</li>
+</ul>
+</li>
+<li>
+            <a href="Pset_EnvironmentalCondition.html">Pset_EnvironmentalCondition</a>
+            <ul>
+<li>ReferenceAirRelativeHumidity</li>
+<li>ReferenceEnvironmentTemperature</li>
+<li>MaximumAtmosphericPressure</li>
+<li>StorageTemperatureRange</li>
+<li>MaximumWindSpeed</li>
+<li>OperationalTemperatureRange</li>
+<li>MaximumRainIntensity</li>
+<li>SaltMistLevel</li>
+<li>SeismicResistance</li>
+<li>SmokeLevel</li>
+<li>MaximumSolarRadiation</li>
+</ul>
+</li>
+<li>
+            <a href="Pset_EnvironmentalImpactIndicators.html">Pset_EnvironmentalImpactIndicators</a>
+            <ul>
+<li>Reference</li>
+<li>FunctionalUnitReference</li>
+<li>IndicatorsUnit</li>
+<li>LifeCyclePhase</li>
+<li>ExpectedServiceLife</li>
+<li>TotalPrimaryEnergyConsumptionPerUnit</li>
+<li>WaterConsumptionPerUnit</li>
+<li>HazardousWastePerUnit</li>
+<li>NonHazardousWastePerUnit</li>
+<li>ClimateChangePerUnit</li>
+<li>AtmosphericAcidificationPerUnit</li>
+<li>RenewableEnergyConsumptionPerUnit</li>
+<li>NonRenewableEnergyConsumptionPerUnit</li>
+<li>ResourceDepletionPerUnit</li>
+<li>InertWastePerUnit</li>
+<li>RadioactiveWastePerUnit</li>
+<li>StratosphericOzoneLayerDestructionPerUnit</li>
+<li>PhotochemicalOzoneFormationPerUnit</li>
+<li>EutrophicationPerUnit</li>
+</ul>
+</li>
+<li>
+            <a href="Pset_EnvironmentalImpactValues.html">Pset_EnvironmentalImpactValues</a>
+            <ul>
+<li>TotalPrimaryEnergyConsumption</li>
+<li>WaterConsumption</li>
+<li>HazardousWaste</li>
+<li>NonHazardousWaste</li>
+<li>ClimateChange</li>
+<li>AtmosphericAcidification</li>
+<li>RenewableEnergyConsumption</li>
+<li>NonRenewableEnergyConsumption</li>
+<li>ResourceDepletion</li>
+<li>InertWaste</li>
+<li>RadioactiveWaste</li>
+<li>StratosphericOzoneLayerDestruction</li>
+<li>PhotochemicalOzoneFormation</li>
+<li>Eutrophication</li>
+<li>LeadInTime</li>
+<li>Duration</li>
+<li>LeadOutTime</li>
+</ul>
+</li>
+<li>
+            <a href="Pset_InstallationOccurrence.html">Pset_InstallationOccurrence</a>
+            <ul>
+<li>InstallationDate</li>
+<li>AcceptanceDate</li>
+<li>PutIntoOperationDate</li>
+</ul>
+</li>
+<li>
+            <a href="Pset_MaintenanceStrategy.html">Pset_MaintenanceStrategy</a>
+            <ul>
+<li>AssetCriticality</li>
+<li>AssetFrailty</li>
+<li>AssetPriority</li>
+<li>MonitoringType</li>
+<li>AccidentResponse</li>
+</ul>
+</li>
+<li>
+            <a href="Pset_MaintenanceTriggerCondition.html">Pset_MaintenanceTriggerCondition</a>
+            <ul>
+<li>ConditionTargetPerformance</li>
+<li>ConditionMaintenanceLevel</li>
+<li>ConditionReplacementLevel</li>
+<li>ConditionDisposalLevel</li>
+</ul>
+</li>
+<li>
+            <a href="Pset_MaintenanceTriggerDuration.html">Pset_MaintenanceTriggerDuration</a>
+            <ul>
+<li>DurationTargetPerformance</li>
+<li>DurationMaintenanceLevel</li>
+<li>DurationReplacementLevel</li>
+<li>DurationDisposalLevel</li>
+</ul>
+</li>
+<li>
+            <a href="Pset_MaintenanceTriggerPerformance.html">Pset_MaintenanceTriggerPerformance</a>
+            <ul>
+<li>TargetPerformance</li>
+<li>PerformanceMaintenanceLevel</li>
+<li>ReplacementLevel</li>
+<li>DisposalLevel</li>
+</ul>
+</li>
+<li>
+            <a href="Pset_ManufacturerOccurrence.html">Pset_ManufacturerOccurrence</a>
+            <ul>
+<li>AcquisitionDate</li>
+<li>BarCode</li>
+<li>SerialNumber</li>
+<li>BatchReference</li>
+<li>AssemblyPlace</li>
+<li>ManufacturingDate</li>
+</ul>
+</li>
+<li>
+            <a href="Pset_ManufacturerTypeInformation.html">Pset_ManufacturerTypeInformation</a>
+            <ul>
+<li>GlobalTradeItemNumber</li>
+<li>ArticleNumber</li>
+<li>ModelReference</li>
+<li>ModelLabel</li>
+<li>Manufacturer</li>
+<li>ProductionYear</li>
+<li>AssemblyPlace</li>
+<li>OperationalDocument</li>
+<li>SafetyDocument</li>
+<li>PerformanceCertificate</li>
+</ul>
+</li>
+<li>
+            <a href="Pset_PrecastConcreteElementFabrication.html">Pset_PrecastConcreteElementFabrication</a>
+            <ul>
+<li>TypeDesignation</li>
+<li>ProductionLotId</li>
+<li>SerialNumber</li>
+<li>PieceMark</li>
+<li>AsBuiltLocationNumber</li>
+<li>ActualProductionDate</li>
+<li>ActualErectionDate</li>
+</ul>
+</li>
+<li>
+            <a href="Pset_PrecastConcreteElementGeneral.html">Pset_PrecastConcreteElementGeneral</a>
+            <ul>
+<li>TypeDesignation</li>
+<li>CornerChamfer</li>
+<li>ManufacturingToleranceClass</li>
+<li>FormStrippingStrength</li>
+<li>LiftingStrength</li>
+<li>ReleaseStrength</li>
+<li>MinimumAllowableSupportLength</li>
+<li>InitialTension</li>
+<li>TendonRelaxation</li>
+<li>TransportationStrength</li>
+<li>SupportDuringTransportDescription</li>
+<li>SupportDuringTransportDocReference</li>
+<li>HollowCorePlugging</li>
+<li>CamberAtMidspan</li>
+<li>BatterAtStart</li>
+<li>BatterAtEnd</li>
+<li>Twisting</li>
+<li>Shortening</li>
+<li>PieceMark</li>
+<li>DesignLocationNumber</li>
+</ul>
+</li>
+<li>
+            <a href="Pset_PrecastSlab.html">Pset_PrecastSlab</a>
+            <ul>
+<li>TypeDesignation</li>
+<li>ToppingType</li>
+<li>EdgeDistanceToFirstAxis</li>
+<li>DistanceBetweenComponentAxes</li>
+<li>AngleToFirstAxis</li>
+<li>AngleBetweenComponentAxes</li>
+<li>NominalThickness</li>
+<li>NominalToppingThickness</li>
+</ul>
+</li>
+<li>
+            <a href="Pset_ReinforcementBarPitchOfSlab.html">Pset_ReinforcementBarPitchOfSlab</a>
+            <ul>
+<li>Description</li>
+<li>Reference</li>
+<li>LongOutsideTopBarPitch</li>
+<li>LongInsideCenterTopBarPitch</li>
+<li>LongInsideEndTopBarPitch</li>
+<li>ShortOutsideTopBarPitch</li>
+<li>ShortInsideCenterTopBarPitch</li>
+<li>ShortInsideEndTopBarPitch</li>
+<li>LongOutsideLowerBarPitch</li>
+<li>LongInsideCenterLowerBarPitch</li>
+<li>LongInsideEndLowerBarPitch</li>
+<li>ShortOutsideLowerBarPitch</li>
+<li>ShortInsideCenterLowerBarPitch</li>
+<li>ShortInsideEndLowerBarPitch</li>
+</ul>
+</li>
+<li>
+            <a href="Pset_RepairOccurrence.html">Pset_RepairOccurrence</a>
+            <ul>
+<li>RepairContent</li>
+<li>RepairDate</li>
+<li>MeanTimeToRepair</li>
+</ul>
+</li>
+<li>
+            <a href="Pset_Risk.html">Pset_Risk</a>
+            <ul>
+<li>RiskName</li>
+<li>RiskType</li>
+<li>NatureOfRisk</li>
+<li>RiskAssessmentMethodology</li>
+<li>UnmitigatedRiskLikelihood</li>
+<li>UnmitigatedRiskConsequence</li>
+<li>UnmitigatedRiskSignificance</li>
+<li>MitigationPlanned</li>
+<li>MitigatedRiskLikelihood</li>
+<li>MitigatedRiskConsequence</li>
+<li>MitigatedRiskSignificance</li>
+<li>MitigationProposed</li>
+<li>AssociatedProduct</li>
+<li>AssociatedActivity</li>
+<li>AssociatedLocation</li>
+</ul>
+</li>
+<li>
+            <a href="Pset_ServiceLife.html">Pset_ServiceLife</a>
+            <ul>
+<li>ServiceLifeDuration</li>
+<li>MeanTimeBetweenFailure</li>
+</ul>
+</li>
+<li>
+            <a href="Pset_SlabCommon.html">Pset_SlabCommon</a>
+            <ul>
+<li>Reference</li>
+<li>Status</li>
+<li>AcousticRating</li>
+<li>FireRating</li>
+<li>PitchAngle</li>
+<li>Combustible</li>
+<li>SurfaceSpreadOfFlame</li>
+<li>Compartmentation</li>
+<li>IsExternal</li>
+<li>ThermalTransmittance</li>
+<li>LoadBearing</li>
+</ul>
+</li>
+<li>
+            <a href="Pset_SlabTypeTrackSlab.html">Pset_SlabTypeTrackSlab</a>
+            <code>TRACKSLAB</code>
+<ul>
+<li>TechnicalStandard</li>
+</ul>
+</li>
+<li>
+            <a href="Pset_Tolerance.html">Pset_Tolerance</a>
+            <ul>
+<li>ToleranceDescription</li>
+<li>ToleranceBasis</li>
+<li>OverallTolerance</li>
+<li>HorizontalTolerance</li>
+<li>OrthogonalTolerance</li>
+<li>VerticalTolerance</li>
+<li>PlanarFlatness</li>
+<li>HorizontalFlatness</li>
+<li>ElevationalFlatness</li>
+<li>SideFlatness</li>
+<li>OverallOrthogonality</li>
+<li>HorizontalOrthogonality</li>
+<li>OrthogonalOrthogonality</li>
+<li>VerticalOrthogonality</li>
+<li>OverallStraightness</li>
+<li>HorizontalStraightness</li>
+<li>OrthogonalStraightness</li>
+<li>VerticalStraightness</li>
+</ul>
+</li>
+<li>
+            <a href="Pset_TrackBase.html">Pset_TrackBase</a>
+            <code>BASESLAB</code>
+<ul>
+<li>IsSurfaceGalling</li>
+<li>SurfaceGallingArea</li>
+</ul>
+</li>
+<li>
+            <a href="Pset_Uncertainty.html">Pset_Uncertainty</a>
+            <ul>
+<li>UncertaintyBasis</li>
+<li>UncertaintyDescription</li>
+<li>HorizontalUncertainty</li>
+<li>LinearUncertainty</li>
+<li>OrthogonalUncertainty</li>
+<li>VerticalUncertainty</li>
+</ul>
+</li>
+<li>
+            <a href="Pset_Warranty.html">Pset_Warranty</a>
+            <ul>
+<li>WarrantyIdentifier</li>
+<li>WarrantyStartDate</li>
+<li>IsExtendedWarranty</li>
+<li>WarrantyPeriod</li>
+<li>WarrantyContent</li>
+<li>PointOfContact</li>
+<li>Exclusions</li>
+</ul>
+</li>
+<li>
+            <a href="Qto_BodyGeometryValidation.html">Qto_BodyGeometryValidation</a>
+            <ul>
+<li>GrossSurfaceArea</li>
+<li>NetSurfaceArea</li>
+<li>GrossVolume</li>
+<li>NetVolume</li>
+<li>SurfaceGenusBeforeFeatures</li>
+<li>SurfaceGenusAfterFeatures</li>
+</ul>
+</li>
+<li>
+            <a href="Qto_SlabBaseQuantities.html">Qto_SlabBaseQuantities</a>
+            <ul>
+<li>Width</li>
+<li>Length</li>
+<li>Depth</li>
+<li>Perimeter</li>
+<li>GrossArea</li>
+<li>NetArea</li>
+<li>GrossVolume</li>
+<li>NetVolume</li>
+<li>GrossWeight</li>
+<li>NetWeight</li>
+</ul>
+</li>
+</ul>
+<h2><a class="anchor" id="6.1.3.35.6-Concept-usage"></a>
+    6.1.3.35.6 Concept usage
+<a class="link" href="#6.1.3.35.6-Concept-usage"><i data-feather="link"></i></a></h2>
+<figure><a class="anchor" id="Table-C"></a><table class="striped grouped concepts">
+<thead>
+<tr>
+<th>Concept</th>
+<th>Usage</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="group-inherited">
+<td colspan="3">
+                <a href="IfcRoot.html">IfcRoot</a>
+                <small>(2)</small>
+</td>
+</tr>
+<tr class="inherited" data-type="concept">
+<td data-label="Name">
+<a href="../concepts/Object_Attributes/Revision_Control/content.html">Revision Control</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<p>Ownership, history, and merge state is captured using <a href="IfcOwnerHistory.html">IfcOwnerHistory</a>.</p>
+</td>
+</tr>
+<tr class="inherited" data-type="concept">
+<td data-label="Name">
+<a href="../concepts/Object_Attributes/Software_Identity/content.html">Software Identity</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<p><a href="IfcRoot.html">IfcRoot</a> assigns the globally unique ID. In addition, it may also provide a name and description for the concept.</p>
+</td>
+</tr>
+<tr class="group-inherited">
+<td colspan="3">
+                <a href="IfcObjectDefinition.html">IfcObjectDefinition</a>
+                <small>(9)</small>
+</td>
+</tr>
+<tr class="inherited" data-type="concept">
+<td data-label="Name">
+<a href="../concepts/Object_Association/Classification_Association/content.html">Classification Association</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<p>Any object occurrence or object type can have a reference to a specific classification reference, i.e. to a particular facet within a classification system.</p>
+</td>
+</tr>
+<tr class="inherited" data-type="concept">
+<td data-label="Name">
+<a href="../concepts/Object_Composition/Aggregation/content.html">Aggregation</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<p class="search-skip">
+<em>No description available.</em>
+</p>
+</td>
+</tr>
+<tr class="inherited" data-type="concept">
+<td data-label="Name">
+<a href="../concepts/Object_Association/Approval_Association/content.html">Approval Association</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<p class="search-skip">
+<em>No description available.</em>
+</p>
+</td>
+</tr>
+<tr class="inherited" data-type="concept">
+<td data-label="Name">
+<a href="../concepts/Object_Association/Constraint_Association/content.html">Constraint Association</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<p class="search-skip">
+<em>No description available.</em>
+</p>
+</td>
+</tr>
+<tr class="inherited" data-type="concept">
+<td data-label="Name">
+<a href="../concepts/Object_Association/Document_Association/content.html">Document Association</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<p class="search-skip">
+<em>No description available.</em>
+</p>
+</td>
+</tr>
+<tr class="inherited" data-type="concept">
+<td data-label="Name">
+<a href="../concepts/Object_Association/Library_Association/content.html">Library Association</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<p class="search-skip">
+<em>No description available.</em>
+</p>
+</td>
+</tr>
+<tr class="inherited" data-type="concept">
+<td data-label="Name">
+<a href="../concepts/Object_Association/Material_Association/content.html">Material Association</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<p class="search-skip">
+<em>No description available.</em>
+</p>
+</td>
+</tr>
+<tr class="inherited" data-type="concept">
+<td data-label="Name">
+<a href="../concepts/Object_Association/Material_Association/Material_Single/content.html">Material Single</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<p class="search-skip">
+<em>No description available.</em>
+</p>
+</td>
+</tr>
+<tr class="inherited" data-type="concept">
+<td data-label="Name">
+<a href="../concepts/Object_Composition/Nesting/content.html">Nesting</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<p class="search-skip">
+<em>No description available.</em>
+</p>
+</td>
+</tr>
+<tr class="group-inherited">
+<td colspan="3">
+                <a href="IfcObject.html">IfcObject</a>
+                <small>(5)</small>
+</td>
+</tr>
+<tr class="inherited" data-type="concept">
+<td data-label="Name">
+<a href="../concepts/Object_Attributes/Object_Predefined_Type/content.html">Object Predefined Type</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<p class="search-skip">
+<em>No description available.</em>
+</p>
+</td>
+</tr>
+<tr class="inherited" data-type="concept">
+<td data-label="Name">
+<a href="../concepts/Object_Definition/Object_Typing/content.html">Object Typing</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<p>Any object occurrence can be typed by being assigned to a common object type utilizing this concept. A particular rule, restricting the applicable subtypes of <em><a href="IfcTypeObject.html">IfcTypeObject</a></em> that can be assigned, is introduced by overriding this concept at the level of subtypes of <em><a href="IfcObject.html">IfcObject</a></em>.</p>
+<p class="search-skip">This concept can be applied to the following resources:</p>
+<ul>
+<li>
+                        <a href="IfcTypeObject.html">IfcTypeObject</a>
+                    </li>
+</ul>
+</td>
+</tr>
+<tr class="inherited" data-type="concept">
+<td data-label="Name">
+<a href="../concepts/Object_Attributes/Object_User_Identity/content.html">Object User Identity</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<p>An attribute <em>Name</em> and optionally <em>Description</em> can be used for all subypes of <em><a href="IfcObject.html">IfcObject</a></em>. For those subtypes, that have an object type definition, such as <em><a href="IfcBeam.html">IfcBeam</a></em> - <em><a href="IfcBeamType.html">IfcBeamType</a></em>, the common <em>Name</em> and optionally <em>Description</em> is associated with the object type.</p>
+</td>
+</tr>
+<tr class="inherited" data-type="concept">
+<td data-label="Name">
+<a href="../concepts/Object_Definition/Property_Sets/Property_Sets_for_Objects/Property_Sets_with_Override/content.html">Property Sets with Override</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<p>Any object occurrence can hold property sets, either directly at the object occurrence as element specific property sets, or at the object type, as type property sets. In this case, the properties that are provided to the object occurrence are the combinations of element specific and type properties. In case that the same property (within the same property set) is defined both in occurrence and type properties, the property value of the occurrence property overrides the property value of the type property.</p>
+</td>
+</tr>
+<tr class="inherited" data-type="concept">
+<td data-label="Name">
+<a href="../concepts/Object_Assignment/Assignment_to_Group/content.html">Assignment to Group</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<p class="search-skip">
+<em>No description available.</em>
+</p>
+</td>
+</tr>
+<tr class="group-inherited">
+<td colspan="3">
+                <a href="IfcProduct.html">IfcProduct</a>
+                <small>(18)</small>
+</td>
+</tr>
+<tr class="inherited" data-type="concept">
+<td data-label="Name">
+<a href="../concepts/Product_Shape/Product_Geometric_Representation/Body_Geometry/content.html">Body Geometry</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<p>The body or solid model geometric representation of an <em><a href="IfcProduct.html">IfcProduct</a></em> is typically defined using a Tessellation or Brep. Subtypes may provide recommendations on other representation types that may be used. The following attribute values for the <em><a href="IfcShapeRepresentation.html">IfcShapeRepresentation</a></em> holding this geometric representation shall be used:</p>
+<ul>
+<li><em><a href="IfcShapeRepresentation.html">IfcShapeRepresentation</a>.RepresentationIdentifier</em> = 'Body'</li>
+<li><em><a href="IfcShapeRepresentation.html">IfcShapeRepresentation</a>.RepresentationType</em> = Typically 'Tessellation' or 'Brep'</li>
+</ul>
+</td>
+</tr>
+<tr class="inherited" data-type="concept">
+<td data-label="Name">
+<a href="../concepts/Product_Shape/Product_Geometric_Representation/content.html">Product Geometric Representation</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<p>The geometric representation of any <em><a href="IfcProduct.html">IfcProduct</a></em> is provided by the <em><a href="IfcProductDefinitionShape.html">IfcProductDefinitionShape</a></em> allowing multiple geometric representations. It uses the <em>Product Placement</em> concept utilizing <em><a href="IfcLocalPlacement.html">IfcLocalPlacement</a></em> to establish an object coordinate system, in which all geometric representations are founded.</p>
+<aside class="aside-note"><mark>NOTE</mark> A detailed specification of how to apply the local placement and which shape representations are applicable is provided at the level of subtypes of <em><a href="IfcProduct.html">IfcProduct</a></em> and is further determined by the model view definition and implementer agreements.</aside>
+</td>
+</tr>
+<tr class="inherited" data-type="concept">
+<td data-label="Name">
+<a href="../concepts/Product_Shape/Product_Geometry_Colour/content.html">Product Geometry Colour</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<p class="search-skip">
+<em>No description available.</em>
+</p>
+</td>
+</tr>
+<tr class="inherited" data-type="concept">
+<td data-label="Name">
+<a href="../concepts/Product_Shape/Product_Geometry_Layer/content.html">Product Geometry Layer</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<p class="search-skip">
+<em>No description available.</em>
+</p>
+</td>
+</tr>
+<tr class="inherited" data-type="concept">
+<td data-label="Name">
+<a href="../concepts/Object_Connectivity/Product_Relative_Positioning/content.html">Product Relative Positioning</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<p>If the <em><a href="IfcProduct.html">IfcProduct</a></em> <em>Product Placement</em> is placed relative to an <em><a href="IfcPositioningElement.html">IfcPositioningElement</a></em> this relationship covers the information on which <em><a href="IfcPositioningElement.html">IfcPositioningElement</a></em> positions the <em><a href="IfcProduct.html">IfcProduct</a></em>.</p>
+</td>
+</tr>
+<tr class="inherited" data-type="concept">
+<td data-label="Name">
+<a href="../concepts/Object_Connectivity/Product_Span_Positioning/content.html">Product Span Positioning</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<p class="search-skip">
+<em>No description available.</em>
+</p>
+</td>
+</tr>
+<tr class="inherited" data-type="concept">
+<td data-label="Name">
+<a href="../concepts/Product_Shape/Product_Geometric_Representation/Box_Geometry/content.html">Box Geometry</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<p class="search-skip">
+<em>No description available.</em>
+</p>
+</td>
+</tr>
+<tr class="inherited" data-type="concept">
+<td data-label="Name">
+<a href="../concepts/Product_Shape/Product_Geometric_Representation/CoG_Geometry/content.html">CoG Geometry</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<p class="search-skip">
+<em>No description available.</em>
+</p>
+</td>
+</tr>
+<tr class="inherited" data-type="concept">
+<td data-label="Name">
+<a href="../concepts/Product_Shape/Product_Geometric_Representation/Mapped_Geometry/content.html">Mapped Geometry</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<p class="search-skip">
+<em>No description available.</em>
+</p>
+</td>
+</tr>
+<tr class="inherited" data-type="concept">
+<td data-label="Name">
+<a href="../concepts/Object_Definition/Object_Typing/content.html">Object Typing</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<aside class="inherited search-skip">
+<small>
+<i data-feather="paperclip"></i>
+                        This is a further elaboration on an inherited concept.
+                    </small>
+</aside>
+<p class="search-skip">This concept can be applied to the following resources:</p>
+<ul>
+<li>
+                        <a href="IfcTypeProduct.html">IfcTypeProduct</a>
+                    </li>
+</ul>
+</td>
+</tr>
+<tr class="inherited" data-type="concept">
+<td data-label="Name">
+<a href="../concepts/Product_Shape/Product_Placement/Product_Local_Placement/content.html">Product Local Placement</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<p class="search-skip">
+<em>No description available.</em>
+</p>
+</td>
+</tr>
+<tr class="inherited" data-type="concept">
+<td data-label="Name">
+<a href="../concepts/Product_Shape/Product_Topology_Representation/content.html">Product Topology Representation</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<p class="search-skip">
+<em>No description available.</em>
+</p>
+</td>
+</tr>
+<tr class="inherited" data-type="concept">
+<td data-label="Name">
+<a href="../concepts/Object_Definition/Property_Sets/Property_Sets_for_Objects/content.html">Property Sets for Objects</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<p class="search-skip">This concept can be applied to the following resources:</p>
+<ul>
+<li>
+                        <a href="Pset_Tolerance.html">Pset_Tolerance</a>
+                    </li>
+<li>
+                        <a href="Pset_Risk.html">Pset_Risk</a>
+                    </li>
+<li>
+                        <a href="Pset_Uncertainty.html">Pset_Uncertainty</a>
+                    </li>
+</ul>
+</td>
+</tr>
+<tr class="inherited" data-type="concept">
+<td data-label="Name">
+<a href="../concepts/Object_Definition/Quantity_Sets/content.html">Quantity Sets</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<p class="search-skip">This concept can be applied to the following resources:</p>
+<ul>
+<li>
+                        <a href="Qto_BodyGeometryValidation.html">Qto_BodyGeometryValidation</a>
+                    </li>
+</ul>
+</td>
+</tr>
+<tr class="inherited" data-type="concept">
+<td data-label="Name">
+<a href="../concepts/Product_Shape/Product_Geometric_Representation/Reference_Geometry/content.html">Reference Geometry</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<p class="search-skip">
+<em>No description available.</em>
+</p>
+</td>
+</tr>
+<tr class="inherited" data-type="concept">
+<td data-label="Name">
+<a href="../concepts/Product_Shape/Product_Geometric_Representation/Reference_Geometry/Reference_SweptSolid_Geometry/content.html">Reference SweptSolid Geometry</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<p class="search-skip">
+<em>No description available.</em>
+</p>
+</td>
+</tr>
+<tr class="inherited" data-type="concept">
+<td data-label="Name">
+<a href="../concepts/Product_Shape/Product_Geometric_Representation/Reference_Geometry/Reference_SweptSolid_Geometry/Reference_SweptSolid_PolyCurve_Geometry/content.html">Reference SweptSolid PolyCurve Geometry</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<p class="search-skip">
+<em>No description available.</em>
+</p>
+</td>
+</tr>
+<tr class="inherited" data-type="concept">
+<td data-label="Name">
+<a href="../concepts/Product_Shape/Product_Geometric_Representation/Reference_Geometry/Reference_Tessellation_Geometry/content.html">Reference Tessellation Geometry</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<p class="search-skip">
+<em>No description available.</em>
+</p>
+</td>
+</tr>
+<tr class="group-inherited">
+<td colspan="3">
+                <a href="IfcElement.html">IfcElement</a>
+                <small>(44)</small>
+</td>
+</tr>
+<tr class="inherited" data-type="concept">
+<td data-label="Name">
+<a href="../concepts/Product_Shape/Product_Geometric_Representation/Body_Geometry/Body_AdvancedBrep_Geometry/content.html">Body AdvancedBrep Geometry</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<p>An <em><a href="IfcElement.html">IfcElement</a></em> (so far no further constraints are defined at the level of its subtypes or by view definitions) may be represented as a single or multiple boundary representation models, which include advanced surfaces, usually referred to as NURBS surfaces. The 'AdvancedBrep' representation allows for the representation of complex free-form element shape.</p>
+<aside class="aside-note"><mark>NOTE</mark> View definitions or implementer agreements may restrict or disallow the use of 'AdvancedBrep' geometry.</aside>
+</td>
+</tr>
+<tr class="inherited" data-type="concept">
+<td data-label="Name">
+<a href="../concepts/Product_Shape/Product_Geometric_Representation/Body_Geometry/Body_AdvancedSweptSolid_Geometry/Body_AdvancedSwept_Directrix_Geometry/content.html">Body AdvancedSwept Directrix Geometry</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<p class="search-skip">
+<em>No description available.</em>
+</p>
+</td>
+</tr>
+<tr class="inherited" data-type="concept">
+<td data-label="Name">
+<a href="../concepts/Product_Shape/Product_Geometric_Representation/Body_Geometry/Body_AdvancedSweptSolid_Geometry/Body_AdvancedSwept_DiskSolid_PolyCurve_Geometry/content.html">Body AdvancedSwept DiskSolid PolyCurve Geometry</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<p class="search-skip">
+<em>No description available.</em>
+</p>
+</td>
+</tr>
+<tr class="inherited" data-type="concept">
+<td data-label="Name">
+<a href="../concepts/Product_Shape/Product_Geometric_Representation/Body_Geometry/Body_AdvancedSweptSolid_Geometry/Body_AdvancedSwept_Tapered_Geometry/content.html">Body AdvancedSwept Tapered Geometry</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<p class="search-skip">
+<em>No description available.</em>
+</p>
+</td>
+</tr>
+<tr class="inherited" data-type="concept">
+<td data-label="Name">
+<a href="../concepts/Product_Shape/Product_Geometric_Representation/Body_Geometry/Body_Brep_Geometry/content.html">Body Brep Geometry</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<p>Any <em><a href="IfcElement.html">IfcElement</a></em> (so far no further constraints are defined at the level of its subtypes) may be represented as a single or multiple Boundary Representation models (which are restricted to be faceted Brep's with or without voids). The Brep representation allows for the representation of complex element shape.</p>
+<figure><a class="anchor" id="Figure-D-Building-element-body-boundary-representation"></a><img alt="Brep representation" src="../figures/ifcbuildingelement-brep-layout1.gif"/><figcaption>Figure D — Building element body boundary representation<a class="link" href="#Figure-D-Building-element-body-boundary-representation"><i data-feather="link"></i></a></figcaption></figure>
+
+<aside class="aside-example"><mark>EXAMPLE</mark>  As shown in Figure D, the Brep representation is given by an <em><a href="IfcShapeRepresentation.html">IfcShapeRepresentation</a></em>, which includes one or more items, all of type <em><a href="IfcFacetedBrep.html">IfcFacetedBrep</a></em>. In some cases it may be useful to also expose a simple representation as a bounding box representation of the same complex shape.</aside>
+</td>
+</tr>
+<tr class="inherited" data-type="concept">
+<td data-label="Name">
+<a href="../concepts/Product_Shape/Product_Geometric_Representation/Body_Geometry/Body_CSG_Geometry/content.html">Body CSG Geometry</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<p>Any <em><a href="IfcElement.html">IfcElement</a></em> (so far no further constraints are defined at the level of its subtypes) may be represented as a CSG primitive or CSG tree. The CSG representation allows for the representation of complex element shape.</p>
+<aside class="aside-note"><mark>NOTE</mark> View definitions or implementer agreements may restrict or disallow the use of 'CSG' geometry.</aside>
+</td>
+</tr>
+<tr class="inherited" data-type="concept">
+<td data-label="Name">
+<a href="../concepts/Product_Shape/Product_Geometric_Representation/Body_Geometry/Body_AdvancedSweptSolid_Geometry/Body_SectionedSolidHorizontal/content.html">Body SectionedSolidHorizontal</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<p class="search-skip">
+<em>No description available.</em>
+</p>
+</td>
+</tr>
+<tr class="inherited" data-type="concept">
+<td data-label="Name">
+<a href="../concepts/Product_Shape/Product_Geometric_Representation/Body_Geometry/Body_SurfaceModel_Geometry/content.html">Body SurfaceModel Geometry</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<p>Any <em><a href="IfcElement.html">IfcElement</a></em> (so far no further constraints are defined at the level of its subtypes) may be represented as a single or multiple surface models, based on either shell or face based surface models. It may also include tessellated models.</p>
+<figure><a class="anchor" id="Figure-E-Element-surface-model-representation"></a><img alt="surface model" src="../figures/ifcbuildingelement-surfacemodel-layout1.gif"/><figcaption>Figure E — Element surface model representation<a class="link" href="#Figure-E-Element-surface-model-representation"><i data-feather="link"></i></a></figcaption></figure>
+
+<aside class="aside-example"><mark>EXAMPLE</mark> As shown in Figure E, the surface model representation is given by an <em><a href="IfcShapeRepresentation.html">IfcShapeRepresentation</a></em>, which includes a single item which is either an <em><a href="IfcShellBasedSurfaceModel.html">IfcShellBasedSurfaceModel</a></em>, or an <em><a href="IfcFaceBasedSurfaceModel.html">IfcFaceBasedSurfaceModel</a></em>. In some cases it may also be useful to expose a simple representation as a bounding box representation of the same complex shape.</aside>
+</td>
+</tr>
+<tr class="inherited" data-type="concept">
+<td data-label="Name">
+<a href="../concepts/Product_Shape/Product_Geometric_Representation/Body_Geometry/Body_SurfaceOrSolidModel_Geometry/content.html">Body SurfaceOrSolidModel Geometry</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<p>Any <em><a href="IfcElement.html">IfcElement</a></em> (so far no further constraints are defined at the level of its subtypes) may be represented as a mixed representation, including surface and solid models.</p>
+</td>
+</tr>
+<tr class="inherited" data-type="concept">
+<td data-label="Name">
+<a href="../concepts/Product_Shape/Product_Geometric_Representation/Body_Geometry/Body_SweptSolid_Geometry/Body_SweptSolid_Composite_Geometry/content.html">Body SweptSolid Composite Geometry</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<p class="search-skip">
+<em>No description available.</em>
+</p>
+</td>
+</tr>
+<tr class="inherited" data-type="concept">
+<td data-label="Name">
+<a href="../concepts/Product_Shape/Product_Geometric_Representation/Body_Geometry/Body_SweptSolid_Geometry/Body_SweptSolid_CompositeCurve_Geometry/content.html">Body SweptSolid CompositeCurve Geometry</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<p class="search-skip">
+<em>No description available.</em>
+</p>
+</td>
+</tr>
+<tr class="inherited" data-type="concept">
+<td data-label="Name">
+<a href="../concepts/Product_Shape/Product_Geometric_Representation/Body_Geometry/Body_SweptSolid_Geometry/Body_SweptSolid_ParameterizedProfile_Geometry/content.html">Body SweptSolid ParameterizedProfile Geometry</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<p class="search-skip">
+<em>No description available.</em>
+</p>
+</td>
+</tr>
+<tr class="inherited" data-type="concept">
+<td data-label="Name">
+<a href="../concepts/Product_Shape/Product_Geometric_Representation/Body_Geometry/Body_SweptSolid_Geometry/Body_SweptSolid_PolyCurve_Geometry/content.html">Body SweptSolid PolyCurve Geometry</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<p class="search-skip">
+<em>No description available.</em>
+</p>
+</td>
+</tr>
+<tr class="inherited" data-type="concept">
+<td data-label="Name">
+<a href="../concepts/Product_Shape/Product_Geometric_Representation/Body_Geometry/Body_Tessellation_Geometry/content.html">Body Tessellation Geometry</a>
+</td>
+<td data-label="Usage">
+                Reference View
+            </td>
+<td data-label="Description">
+<p>Any <em><a href="IfcElement.html">IfcElement</a></em> (so far no further constraints are defined at the level of its subtypes) may be represented as a single or multiple tessellated surface models, in particular triangulated surface models.</p>
+</td>
+</tr>
+<tr class="inherited" data-type="concept">
+<td data-label="Name">
+<a href="../concepts/Product_Shape/Product_Geometric_Representation/Box_Geometry/content.html">Box Geometry</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<aside class="inherited search-skip">
+<small>
+<i data-feather="paperclip"></i>
+                        This is a further elaboration on an inherited concept.
+                    </small>
+</aside>
+<figure><a class="anchor" id="Figure-F-Building-element-box-representation"></a><img alt="bounding box" src="../figures/ifcbuildingelement-boundingbox-layout1.gif"/><figcaption>Figure F — Building element box representation<a class="link" href="#Figure-F-Building-element-box-representation"><i data-feather="link"></i></a></figcaption></figure>
+
+<aside class="aside-example"><mark>EXAMPLE</mark>  Any <em><a href="IfcElement.html">IfcElement</a></em> may be represented by a bounding box, which shows the maximum extent of the body within the object coordinate system established by the <em><a href="IfcObjectPlacement.html">IfcObjectPlacement</a></em>. As shown in Figure F, the bounding box representation is given by an <em><a href="IfcShapeRepresentation.html">IfcShapeRepresentation</a></em> that includes a single item: an <em><a href="IfcBoundingBox.html">IfcBoundingBox</a></em>.</aside>
+</td>
+</tr>
+<tr class="inherited" data-type="concept">
+<td data-label="Name">
+<a href="../concepts/Product_Shape/Product_Geometric_Representation/CoG_Geometry/content.html">CoG Geometry</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<aside class="inherited search-skip">
+<small>
+<i data-feather="paperclip"></i>
+                        This is a further elaboration on an inherited concept.
+                    </small>
+</aside>
+<p>The 'CoG', Center of Gravity, shape representation is used as a means to verify the correct import by comparing the CoG of the imported geometry with the explicitly provided CoG created during export.</p>
+</td>
+</tr>
+<tr class="inherited" data-type="concept">
+<td data-label="Name">
+<a href="../concepts/Object_Connectivity/Element_Interference/content.html">Element Interference</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<p class="search-skip">
+<em>No description available.</em>
+</p>
+</td>
+</tr>
+<tr class="inherited" data-type="concept">
+<td data-label="Name">
+<a href="../concepts/Object_Composition/Nesting/Element_Nesting/content.html">Element Nesting</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<p>A host element can nest connected components. This should be used when there is a specific position or form factor to attach specific elements.</p>
+<aside class="aside-example"><mark>EXAMPLE</mark> A sink has a pre-drilled hole to attach a faucet.</aside>
+</td>
+</tr>
+<tr class="inherited" data-type="concept">
+<td data-label="Name">
+<a href="../concepts/Object_Composition/Element_Projecting/content.html">Element Projecting</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<p class="search-skip">
+<em>No description available.</em>
+</p>
+</td>
+</tr>
+<tr class="inherited" data-type="concept">
+<td data-label="Name">
+<a href="../concepts/Object_Composition/Element_Voiding/Element_Voiding_Features/content.html">Element Voiding Features</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<p class="search-skip">
+<em>No description available.</em>
+</p>
+</td>
+</tr>
+<tr class="inherited" data-type="concept">
+<td data-label="Name">
+<a href="../concepts/Product_Shape/Product_Geometric_Representation/FootPrint_Geometry/FootPrint_Annotation_Geometry/content.html">FootPrint Annotation Geometry</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<p class="search-skip">
+<em>No description available.</em>
+</p>
+</td>
+</tr>
+<tr class="inherited" data-type="concept">
+<td data-label="Name">
+<a href="../concepts/Product_Shape/Product_Geometric_Representation/FootPrint_Geometry/FootPrint_GeomSet_Geometry/FootPrint_GeomSet_PolyCurve_Geometry/content.html">FootPrint GeomSet PolyCurve Geometry</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<p class="search-skip">
+<em>No description available.</em>
+</p>
+</td>
+</tr>
+<tr class="inherited" data-type="concept">
+<td data-label="Name">
+<a href="../concepts/Product_Shape/Product_Geometric_Representation/FootPrint_Geometry/content.html">FootPrint Geometry</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<p class="search-skip">
+<em>No description available.</em>
+</p>
+</td>
+</tr>
+<tr class="inherited" data-type="concept">
+<td data-label="Name">
+<a href="../concepts/Product_Shape/Product_Geometric_Representation/Mapped_Geometry/content.html">Mapped Geometry</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<aside class="inherited search-skip">
+<small>
+<i data-feather="paperclip"></i>
+                        This is a further elaboration on an inherited concept.
+                    </small>
+</aside>
+<p>Any <em><a href="IfcElement.html">IfcElement</a></em> (so far no further constraints are defined at the level of its subtypes) may be represented using the 'MappedRepresentation'. This shall be supported as it allows for reusing the geometry definition of a type at all occurrences of the same type. The results are more compact data sets.</p>
+<p>The same constraints, as given for 'SurfaceOrSolidModel', 'SurfaceModel', 'Tessellation', 'Brep', and 'AdvancedBrep' geometric representation, shall apply to the <em><a href="IfcRepresentationMap.html">IfcRepresentationMap</a></em>.</p>
+</td>
+</tr>
+<tr class="inherited" data-type="concept">
+<td data-label="Name">
+<a href="../concepts/Product_Shape/Product_Placement/Product_Grid_Placement/content.html">Product Grid Placement</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<p class="search-skip">
+<em>No description available.</em>
+</p>
+</td>
+</tr>
+<tr class="inherited" data-type="concept">
+<td data-label="Name">
+<a href="../concepts/Product_Shape/Product_Placement/Product_Linear_Placement/content.html">Product Linear Placement</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<p>Product placement with a <em>Product Linear Placement</em> template. It defines the local coordinate system based on the curve which is referenced by <em><a href="IfcLinearPlacement.html">IfcLinearPlacement</a>.RelativePlacement</em> which is an <em><a href="IfcAxis2PlacementLinear.html">IfcAxis2PlacementLinear</a>.Location</em> using an <em><a href="IfcPointByDistanceExpression.html">IfcPointByDistanceExpression</a>.BasisCurve</em>. The local coordinate system is based on the tangent of the curve at Location, its normal in the global Z plane and the cross product of the aforementioned vectors.</p>
+</td>
+</tr>
+<tr class="inherited" data-type="concept">
+<td data-label="Name">
+<a href="../concepts/Product_Shape/Product_Placement/Product_Local_Placement/content.html">Product Local Placement</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<aside class="inherited search-skip">
+<small>
+<i data-feather="paperclip"></i>
+                        This is a further elaboration on an inherited concept.
+                    </small>
+</aside>
+<p>The object placement for any subtype of <a href="IfcElement.html">IfcElement</a> is defined by the <em><a href="IfcObjectPlacement.html">IfcObjectPlacement</a></em>, either <em><a href="IfcLocalPlacement.html">IfcLocalPlacement</a></em> or <em><a href="IfcGridPlacement.html">IfcGridPlacement</a></em>, which defines the local object coordinate system that is referenced by all geometric representations of that <em><a href="IfcElement.html">IfcElement</a></em>.</p>
+</td>
+</tr>
+<tr class="inherited" data-type="concept">
+<td data-label="Name">
+<a href="../concepts/Object_Definition/Property_Sets/Property_Sets_for_Objects/content.html">Property Sets for Objects</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<p class="search-skip">This concept can be applied to the following resources:</p>
+<ul>
+<li>
+                        <a href="Pset_ConstructionAdministration.html">Pset_ConstructionAdministration</a>
+                    </li>
+<li>
+                        <a href="Pset_MaintenanceStrategy.html">Pset_MaintenanceStrategy</a>
+                    </li>
+<li>
+                        <a href="Pset_MaintenanceTriggerDuration.html">Pset_MaintenanceTriggerDuration</a>
+                    </li>
+<li>
+                        <a href="Pset_EnvironmentalImpactIndicators.html">Pset_EnvironmentalImpactIndicators</a>
+                    </li>
+<li>
+                        <a href="Pset_RepairOccurrence.html">Pset_RepairOccurrence</a>
+                    </li>
+<li>
+                        <a href="Pset_Warranty.html">Pset_Warranty</a>
+                    </li>
+<li>
+                        <a href="Pset_ManufacturerOccurrence.html">Pset_ManufacturerOccurrence</a>
+                    </li>
+<li>
+                        <a href="Pset_ConstructionOccurence.html">Pset_ConstructionOccurence</a>
+                    </li>
+<li>
+                        <a href="Pset_ElementKinematics.html">Pset_ElementKinematics</a>
+                    </li>
+<li>
+                        <a href="Pset_Condition.html">Pset_Condition</a>
+                    </li>
+<li>
+                        <a href="Pset_ManufacturerTypeInformation.html">Pset_ManufacturerTypeInformation</a>
+                    </li>
+<li>
+                        <a href="Pset_MaintenanceTriggerPerformance.html">Pset_MaintenanceTriggerPerformance</a>
+                    </li>
+<li>
+                        <a href="Pset_InstallationOccurrence.html">Pset_InstallationOccurrence</a>
+                    </li>
+<li>
+                        <a href="Pset_EnvironmentalImpactValues.html">Pset_EnvironmentalImpactValues</a>
+                    </li>
+<li>
+                        <a href="Pset_MaintenanceTriggerCondition.html">Pset_MaintenanceTriggerCondition</a>
+                    </li>
+<li>
+                        <a href="Pset_ServiceLife.html">Pset_ServiceLife</a>
+                    </li>
+<li>
+                        <a href="Pset_EnvironmentalCondition.html">Pset_EnvironmentalCondition</a>
+                    </li>
+</ul>
+</td>
+</tr>
+<tr class="inherited" data-type="concept">
+<td data-label="Name">
+<a href="../concepts/Object_Composition/Surface_Feature_Adherence/content.html">Surface Feature Adherence</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<p class="search-skip">
+<em>No description available.</em>
+</p>
+</td>
+</tr>
+<tr class="inherited" data-type="concept">
+<td data-label="Name">
+<a href="../concepts/Product_Shape/Product_Geometric_Representation/Surface_Geometry/Surface_Sectioned_Geometry/content.html">Surface Sectioned Geometry</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<p class="search-skip">
+<em>No description available.</em>
+</p>
+</td>
+</tr>
+<tr class="inherited" data-type="concept">
+<td data-label="Name">
+<a href="../concepts/Product_Shape/Product_Geometric_Representation/Surface_Geometry/Surface_Tessellation_Geometry/content.html">Surface Tessellation Geometry</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<p class="search-skip">
+<em>No description available.</em>
+</p>
+</td>
+</tr>
+<tr class="inherited" data-type="concept">
+<td data-label="Name">
+<a href="../concepts/Product_Shape/Product_Geometric_Representation/Body_Geometry/Body_AdvancedSweptSolid_Geometry/content.html">Body AdvancedSweptSolid Geometry</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<p class="search-skip">
+<em>No description available.</em>
+</p>
+</td>
+</tr>
+<tr class="inherited" data-type="concept">
+<td data-label="Name">
+<a href="../concepts/Product_Shape/Product_Geometric_Representation/Body_Geometry/Body_Clipping_Geometry/content.html">Body Clipping Geometry</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<p class="search-skip">
+<em>No description available.</em>
+</p>
+</td>
+</tr>
+<tr class="inherited" data-type="concept">
+<td data-label="Name">
+<a href="../concepts/Product_Shape/Product_Geometric_Representation/Body_Geometry/Body_SweptSolid_Geometry/content.html">Body SweptSolid Geometry</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<p class="search-skip">
+<em>No description available.</em>
+</p>
+</td>
+</tr>
+<tr class="inherited" data-type="concept">
+<td data-label="Name">
+<a href="../concepts/Object_Connectivity/Element_Covering/content.html">Element Covering</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<p class="search-skip">
+<em>No description available.</em>
+</p>
+</td>
+</tr>
+<tr class="inherited" data-type="concept">
+<td data-label="Name">
+<a href="../concepts/Object_Attributes/Object_Occurrence_Attributes/Element_Occurrence_Attributes/content.html">Element Occurrence Attributes</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<p class="search-skip">
+<em>No description available.</em>
+</p>
+</td>
+</tr>
+<tr class="inherited" data-type="concept">
+<td data-label="Name">
+<a href="../concepts/Object_Composition/Element_Voiding/content.html">Element Voiding</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<p class="search-skip">
+<em>No description available.</em>
+</p>
+</td>
+</tr>
+<tr class="inherited" data-type="concept">
+<td data-label="Name">
+<a href="../concepts/Product_Shape/Product_Geometric_Representation/Lighting_Geometry/content.html">Lighting Geometry</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<p class="search-skip">
+<em>No description available.</em>
+</p>
+</td>
+</tr>
+<tr class="inherited" data-type="concept">
+<td data-label="Name">
+<a href="../concepts/Object_Definition/Object_Typing/content.html">Object Typing</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<p class="search-skip">This concept can be applied to the following resources:</p>
+<ul>
+<li>
+                        <a href="IfcElementType.html">IfcElementType</a>
+                    </li>
+</ul>
+</td>
+</tr>
+<tr class="inherited" data-type="concept">
+<td data-label="Name">
+<a href="../concepts/Product_Shape/Product_Geometric_Representation/Profile_Geometry/Profile_3D_Geometry/content.html">Profile 3D Geometry</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<p class="search-skip">
+<em>No description available.</em>
+</p>
+</td>
+</tr>
+<tr class="inherited" data-type="concept">
+<td data-label="Name">
+<a href="../concepts/Product_Shape/Product_Geometric_Representation/Profile_Geometry/content.html">Profile Geometry</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<p class="search-skip">
+<em>No description available.</em>
+</p>
+</td>
+</tr>
+<tr class="inherited" data-type="concept">
+<td data-label="Name">
+<a href="../concepts/Object_Connectivity/Spatial_Structure/Spatial_Containment/content.html">Spatial Containment</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<p class="search-skip">This concept can be applied to the following resources:</p>
+<ul>
+<li>
+                        <a href="IfcSpatialElement.html">IfcSpatialElement</a>
+                    </li>
+</ul>
+</td>
+</tr>
+<tr class="inherited" data-type="concept">
+<td data-label="Name">
+<a href="../concepts/Product_Shape/Product_Geometric_Representation/Surface_Geometry/Surface_3D_Geometry/content.html">Surface 3D Geometry</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<p class="search-skip">
+<em>No description available.</em>
+</p>
+</td>
+</tr>
+<tr class="inherited" data-type="concept">
+<td data-label="Name">
+<a href="../concepts/Product_Shape/Product_Geometric_Representation/Surface_Geometry/content.html">Surface Geometry</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<p class="search-skip">
+<em>No description available.</em>
+</p>
+</td>
+</tr>
+<tr class="group-inherited">
+<td colspan="3">
+                <a href="IfcBuiltElement.html">IfcBuiltElement</a>
+                <small>(3)</small>
+</td>
+</tr>
+<tr class="inherited" data-type="concept">
+<td data-label="Name">
+<a href="../concepts/Object_Assignment/Product_Assignment/content.html">Product Assignment</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<p class="search-skip">This concept can be applied to the following resources:</p>
+<ul>
+<li>
+                        <a href="IfcTask.html">IfcTask</a>
+                         - A task for operating on the slab.
+                    </li>
+</ul>
+</td>
+</tr>
+<tr class="inherited" data-type="concept">
+<td data-label="Name">
+<a href="../concepts/Product_Shape/Product_Geometric_Representation/Surface_Geometry/Surface_3D_Geometry/content.html">Surface 3D Geometry</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<aside class="inherited search-skip">
+<small>
+<i data-feather="paperclip"></i>
+                        This is a further elaboration on an inherited concept.
+                    </small>
+</aside>
+<p>Some <em><a href="IfcBuiltElement.html">IfcBuiltElement</a></em> may be represented by a surface as an abstract geometric representation. See each subtype for specific guidance.</p>
+</td>
+</tr>
+<tr class="inherited" data-type="concept">
+<td data-label="Name">
+<a href="../concepts/Object_Definition/Object_Typing/content.html">Object Typing</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<p class="search-skip">This concept can be applied to the following resources:</p>
+<ul>
+<li>
+                        <a href="IfcBuiltElementType.html">IfcBuiltElementType</a>
+                    </li>
+</ul>
+</td>
+</tr>
+<tr class="preview">
+<td colspan="4">
+<small class="show-inherited" data-type="concept">
+<i data-feather="eye-off"></i>
+                    Click to show 81 hidden inherited concepts
+                </small>
+<small class="hide-inherited" data-type="concept">
+<i data-feather="eye-off"></i>
+                    Click to hide 81 inherited concepts
+                </small>
+</td>
+</tr>
+<tr class="group">
+<td colspan="3">
+                <a href="IfcSlab.html">IfcSlab</a>
+                <small>(12)</small>
+</td>
+</tr>
+<tr>
+<td data-label="Name">
+<a href="../concepts/Product_Shape/Product_Geometric_Representation/Body_Geometry/Body_Clipping_Geometry/content.html">Body Clipping Geometry</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<aside class="inherited search-skip">
+<small>
+<i data-feather="paperclip"></i>
+                        This is a further elaboration on an inherited concept.
+                    </small>
+</aside>
+<p>The following constraints apply to the 'Clipping' representation:</p>
+<ul>
+<li>Solid: <em><a href="IfcExtrudedAreaSolid.html">IfcExtrudedAreaSolid</a></em> is required,</li>
+<li>Profile: <em><a href="IfcArbitraryClosedProfileDef.html">IfcArbitraryClosedProfileDef</a></em>, <em><a href="IfcRectangleProfileDef.html">IfcRectangleProfileDef</a></em>, <em><a href="IfcCircleProfileDef.html">IfcCircleProfileDef</a></em>, <em><a href="IfcEllipseProfileDef.html">IfcEllipseProfileDef</a></em> shall be supported.</li>
+<li>Extrusion: The profile can be extruded perpendicularly or non-perpendicularly to the plane of the swept profile.</li>
+<li>Boolean result: The <em><a href="IfcBooleanClippingResult.html">IfcBooleanClippingResult</a></em> shall be supported, allowing for Boolean differences between the swept solid (here <em><a href="IfcExtrudedAreaSolid.html">IfcExtrudedAreaSolid</a></em>) and one or several <em><a href="IfcHalfSpaceSolid.html">IfcHalfSpaceSolid</a></em>.</li>
+</ul>
+<p>Additional constraints apply when an <em><a href="IfcMaterialLayerSetUsage.html">IfcMaterialLayerSetUsage</a></em> is used:</p>
+<ul>
+<li>Material: The definition of the <em><a href="IfcMaterialLayerSetUsage.html">IfcMaterialLayerSetUsage</a></em>, particularly of the <em>OffsetFromReferenceLine</em> and the <em>ForLayerSet.TotalThickness</em>, has to be consistent to the 'SweptSolid' representation.</li>
+</ul>
+<p>Figure G illustrates a 'Clipping' geometric representation with definition of a roof slab using advanced
+geometric representation. The profile is extruded non-perpendicular and the slab body is clipped at the eave.</p>
+<figure><a class="anchor" id="Figure-G-Slab-body-clipping"></a><img alt="advanced slab" src="../figures/ifcslab_advanced-layout1.gif"/><figcaption>Figure G — Slab body clipping<a class="link" href="#Figure-G-Slab-body-clipping"><i data-feather="link"></i></a></figcaption></figure>
+
+</td>
+</tr>
+<tr>
+<td data-label="Name">
+<a href="../concepts/Product_Shape/Product_Geometric_Representation/Body_Geometry/Body_SweptSolid_Geometry/content.html">Body SweptSolid Geometry</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<aside class="inherited search-skip">
+<small>
+<i data-feather="paperclip"></i>
+                        This is a further elaboration on an inherited concept.
+                    </small>
+</aside>
+<p>The following constraints apply to the 'SweptSolid'
+representation:</p>
+<ul>
+<li>Solid: <em><a href="IfcExtrudedAreaSolid.html">IfcExtrudedAreaSolid</a></em> is required,</li>
+<li>Profile: <em><a href="IfcArbitraryClosedProfileDef.html">IfcArbitraryClosedProfileDef</a></em>, <em><a href="IfcRectangleProfileDef.html">IfcRectangleProfileDef</a></em>, <em><a href="IfcCircleProfileDef.html">IfcCircleProfileDef</a></em>, <em><a href="IfcEllipseProfileDef.html">IfcEllipseProfileDef</a></em> shall be supported.</li>
+<li>Extrusion: The profile can be extruded perpendicularly or non-perpendicularly to the plane of the swept profile.</li>
+</ul>
+<p>For polygonal slabs, the following interpretation of dimension parameter applies:</p>
+<ul>
+<li><em><a href="IfcArbitraryClosedProfileDef.html">IfcArbitraryClosedProfileDef</a>.OuterCurve</em>: closed bounded curve interpreted as area (or foot print) of the slab.</li>
+</ul>
+<p>Additional constraints apply when an <em><a href="IfcMaterialLayerSetUsage.html">IfcMaterialLayerSetUsage</a></em> is used:</p>
+<ul>
+<li>Material: The definition of the <em><a href="IfcMaterialLayerSetUsage.html">IfcMaterialLayerSetUsage</a></em>, particularly of the <em>OffsetFromReferenceLine</em> and the <em>ForLayerSet.TotalThickness</em>, has to be consistent to the 'SweptSolid' representation.</li>
+</ul>
+<figure><a class="anchor" id="Figure-H-Slab-body-extrusion"></a><img alt="standard slab" src="../figures/ifcslab_standard-layout1.gif"/><figcaption>Figure H — Slab body extrusion<a class="link" href="#Figure-H-Slab-body-extrusion"><i data-feather="link"></i></a></figcaption></figure>
+
+</td>
+</tr>
+<tr>
+<td data-label="Name">
+<a href="../concepts/Object_Composition/Aggregation/Element_Decomposition/content.html">Element Decomposition</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<p>A slab may be decomposed into parts such as for structural framing and covering panels or topping. For efficiency, each part may reuse geometry using the mapped geometry concept.</p>
+<figure><a class="anchor" id="Figure-I-A-timber-construction-slab-decomposed-into-parts."></a><img alt="voiding" src="../figures/ifcslab-floor.png"/><figcaption>Figure I — A timber construction slab decomposed into parts.<a class="link" href="#Figure-I-A-timber-construction-slab-decomposed-into-parts."><i data-feather="link"></i></a></figcaption></figure>
+
+<figure><a class="anchor" id="Figure-J-A-section-showing-a-slab-made-from-precast-hollow-core-panels"></a><img alt="A diagram of a precast hollowcore slab" src="../figures/ifcslab-aggregation.png"/><figcaption>Figure J — A section showing a slab made from precast hollow core panels<a class="link" href="#Figure-J-A-section-showing-a-slab-made-from-precast-hollow-core-panels"><i data-feather="link"></i></a></figcaption></figure>
+
+<p class="search-skip">This concept can be applied to the following resources:</p>
+<ul>
+<li>
+                        <a href="IfcBuildingElementPart.html">IfcBuildingElementPart</a>
+                         - Parts for other elements
+                    </li>
+<li>
+                        <a href="IfcBeam.html">IfcBeam</a>
+                         - Precast hollow core planks or double tee beams in concrete construction, or joists and bearers in timber construction
+                    </li>
+<li>
+                        <a href="IfcCovering.html">IfcCovering</a>
+                         - Concrete or topping screeds
+                    </li>
+<li>
+                        <a href="IfcPlate.html">IfcPlate</a>
+                         - Used for metal decks at the base of slabs or sheathing
+                    </li>
+</ul>
+</td>
+</tr>
+<tr>
+<td data-label="Name">
+<a href="../concepts/Object_Composition/Element_Voiding/content.html">Element Voiding</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<aside class="inherited search-skip">
+<small>
+<i data-feather="paperclip"></i>
+                        This is a further elaboration on an inherited concept.
+                    </small>
+</aside>
+<p>As shown in Figure K, openings within an aggregated slab are directly assigned to <em><a href="IfcSlab.html">IfcSlab</a></em> using <em><a href="IfcRelVoidsElement.html">IfcRelVoidsElement</a></em> pointing to <em><a href="IfcOpeningElement.html">IfcOpeningElement</a></em> and apply to all aggregated parts. If individual parts have cutting and other voiding features, then the decomposed parts have a separate voiding relationship <em><a href="IfcRelVoidsElement.html">IfcRelVoidsElement</a></em> pointing to <em><a href="IfcVoidingFeature.html">IfcVoidingFeature</a></em>.</p>
+<figure><a class="anchor" id="Figure-K-How-individual-parts-being-cut-may-be-expressed."></a><svg height="203px" viewbox="0.00 0.00 614.50 203.50" width="615px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g class="graph" id="graph0" transform="scale(1 1) rotate(0) translate(40.5 199.5)">
+<title>dot_neato</title>
+<polygon fill="transparent" points="-40.5,4 -40.5,-199.5 574,-199.5 574,4 -40.5,4" stroke="transparent"></polygon>
+<!-- IfcSlab -->
+<g class="node" id="node1">
+<title>IfcSlab</title>
+<g id="a_node1"><a xlink:href="/lexical/IfcSlab.html" xlink:title="IfcSlab">
+<polygon fill="#1976d2" points="164.5,-176 20.5,-176 20.5,-140 164.5,-140 164.5,-176" stroke="#000000"></polygon>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="92.5" y="-154.3">IfcSlab</text>
+</a>
+</g>
+</g>
+<!-- IfcRelVoidsElement -->
+<g class="node" id="node2">
+<title>IfcRelVoidsElement</title>
+<g id="a_node2"><a xlink:href="/lexical/IfcRelVoidsElement.html" xlink:title="IfcRelVoidsElement">
+<polygon fill="#e9d758" points="370.5,-176 214.5,-176 214.5,-140 370.5,-140 370.5,-176" stroke="#000000" stroke-width="0.2"></polygon>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="292.5" y="-154.3">IfcRelVoidsElement</text>
+</a>
+</g>
+</g>
+<!-- IfcRelVoidsElement&#45;&gt;IfcSlab -->
+<g class="edge" id="edge1">
+<title>IfcRelVoidsElement-&gt;IfcSlab</title>
+<path d="M214.32,-158C199.39,-158 183.79,-158 168.93,-158" fill="none" stroke="black"></path>
+<ellipse cx="166.75" cy="-158" fill="black" rx="2" ry="2" stroke="black"></ellipse>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="164.75" y="-184.3">RelatingBuildingElement</text>
+</g>
+<!-- IfcOpeningElement -->
+<g class="node" id="node3">
+<title>IfcOpeningElement</title>
+<g id="a_node3"><a xlink:href="/lexical/IfcOpeningElement.html" xlink:title="IfcOpeningElement">
+<polygon fill="#1976d2" points="570,-176 415,-176 415,-140 570,-140 570,-176" stroke="#000000" stroke-width="0.2"></polygon>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="492.5" y="-154.3">IfcOpeningElement</text>
+</a>
+</g>
+</g>
+<!-- IfcRelVoidsElement&#45;&gt;IfcOpeningElement -->
+<g class="edge" id="edge2">
+<title>IfcRelVoidsElement-&gt;IfcOpeningElement</title>
+<path d="M370.68,-158C383.79,-158 397.42,-158 410.62,-158" fill="none" stroke="black"></path>
+<ellipse cx="412.7" cy="-158" fill="black" rx="2" ry="2" stroke="black"></ellipse>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="414.7" y="-184.3">RelatedOpeningElement</text>
+</g>
+<!-- IfcRelAggregates -->
+<g class="node" id="node4">
+<title>IfcRelAggregates</title>
+<g id="a_node4"><a xlink:href="/lexical/IfcRelAggregates.html" xlink:title="IfcRelAggregates">
+<polygon fill="#e9d758" points="164.5,-106 20.5,-106 20.5,-70 164.5,-70 164.5,-106" stroke="#000000" stroke-width="0.2"></polygon>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="92.5" y="-84.3">IfcRelAggregates</text>
+</a>
+</g>
+</g>
+<!-- IfcRelAggregates&#45;&gt;IfcSlab -->
+<g class="edge" id="edge3">
+<title>IfcRelAggregates-&gt;IfcSlab</title>
+<path d="M92.5,-106.03C92.5,-115.1 92.5,-126.18 92.5,-135.78" fill="none" stroke="black"></path>
+<ellipse cx="92.5" cy="-137.79" fill="black" rx="2" ry="2" stroke="black"></ellipse>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="39" y="-124.7">RelatingObject</text>
+</g>
+<!-- IfcBuildingElementPart -->
+<g class="node" id="node5">
+<title>IfcBuildingElementPart</title>
+<g id="a_node5"><a xlink:href="/lexical/IfcBuildingElementPart.html" xlink:title="IfcBuildingElementPart">
+<polygon fill="#1976d2" points="185,-36 0,-36 0,0 185,0 185,-36" stroke="#000000" stroke-width="0.2"></polygon>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="92.5" y="-14.3">IfcBuildingElementPart</text>
+</a>
+</g>
+</g>
+<!-- IfcRelAggregates&#45;&gt;IfcBuildingElementPart -->
+<g class="edge" id="edge4">
+<title>IfcRelAggregates-&gt;IfcBuildingElementPart</title>
+<path d="M92.5,-69.97C92.5,-60.9 92.5,-49.82 92.5,-40.22" fill="none" stroke="black"></path>
+<ellipse cx="92.5" cy="-38.21" fill="black" rx="2" ry="2" stroke="black"></ellipse>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="28" y="-43.9">RelatedObjects[1]</text>
+</g>
+<!-- IfcRelVoidsElement2 -->
+<g class="node" id="node6">
+<title>IfcRelVoidsElement2</title>
+<polygon fill="#e9d758" points="370.5,-36 214.5,-36 214.5,0 370.5,0 370.5,-36" stroke="#000000" stroke-width="0.2"></polygon>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="292.5" y="-14.3">IfcRelVoidsElement</text>
+</g>
+<!-- IfcRelVoidsElement2&#45;&gt;IfcBuildingElementPart -->
+<g class="edge" id="edge5">
+<title>IfcRelVoidsElement2-&gt;IfcBuildingElementPart</title>
+<path d="M214.32,-18C206.12,-18 197.73,-18 189.36,-18" fill="none" stroke="black"></path>
+<ellipse cx="187.26" cy="-18" fill="black" rx="2" ry="2" stroke="black"></ellipse>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="185.26" y="-44.3">RelatingBuildingElement</text>
+</g>
+<!-- IfcVoidingFeature -->
+<g class="node" id="node7">
+<title>IfcVoidingFeature</title>
+<g id="a_node7"><a xlink:href="/lexical/IfcVoidingFeature.html" xlink:title="IfcVoidingFeature">
+<polygon fill="#1976d2" points="564.5,-36 420.5,-36 420.5,0 564.5,0 564.5,-36" stroke="#000000" stroke-width="0.2"></polygon>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="492.5" y="-14.3">IfcVoidingFeature</text>
+</a>
+</g>
+</g>
+<!-- IfcRelVoidsElement2&#45;&gt;IfcVoidingFeature -->
+<g class="edge" id="edge6">
+<title>IfcRelVoidsElement2-&gt;IfcVoidingFeature</title>
+<path d="M370.68,-18C385.61,-18 401.21,-18 416.07,-18" fill="none" stroke="black"></path>
+<ellipse cx="418.25" cy="-18" fill="black" rx="2" ry="2" stroke="black"></ellipse>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="420.25" y="-44.3">RelatedOpeningElement</text>
+</g>
+</g>
+</svg><figcaption>Figure K — How individual parts being cut may be expressed.<a class="link" href="#Figure-K-How-individual-parts-being-cut-may-be-expressed."><i data-feather="link"></i></a></figcaption></figure>
+
+</td>
+</tr>
+<tr>
+<td data-label="Name">
+<a href="../concepts/Object_Association/Material_Association/Material_Layer_Set_Usage/content.html">Material Layer Set Usage</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<p>Figure L illustrates assignment of <em><a href="IfcMaterialLayerSetUsage.html">IfcMaterialLayerSetUsage</a></em> and <em><a href="IfcMaterialLayerSet.html">IfcMaterialLayerSet</a></em> to the <em><a href="IfcSlabType.html">IfcSlabType</a></em> and the <em><a href="IfcSlab.html">IfcSlab</a></em> occurrence.</p>
+<figure><a class="anchor" id="Figure-L-Slab-type-definition"></a><img alt="Material layer set and usage" src="../figures/ifcslab_materialusage-01.png"/><figcaption>Figure L — Slab type definition<a class="link" href="#Figure-L-Slab-type-definition"><i data-feather="link"></i></a></figcaption></figure>
+
+<p>Figure N and Figure M illustrates material layer usage, where:</p>
+<ul>
+<li>The reference coordinate system is the coordinate system established by the <em><a href="IfcExtrudedAreaSolid.html">IfcExtrudedAreaSolid</a>.Position</em>.</li>
+<li>The reference plane is the plane defined by the extruded profile of <em><a href="IfcExtrudedAreaSolid.html">IfcExtrudedAreaSolid</a>.SweptSolid</em>. The <em><a href="IfcMaterialLayerSetUsage.html">IfcMaterialLayerSetUsage</a>.OffsetFromReferenceLine</em> is given as a distance from this plane.</li>
+<li>The <em><a href="IfcMaterialLayerSetUsage.html">IfcMaterialLayerSetUsage</a>.DirectionSense</em> defines how the <em><a href="IfcMaterialLayer.html">IfcMaterialLayer</a></em>'s are assigned to the reference plane. POSITIVE means in direction to the positive z-axis of the reference coordinate system.</li>
+<li>The <em><a href="IfcMaterialLayerSetUsage.html">IfcMaterialLayerSetUsage</a>.OffsetFromReferenceLine</em> is the distance parallel to the reference plane and always perpendicular to the base (XY) plane of the reference coordinate system. This is independent of a potential non-perpendicular extrusion given by <em><a href="IfcExtrudedAreaSolid.html">IfcExtrudedAreaSolid</a>.ExtrudedDirection</em> &lt;&gt; 0.,0.,1. A positive value of <em><a href="IfcMaterialLayerSetUsage.html">IfcMaterialLayerSetUsage</a>.OffsetFromReferenceLine</em> would then point into the positive z-axis of the reference coordinate system.</li>
+<li>The <em>Thickness</em> of each <em><a href="IfcMaterialLayer.html">IfcMaterialLayer</a></em> shall be the parallel distance (measured perpendicular to the base plane). The <em>TotalThickness</em> of the <em><a href="IfcMaterialLayerSet.html">IfcMaterialLayerSet</a></em> is the sum of all layer thicknesses and in case of a perpendicular extrusion identical with <em><a href="IfcExtrudedAreaSolid.html">IfcExtrudedAreaSolid</a>.Depth</em></li>
+<li>The <em><a href="IfcMaterialLayerSetUsage.html">IfcMaterialLayerSetUsage</a>.LayerSetDirection</em> is always AXIS3.</li>
+<li>The local placement of the slab uses the the x/y plane for the profile, and the z-axis as the extrusion direction for the slab body.</li>
+</ul>
+<figure><a class="anchor" id="Figure-M-Standard-usage-of-a-material-layer-set"></a><img alt="slab material layer set" src="../figures/ifcmateriallayersetusage_slab-01.png"/><figcaption>Figure M — Standard usage of a material layer set<a class="link" href="#Figure-M-Standard-usage-of-a-material-layer-set"><i data-feather="link"></i></a></figcaption></figure>
+
+<figure><a class="anchor" id="Figure-N-Material-layers-used-in-a-sloping-roof-slab"></a><img alt="roof slab material layer set" src="../figures/ifcmateriallayersetusage_roofslab-01.png"/><figcaption>Figure N — Material layers used in a sloping roof slab<a class="link" href="#Figure-N-Material-layers-used-in-a-sloping-roof-slab"><i data-feather="link"></i></a></figcaption></figure>
+
+</td>
+</tr>
+<tr>
+<td data-label="Name">
+<a href="../concepts/Object_Definition/Object_Typing/content.html">Object Typing</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<aside class="inherited search-skip">
+<small>
+<i data-feather="paperclip"></i>
+                        This is a further elaboration on an inherited concept.
+                    </small>
+</aside>
+<p class="search-skip">This concept can be applied to the following resources:</p>
+<ul>
+<li>
+                        <a href="IfcSlabType.html">IfcSlabType</a>
+                    </li>
+</ul>
+</td>
+</tr>
+<tr>
+<td data-label="Name">
+<a href="../concepts/Object_Assignment/Product_Assignment/content.html">Product Assignment</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<aside class="inherited search-skip">
+<small>
+<i data-feather="paperclip"></i>
+                        This is a further elaboration on an inherited concept.
+                    </small>
+</aside>
+<p class="search-skip">This concept can be applied to the following resources:</p>
+<ul>
+<li>
+                        <a href="IfcStructuralSurfaceMember.html">IfcStructuralSurfaceMember</a>
+                         - An idealized structural member corresponding to the slab.
+                    </li>
+<li>
+                        <a href="IfcTask.html">IfcTask</a>
+                         - A task for operating on the slab.
+                    </li>
+</ul>
+</td>
+</tr>
+<tr>
+<td data-label="Name">
+<a href="../concepts/Object_Definition/Property_Sets/Property_Sets_for_Objects/content.html">Property Sets for Objects</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<aside class="inherited search-skip">
+<small>
+<i data-feather="paperclip"></i>
+                        This is a further elaboration on an inherited concept.
+                    </small>
+</aside>
+<p class="search-skip">This concept can be applied to the following resources:</p>
+<ul>
+<li>
+                        <a href="Pset_SlabCommon.html">Pset_SlabCommon</a>
+                    </li>
+<li>
+                        <a href="Pset_ConcreteElementGeneral.html">Pset_ConcreteElementGeneral</a>
+                    </li>
+<li>
+                        <a href="Pset_ReinforcementBarPitchOfSlab.html">Pset_ReinforcementBarPitchOfSlab</a>
+                    </li>
+<li>
+                        <a href="Pset_PrecastConcreteElementGeneral.html">Pset_PrecastConcreteElementGeneral</a>
+                    </li>
+<li>
+                        <a href="Pset_EmbeddedTrack.html">Pset_EmbeddedTrack</a>
+                        (only applies to <code>TRACKSLAB)
+                    </code></li>
+<li>
+                        <a href="Pset_TrackBase.html">Pset_TrackBase</a>
+                        (only applies to <code>BASESLAB)
+                    </code></li>
+<li>
+                        <a href="Pset_SlabTypeTrackSlab.html">Pset_SlabTypeTrackSlab</a>
+                        (only applies to <code>TRACKSLAB)
+                    </code></li>
+<li>
+                        <a href="Pset_PrecastConcreteElementFabrication.html">Pset_PrecastConcreteElementFabrication</a>
+                    </li>
+<li>
+                        <a href="Pset_PrecastSlab.html">Pset_PrecastSlab</a>
+                    </li>
+<li>
+                        <a href="Pset_CessBetweenRails.html">Pset_CessBetweenRails</a>
+                        (only applies to <code>TRACKSLAB)
+                    </code></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td data-label="Name">
+<a href="../concepts/Object_Definition/Quantity_Sets/content.html">Quantity Sets</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<p class="search-skip">This concept can be applied to the following resources:</p>
+<ul>
+<li>
+                        <a href="Qto_SlabBaseQuantities.html">Qto_SlabBaseQuantities</a>
+                    </li>
+</ul>
+</td>
+</tr>
+<tr>
+<td data-label="Name">
+<a href="../concepts/Object_Connectivity/Spatial_Structure/Spatial_Containment/content.html">Spatial Containment</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<aside class="inherited search-skip">
+<small>
+<i data-feather="paperclip"></i>
+                        This is a further elaboration on an inherited concept.
+                    </small>
+</aside>
+<p>The <em><a href="IfcSlab.html">IfcSlab</a></em>, as any subtype of <em><a href="IfcBuiltElement.html">IfcBuiltElement</a></em>, may participate alternatively in one of the two different containment relationships:</p>
+<ul>
+<li>the <em>Spatial Containment</em> (defined here), or</li>
+<li>the <em>Element Composition</em>.</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td data-label="Name">
+<a href="../concepts/Product_Shape/Product_Geometric_Representation/Surface_Geometry/content.html">Surface Geometry</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<aside class="inherited search-skip">
+<small>
+<i data-feather="paperclip"></i>
+                        This is a further elaboration on an inherited concept.
+                    </small>
+</aside>
+<p>The 'Surface' can be used to define a surfacic model of the building (e.g. for analytical purposes, or for reduced Level of Detail representation).</p>
+</td>
+</tr>
+<tr>
+<td data-label="Name">
+<a href="../concepts/Object_Association/Material_Association/Material_Set/content.html">Material Set</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<p class="search-skip">This concept can be applied to the following resources:</p>
+<ul>
+<li>
+                        LoadBearing
+                    </li>
+<li>
+                        Insulation
+                    </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table><figcaption>Table C<a class="link" href="#Table-C"><i data-feather="link"></i></a></figcaption></figure>
+<h2><a class="anchor" id="6.1.3.35.7-Formal-representation"></a>
+    6.1.3.35.7 Formal representation
+<a class="link" href="#6.1.3.35.7-Formal-representation"><i data-feather="link"></i></a></h2>
 <pre><code class="language-express pygments" data-highlighted="generator"><span class="tok-kd">ENTITY</span> <a href="IfcSlab.html"><span class="tok-nc">IfcSlab</span></a>
 <span class="tok-k">SUBTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><a href="IfcBuiltElement.html"><span class="tok-nc">IfcBuiltElement</span></a><span class="tok-p">)</span><span class="tok-p">;</span>
 <span class="tok-n">PredefinedType</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <a href="IfcSlabTypeEnum.html"><span class="tok-nc">IfcSlabTypeEnum</span></a><span class="tok-p">;</span>
@@ -1028,11 +3093,11 @@
 <span class="tok-p">(</span><span class="tok-n">PredefinedType</span> <span class="tok-o">&lt;&gt;</span> <a href="IfcSlabTypeEnum.html"><span class="tok-nc">IfcSlabTypeEnum</span></a><span class="tok-p">.</span><span class="tok-n">USERDEFINED</span><span class="tok-p">)</span> <span class="tok-nb">OR</span>
 <span class="tok-p">(</span><span class="tok-p">(</span><span class="tok-n">PredefinedType</span> <span class="tok-o">=</span> <a href="IfcSlabTypeEnum.html"><span class="tok-nc">IfcSlabTypeEnum</span></a><span class="tok-p">.</span><span class="tok-n">USERDEFINED</span><span class="tok-p">)</span> <span class="tok-nb">AND</span> <span class="tok-nb">EXISTS</span> <span class="tok-p">(</span><span class="tok-nb">SELF</span><span class="tok-o">\</span><a href="IfcObject.html"><span class="tok-nc">IfcObject</span></a><span class="tok-p">.</span><span class="tok-n">ObjectType</span><span class="tok-p">)</span><span class="tok-p">)</span><span class="tok-p">;</span>
 <span class="tok-n">CorrectTypeAssigned</span> <span class="tok-o">:</span> <span class="tok-p">(</span><span class="tok-nb">SIZEOF</span><span class="tok-p">(</span><span class="tok-n">IsTypedBy</span><span class="tok-p">)</span> <span class="tok-o">=</span> <span class="tok-m">0</span><span class="tok-p">)</span> <span class="tok-nb">OR</span>
-<span class="tok-p">(</span><span class="tok-s1">'IFC4X3_DEV_ef03d81.IFCSLABTYPE'</span> <span class="tok-nb">IN</span> <span class="tok-nb">TYPEOF</span><span class="tok-p">(</span><span class="tok-nb">SELF</span><span class="tok-o">\</span><a href="IfcObject.html"><span class="tok-nc">IfcObject</span></a><span class="tok-p">.</span><span class="tok-n">IsTypedBy</span><span class="tok-p">[</span><span class="tok-m">1</span><span class="tok-p">]</span><span class="tok-p">.</span><span class="tok-n">RelatingType</span><span class="tok-p">)</span><span class="tok-p">)</span><span class="tok-p">;</span>
+<span class="tok-p">(</span><span class="tok-s1">'IFC4X3_DEV_2c1089c.IFCSLABTYPE'</span> <span class="tok-nb">IN</span> <span class="tok-nb">TYPEOF</span><span class="tok-p">(</span><span class="tok-nb">SELF</span><span class="tok-o">\</span><a href="IfcObject.html"><span class="tok-nc">IfcObject</span></a><span class="tok-p">.</span><span class="tok-n">IsTypedBy</span><span class="tok-p">[</span><span class="tok-m">1</span><span class="tok-p">]</span><span class="tok-p">.</span><span class="tok-n">RelatingType</span><span class="tok-p">)</span><span class="tok-p">)</span><span class="tok-p">;</span>
 <span class="tok-kd">END_ENTITY</span><span class="tok-p">;</span></code></pre>
-<h2><a class="anchor" id="6.1.3.35.6-References"></a>
-    6.1.3.35.6 References
-<a class="link" href="#6.1.3.35.6-References"><i data-feather="link"></i></a></h2>
+<h2><a class="anchor" id="6.1.3.35.8-References"></a>
+    6.1.3.35.8 References
+<a class="link" href="#6.1.3.35.8-References"><i data-feather="link"></i></a></h2>
 <ul class="references">
 <li><i data-feather="paperclip"></i><a href="IfcBuiltElement.html">IfcBuiltElement</a></li>
 </ul>

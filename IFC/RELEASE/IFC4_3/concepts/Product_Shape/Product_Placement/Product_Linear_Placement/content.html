@@ -18,7 +18,7 @@
                         padding-top: 0px;
                         float: left;
                     " width="100"/>
-<p style="display: inline-block; vertical-align: top;">IFC 4.3.2.20260428 (IFC4X3_ADD2)
+<p style="display: inline-block; vertical-align: top;">IFC 4.3.2.20260526 (IFC4X3_ADD2)
                             <small>under development</small>
 </p>
 <ul>
@@ -220,6 +220,7 @@
 <p>A Product Linear Placement takes into account the ISO 19148 Linear referencing standard. Linear placement is defined by a position relative to a <em><a href="../../../../lexical/IfcLinearPositioningElement.html">IfcLinearPositioningElement</a></em> (distance along and optionally lateral, vertical and longitudinal offsets), a horizontal reference direction, and a vertical axis direction. Each product placed with Product Linear Placement has an absolute placement on the <em><a href="../../../../lexical/IfcLinearPositioningElement.html">IfcLinearPositioningElement</a></em>.<em>Representation</em> where the <em><a href="../../../../lexical/IfcLinearPositioningElement.html">IfcLinearPositioningElement</a></em>  is typically instantiated as an <a href="../../../../lexical/IfcAlignment.html">IfcAlignment</a>. Therefore, similarly to how <em><a href="../../../../lexical/IfcSpatialElement.html">IfcSpatialElement</a></em>.<em>ObjectPlacement</em> sets the context for all contained elements, the <em><a href="../../../../lexical/IfcLinearPositioningElement.html">IfcLinearPositioningElement</a></em>.<em>ObjectPlacement</em> sets the context for all elements positioned on it. Consequently, each product placement that uses Product Linear Placement references the <em><a href="../../../../lexical/IfcObjectPlacement.html">IfcObjectPlacement</a></em> of the <em><a href="../../../../lexical/IfcLinearPositioningElement.html">IfcLinearPositioningElement</a></em> through <em><a href="../../../../lexical/IfcLinearPlacement.html">IfcLinearPlacement</a></em>.<em>PlacementRelTo</em>.</p>
 <p class="search-skip">
     The following diagram shows the generic classes and relationships used when applying this concept.
+    In addition, concepts may have particular importance to common or standardised industry practices and scenarios. For these specific usage scenarios, the table below shows a recommended list of general usage patterns that users may adopt.
 </p>
 <div class="concept-diagram-canvas" data-diagram="concept">
 <figure><a class="anchor" id="Figure-4.1.7.4.2.A"></a><svg height="615px" viewbox="0.00 0.00 1701.00 821.50" width="1275px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -681,6 +682,14 @@
 </g>
 </svg><figcaption>Figure 4.1.7.4.2.A<a class="link" href="#Figure-4.1.7.4.2.A"><i data-feather="link"></i></a></figcaption></figure>
 </div>
+<h3><a class="anchor" id="General-Usage"></a>General Usage<a class="link" href="#General-Usage"><i data-feather="link"></i></a></h3><figure><a class="anchor" id="Table-A"></a><table>
+<thead>
+<tr><th>ApplicableEntity<br/> </th></tr>
+</thead>
+<tbody>
+<tr><td><a href="../../../../lexical/IfcElement.html">IfcElement</a>            </td></tr>
+</tbody>
+</table><figcaption>Table A<a class="link" href="#Table-A"><i data-feather="link"></i></a></figcaption></figure>
 </div>
 <div class="col-md-2 rightpanel">
 <div class="card fluid shadowed">

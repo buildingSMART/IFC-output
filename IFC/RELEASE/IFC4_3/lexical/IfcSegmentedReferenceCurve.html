@@ -18,7 +18,7 @@
                         padding-top: 0px;
                         float: left;
                     " width="100"/>
-<p style="display: inline-block; vertical-align: top;">IFC 4.3.2.20260428 (IFC4X3_ADD2)
+<p style="display: inline-block; vertical-align: top;">IFC 4.3.2.20260526 (IFC4X3_ADD2)
                             <small>under development</small>
 </p>
 <ul>
@@ -520,11 +520,17 @@
 <h2><a class="anchor" id="8.9.3.62.1-Semantic-definition"></a>
     8.9.3.62.1 Semantic definition
 <a class="link" href="#8.9.3.62.1-Semantic-definition"><i data-feather="link"></i></a></h2>
-<p>The <em><a href="IfcSegmentedReferenceCurve.html">IfcSegmentedReferenceCurve</a></em> is a curve defined in the linear parameter space of its base curve that is set in the attribute <em>BaseCurve</em>. The base curve provides a basis for the positioning of the collection of <em><a href="IfcCurveSegment.html">IfcCurveSegment</a></em> occurrences. A deviating explicit position of a curve segment (<em><a href="IfcCurveSegment.html">IfcCurveSegment</a></em>.Placement) from the axis of the base curve produces a superelevation i.e. depression or elevation from the axis of the base curve. The superelevation rate of change is directly proportionate to the curve segment parent curve curvature gradient equation (<em><a href="IfcCurveSegment.html">IfcCurveSegment</a></em>.<em>ParentCurve</em>) in the linear parameter space of the base curve. If no deviation in the position of the curve segment to the base curve axis is specified, the axes (Axis and RefDirection) directions of <em><a href="IfcAxis2Placement.html">IfcAxis2Placement</a></em> are interpolated between the initial curve segment placement and the placement of the subsequent curve segment.</p>
+<p>The <em><a href="IfcSegmentedReferenceCurve.html">IfcSegmentedReferenceCurve</a></em> is a curve defined in the linear parameter space of its base curve that is set in the attribute <em>BaseCurve</em>. The base curve provides a basis for the positioning of the collection of <em><a href="IfcCurveSegment.html">IfcCurveSegment</a></em> occurrences. A deviating explicit position of a curve segment (<em><a href="IfcCurveSegment.html">IfcCurveSegment</a>.Placement</em>) from the axis of the basis curve produces a superelevation (i.e. depression or elevation from the axis of the base curve). The deviating elevation is defined by the <em><a href="IfcCurveSegment.html">IfcCurveSegment</a>.ParentCurve</em> in the linear parameter space of the base curve. If no deviation in the position of the curve segment to the base curve axis is specified, the axes (<em>Axis</em> and <em>RefDirection</em>) directions of <em><a href="IfcAxis2Placement.html">IfcAxis2Placement</a></em> are interpolated between the initial curve segment placement and the placement of the subsequent curve segment.</p>
 <!-- end of short definition -->
-<p>The parametrization of <em><a href="IfcSegmentedReferenceCurve.html">IfcSegmentedReferenceCurve</a></em> is based on the parametrization of <em>BaseCurve</em> and is not altered by the <em>Segments</em>.</p>
-<p>Figure A shows a cross section of a <em><a href="IfcSegmentedReferenceCurve.html">IfcSegmentedReferenceCurve</a></em> usage for an alignmnent representation featuring cant</p>
-<figure><a class="anchor" id="Figure-A-use-of-a-segmented-reference-curve-on-a-cant-segment-based-on-a-gradient-curve"></a><img alt="segmented reference curve usage" src="../figures/ifcsegmentedreferencecurve.jpg" title="Figure 1 — use of a segmented reference curve on a cant segment based on a gradient curve"/><figcaption>Figure A — use of a segmented reference curve on a cant segment based on a gradient curve<a class="link" href="#Figure-A-use-of-a-segmented-reference-curve-on-a-cant-segment-based-on-a-gradient-curve"><i data-feather="link"></i></a></figcaption></figure>
+<p>The parameterization of <em><a href="IfcSegmentedReferenceCurve.html">IfcSegmentedReferenceCurve</a></em> is based on the parameterization of the <em>BaseCurve</em> and is not altered by the <em>Segments</em>.</p>
+<p>Figure A shows a cross section of a <em><a href="IfcSegmentedReferenceCurve.html">IfcSegmentedReferenceCurve</a></em> usage for an alignment representation featuring cant with rotation about the low rail and varying superelevation.</p>
+<figure><a class="anchor" id="Figure-A-use-of-a-segmented-reference-curve-on-a-cant-segment-based-on-a-gradient-curve."></a><img alt="IfcSegmentedReferenceCurve_RailheadRotation" src="../../../../figures/IfcSegmentedReferenceCurve_RailheadRotation.svg"/><figcaption>Figure A — use of a segmented reference curve on a cant segment based on a gradient curve.<a class="link" href="#Figure-A-use-of-a-segmented-reference-curve-on-a-cant-segment-based-on-a-gradient-curve."><i data-feather="link"></i></a></figcaption></figure>
+
+<p>Figure B shows a cross section of a <em><a href="IfcSegmentedReferenceCurve.html">IfcSegmentedReferenceCurve</a></em> usage for an alignment representation feature cant with rotation about the track centerline with no deviating position.</p>
+<figure><a class="anchor" id="Figure-B-use-of-a-segmented-reference-curve-on-a-cant-segment-based-on-a-gradient-curve-with-rotation-about-track-centerline-and-no-superelevation."></a><img alt="IfcSegmentedReferenceCurve_CenterRotation" src="../../../../figures/IfcSegmentedReferenceCurve_CenterRotation.svg"/><figcaption>Figure B — use of a segmented reference curve on a cant segment based on a gradient curve with rotation about track centerline and no superelevation.<a class="link" href="#Figure-B-use-of-a-segmented-reference-curve-on-a-cant-segment-based-on-a-gradient-curve-with-rotation-about-track-centerline-and-no-superelevation."><i data-feather="link"></i></a></figcaption></figure>
+
+<p>Informally, a <em><a href="IfcSegmentedReferenceCurve.html">IfcSegmentedReferenceCurve</a></em> is a curve defined in a “horizontal distance along base curve, deviating elevation” coordinate system. The <em><a href="IfcCurveSegment.html">IfcCurveSegment</a>.ParentCurve</em> defines the change in cross slope between rail heads over the length of the segment. When the <em><a href="IfcCurveSegment.html">IfcCurveSegment</a>.Placement.Location</em> differs from the <em>IfcCurveSegmentPlacement.Location</em> of the next segment (or the <em><a href="IfcSegmentedReferenceCurve.html">IfcSegmentedReferenceCurve</a>.EndPoint</em> for the last segment, if specified), the <em><a href="IfcCurveSegment.html">IfcCurveSegment</a>.ParentCurve</em> also defines the deviating elevation. If the <em><a href="IfcCurveSegment.html">IfcCurveSegment</a>.Placement.Location</em> is the same as for the start of the next segment, the deviating elevation along the length of the segment is constant.</p>
+<p>The evaluation of a <em><a href="IfcCurveSegment.html">IfcCurveSegment</a></em> that is part of a <em><a href="IfcSegmentedReferenceCurve.html">IfcSegmentedReferenceCurve</a></em> is illustrated by the file in the Examples section below.</p>
 <h2><a class="anchor" id="8.9.3.62.2-Entity-inheritance"></a>
     8.9.3.62.2 Entity inheritance
 <a class="link" href="#8.9.3.62.2-Entity-inheritance"><i data-feather="link"></i></a></h2>
@@ -610,7 +616,7 @@
     8.9.3.62.3 Attributes
 <a class="link" href="#8.9.3.62.3-Attributes"><i data-feather="link"></i></a></h2>
 <!-- <a class="button primary hide-inverse"><i data-feather="eye-off"></i> Hide inverse</a> -->
-<figure><a class="anchor" id="Table-B"></a><table class="striped grouped attributes">
+<figure><a class="anchor" id="Table-C"></a><table class="striped grouped attributes">
 <colgroup>
 <col style="width: 20px;"/>
 <col/>
@@ -768,7 +774,7 @@
 </td>
 </tr>
 </tbody>
-</table><figcaption>Table B<a class="link" href="#Table-B"><i data-feather="link"></i></a></figcaption></figure>
+</table><figcaption>Table C<a class="link" href="#Table-C"><i data-feather="link"></i></a></figcaption></figure>
 <h2><a class="anchor" id="8.9.3.62.4-Formal-representation"></a>
     8.9.3.62.4 Formal representation
 <a class="link" href="#8.9.3.62.4-Formal-representation"><i data-feather="link"></i></a></h2>

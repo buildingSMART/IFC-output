@@ -18,7 +18,7 @@
                         padding-top: 0px;
                         float: left;
                     " width="100"/>
-<p style="display: inline-block; vertical-align: top;">IFC 4.3.2.20260428 (IFC4X3_ADD2)
+<p style="display: inline-block; vertical-align: top;">IFC 4.3.2.20260526 (IFC4X3_ADD2)
                             <small>under development</small>
 </p>
 <ul>
@@ -881,18 +881,843 @@
 </tr>
 </tbody>
 </table><figcaption>Table A<a class="link" href="#Table-A"><i data-feather="link"></i></a></figcaption></figure>
-<h2><a class="anchor" id="6.2.3.8.4-Formal-representation"></a>
-    6.2.3.8.4 Formal representation
-<a class="link" href="#6.2.3.8.4-Formal-representation"><i data-feather="link"></i></a></h2>
+<h2><a class="anchor" id="6.2.3.8.4-Property-sets"></a>
+    6.2.3.8.4 Property sets
+<a class="link" href="#6.2.3.8.4-Property-sets"><i data-feather="link"></i></a></h2>
+<ul class="psets">
+<li>
+            <a href="Pset_DistributionPortCommon.html">Pset_DistributionPortCommon</a>
+            <ul>
+<li>PortNumber</li>
+<li>ColourCode</li>
+</ul>
+</li>
+<li>
+            <a href="Pset_DistributionPortPHistoryCable.html">Pset_DistributionPortPHistoryCable</a>
+            <code>CABLE</code>
+<ul>
+<li>CurrentHistory</li>
+<li>VoltageHistory</li>
+<li>RealPower</li>
+<li>ReactivePower</li>
+<li>ApparentPower</li>
+<li>PowerFactorHistory</li>
+<li>DataTransmitted</li>
+<li>DataReceived</li>
+</ul>
+</li>
+<li>
+            <a href="Pset_DistributionPortPHistoryDuct.html">Pset_DistributionPortPHistoryDuct</a>
+            <code>DUCT</code>
+<ul>
+<li>TemperatureHistory</li>
+<li>WetBulbTemperatureHistory</li>
+<li>VolumetricFlowRateHistory</li>
+<li>MassFlowRateHistory</li>
+<li>FlowConditionHistory</li>
+<li>VelocityHistory</li>
+<li>PressureHisotry</li>
+</ul>
+</li>
+<li>
+            <a href="Pset_DistributionPortPHistoryPipe.html">Pset_DistributionPortPHistoryPipe</a>
+            <code>PIPE</code>
+<ul>
+<li>Temperature</li>
+<li>Pressure</li>
+<li>Flowrate</li>
+</ul>
+</li>
+<li>
+            <a href="Pset_DistributionPortTypeCable.html">Pset_DistributionPortTypeCable</a>
+            <code>CABLE</code>
+<ul>
+<li>ElectricalConnectionType</li>
+<li>ConnectionSubtype</li>
+<li>ConnectionGender</li>
+<li>ConductorFunction</li>
+<li>CurrentContent3rdHarmonic</li>
+<li>Current</li>
+<li>Voltage</li>
+<li>Power</li>
+<li>Protocols</li>
+<li>HasConnector</li>
+<li>IsWelded</li>
+</ul>
+</li>
+<li>
+            <a href="Pset_DistributionPortTypeDuct.html">Pset_DistributionPortTypeDuct</a>
+            <code>DUCT</code>
+<ul>
+<li>ConnectionType</li>
+<li>ConnectionSubtype</li>
+<li>NominalWidth</li>
+<li>NominalHeight</li>
+<li>NominalThickness</li>
+<li>DryBulbTemperature</li>
+<li>WetBulbTemperature</li>
+<li>VolumetricFlowRate</li>
+<li>Velocity</li>
+<li>Pressure</li>
+</ul>
+</li>
+<li>
+            <a href="Pset_DistributionPortTypePipe.html">Pset_DistributionPortTypePipe</a>
+            <code>PIPE</code>
+<ul>
+<li>ConnectionType</li>
+<li>ConnectionSubtype</li>
+<li>NominalDiameter</li>
+<li>InnerDiameter</li>
+<li>OuterDiameter</li>
+<li>Temperature</li>
+<li>VolumetricFlowRate</li>
+<li>MassFlowRate</li>
+<li>FlowCondition</li>
+<li>Velocity</li>
+<li>Pressure</li>
+</ul>
+</li>
+<li>
+            <a href="Pset_Risk.html">Pset_Risk</a>
+            <ul>
+<li>RiskName</li>
+<li>RiskType</li>
+<li>NatureOfRisk</li>
+<li>RiskAssessmentMethodology</li>
+<li>UnmitigatedRiskLikelihood</li>
+<li>UnmitigatedRiskConsequence</li>
+<li>UnmitigatedRiskSignificance</li>
+<li>MitigationPlanned</li>
+<li>MitigatedRiskLikelihood</li>
+<li>MitigatedRiskConsequence</li>
+<li>MitigatedRiskSignificance</li>
+<li>MitigationProposed</li>
+<li>AssociatedProduct</li>
+<li>AssociatedActivity</li>
+<li>AssociatedLocation</li>
+</ul>
+</li>
+<li>
+            <a href="Pset_Tolerance.html">Pset_Tolerance</a>
+            <ul>
+<li>ToleranceDescription</li>
+<li>ToleranceBasis</li>
+<li>OverallTolerance</li>
+<li>HorizontalTolerance</li>
+<li>OrthogonalTolerance</li>
+<li>VerticalTolerance</li>
+<li>PlanarFlatness</li>
+<li>HorizontalFlatness</li>
+<li>ElevationalFlatness</li>
+<li>SideFlatness</li>
+<li>OverallOrthogonality</li>
+<li>HorizontalOrthogonality</li>
+<li>OrthogonalOrthogonality</li>
+<li>VerticalOrthogonality</li>
+<li>OverallStraightness</li>
+<li>HorizontalStraightness</li>
+<li>OrthogonalStraightness</li>
+<li>VerticalStraightness</li>
+</ul>
+</li>
+<li>
+            <a href="Pset_Uncertainty.html">Pset_Uncertainty</a>
+            <ul>
+<li>UncertaintyBasis</li>
+<li>UncertaintyDescription</li>
+<li>HorizontalUncertainty</li>
+<li>LinearUncertainty</li>
+<li>OrthogonalUncertainty</li>
+<li>VerticalUncertainty</li>
+</ul>
+</li>
+<li>
+            <a href="Pset_WiredCommunicationPortCommon.html">Pset_WiredCommunicationPortCommon</a>
+            <code>CABLE</code>
+<ul>
+<li>CommunicationStandard</li>
+<li>MaximumTransferRate</li>
+</ul>
+</li>
+<li>
+            <a href="Qto_BodyGeometryValidation.html">Qto_BodyGeometryValidation</a>
+            <ul>
+<li>GrossSurfaceArea</li>
+<li>NetSurfaceArea</li>
+<li>GrossVolume</li>
+<li>NetVolume</li>
+<li>SurfaceGenusBeforeFeatures</li>
+<li>SurfaceGenusAfterFeatures</li>
+</ul>
+</li>
+</ul>
+<h2><a class="anchor" id="6.2.3.8.5-Concept-usage"></a>
+    6.2.3.8.5 Concept usage
+<a class="link" href="#6.2.3.8.5-Concept-usage"><i data-feather="link"></i></a></h2>
+<figure><a class="anchor" id="Table-B"></a><table class="striped grouped concepts">
+<thead>
+<tr>
+<th>Concept</th>
+<th>Usage</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="group-inherited">
+<td colspan="3">
+                <a href="IfcRoot.html">IfcRoot</a>
+                <small>(2)</small>
+</td>
+</tr>
+<tr class="inherited" data-type="concept">
+<td data-label="Name">
+<a href="../concepts/Object_Attributes/Revision_Control/content.html">Revision Control</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<p>Ownership, history, and merge state is captured using <a href="IfcOwnerHistory.html">IfcOwnerHistory</a>.</p>
+</td>
+</tr>
+<tr class="inherited" data-type="concept">
+<td data-label="Name">
+<a href="../concepts/Object_Attributes/Software_Identity/content.html">Software Identity</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<p><a href="IfcRoot.html">IfcRoot</a> assigns the globally unique ID. In addition, it may also provide a name and description for the concept.</p>
+</td>
+</tr>
+<tr class="group-inherited">
+<td colspan="3">
+                <a href="IfcObjectDefinition.html">IfcObjectDefinition</a>
+                <small>(9)</small>
+</td>
+</tr>
+<tr class="inherited" data-type="concept">
+<td data-label="Name">
+<a href="../concepts/Object_Association/Classification_Association/content.html">Classification Association</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<p>Any object occurrence or object type can have a reference to a specific classification reference, i.e. to a particular facet within a classification system.</p>
+</td>
+</tr>
+<tr class="inherited" data-type="concept">
+<td data-label="Name">
+<a href="../concepts/Object_Composition/Aggregation/content.html">Aggregation</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<p class="search-skip">
+<em>No description available.</em>
+</p>
+</td>
+</tr>
+<tr class="inherited" data-type="concept">
+<td data-label="Name">
+<a href="../concepts/Object_Association/Approval_Association/content.html">Approval Association</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<p class="search-skip">
+<em>No description available.</em>
+</p>
+</td>
+</tr>
+<tr class="inherited" data-type="concept">
+<td data-label="Name">
+<a href="../concepts/Object_Association/Constraint_Association/content.html">Constraint Association</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<p class="search-skip">
+<em>No description available.</em>
+</p>
+</td>
+</tr>
+<tr class="inherited" data-type="concept">
+<td data-label="Name">
+<a href="../concepts/Object_Association/Document_Association/content.html">Document Association</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<p class="search-skip">
+<em>No description available.</em>
+</p>
+</td>
+</tr>
+<tr class="inherited" data-type="concept">
+<td data-label="Name">
+<a href="../concepts/Object_Association/Library_Association/content.html">Library Association</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<p class="search-skip">
+<em>No description available.</em>
+</p>
+</td>
+</tr>
+<tr class="inherited" data-type="concept">
+<td data-label="Name">
+<a href="../concepts/Object_Association/Material_Association/content.html">Material Association</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<p class="search-skip">
+<em>No description available.</em>
+</p>
+</td>
+</tr>
+<tr class="inherited" data-type="concept">
+<td data-label="Name">
+<a href="../concepts/Object_Association/Material_Association/Material_Single/content.html">Material Single</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<p class="search-skip">
+<em>No description available.</em>
+</p>
+</td>
+</tr>
+<tr class="inherited" data-type="concept">
+<td data-label="Name">
+<a href="../concepts/Object_Composition/Nesting/content.html">Nesting</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<p class="search-skip">
+<em>No description available.</em>
+</p>
+</td>
+</tr>
+<tr class="group-inherited">
+<td colspan="3">
+                <a href="IfcObject.html">IfcObject</a>
+                <small>(5)</small>
+</td>
+</tr>
+<tr class="inherited" data-type="concept">
+<td data-label="Name">
+<a href="../concepts/Object_Attributes/Object_Predefined_Type/content.html">Object Predefined Type</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<p class="search-skip">
+<em>No description available.</em>
+</p>
+</td>
+</tr>
+<tr class="inherited" data-type="concept">
+<td data-label="Name">
+<a href="../concepts/Object_Definition/Object_Typing/content.html">Object Typing</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<p>Any object occurrence can be typed by being assigned to a common object type utilizing this concept. A particular rule, restricting the applicable subtypes of <em><a href="IfcTypeObject.html">IfcTypeObject</a></em> that can be assigned, is introduced by overriding this concept at the level of subtypes of <em><a href="IfcObject.html">IfcObject</a></em>.</p>
+<p class="search-skip">This concept can be applied to the following resources:</p>
+<ul>
+<li>
+                        <a href="IfcTypeObject.html">IfcTypeObject</a>
+                    </li>
+</ul>
+</td>
+</tr>
+<tr class="inherited" data-type="concept">
+<td data-label="Name">
+<a href="../concepts/Object_Attributes/Object_User_Identity/content.html">Object User Identity</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<p>An attribute <em>Name</em> and optionally <em>Description</em> can be used for all subypes of <em><a href="IfcObject.html">IfcObject</a></em>. For those subtypes, that have an object type definition, such as <em><a href="IfcBeam.html">IfcBeam</a></em> - <em><a href="IfcBeamType.html">IfcBeamType</a></em>, the common <em>Name</em> and optionally <em>Description</em> is associated with the object type.</p>
+</td>
+</tr>
+<tr class="inherited" data-type="concept">
+<td data-label="Name">
+<a href="../concepts/Object_Definition/Property_Sets/Property_Sets_for_Objects/Property_Sets_with_Override/content.html">Property Sets with Override</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<p>Any object occurrence can hold property sets, either directly at the object occurrence as element specific property sets, or at the object type, as type property sets. In this case, the properties that are provided to the object occurrence are the combinations of element specific and type properties. In case that the same property (within the same property set) is defined both in occurrence and type properties, the property value of the occurrence property overrides the property value of the type property.</p>
+</td>
+</tr>
+<tr class="inherited" data-type="concept">
+<td data-label="Name">
+<a href="../concepts/Object_Assignment/Assignment_to_Group/content.html">Assignment to Group</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<p class="search-skip">
+<em>No description available.</em>
+</p>
+</td>
+</tr>
+<tr class="group-inherited">
+<td colspan="3">
+                <a href="IfcProduct.html">IfcProduct</a>
+                <small>(18)</small>
+</td>
+</tr>
+<tr class="inherited" data-type="concept">
+<td data-label="Name">
+<a href="../concepts/Product_Shape/Product_Geometric_Representation/Body_Geometry/content.html">Body Geometry</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<p>The body or solid model geometric representation of an <em><a href="IfcProduct.html">IfcProduct</a></em> is typically defined using a Tessellation or Brep. Subtypes may provide recommendations on other representation types that may be used. The following attribute values for the <em><a href="IfcShapeRepresentation.html">IfcShapeRepresentation</a></em> holding this geometric representation shall be used:</p>
+<ul>
+<li><em><a href="IfcShapeRepresentation.html">IfcShapeRepresentation</a>.RepresentationIdentifier</em> = 'Body'</li>
+<li><em><a href="IfcShapeRepresentation.html">IfcShapeRepresentation</a>.RepresentationType</em> = Typically 'Tessellation' or 'Brep'</li>
+</ul>
+</td>
+</tr>
+<tr class="inherited" data-type="concept">
+<td data-label="Name">
+<a href="../concepts/Product_Shape/Product_Geometric_Representation/content.html">Product Geometric Representation</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<p>The geometric representation of any <em><a href="IfcProduct.html">IfcProduct</a></em> is provided by the <em><a href="IfcProductDefinitionShape.html">IfcProductDefinitionShape</a></em> allowing multiple geometric representations. It uses the <em>Product Placement</em> concept utilizing <em><a href="IfcLocalPlacement.html">IfcLocalPlacement</a></em> to establish an object coordinate system, in which all geometric representations are founded.</p>
+<aside class="aside-note"><mark>NOTE</mark> A detailed specification of how to apply the local placement and which shape representations are applicable is provided at the level of subtypes of <em><a href="IfcProduct.html">IfcProduct</a></em> and is further determined by the model view definition and implementer agreements.</aside>
+</td>
+</tr>
+<tr class="inherited" data-type="concept">
+<td data-label="Name">
+<a href="../concepts/Product_Shape/Product_Geometry_Colour/content.html">Product Geometry Colour</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<p class="search-skip">
+<em>No description available.</em>
+</p>
+</td>
+</tr>
+<tr class="inherited" data-type="concept">
+<td data-label="Name">
+<a href="../concepts/Product_Shape/Product_Geometry_Layer/content.html">Product Geometry Layer</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<p class="search-skip">
+<em>No description available.</em>
+</p>
+</td>
+</tr>
+<tr class="inherited" data-type="concept">
+<td data-label="Name">
+<a href="../concepts/Object_Connectivity/Product_Relative_Positioning/content.html">Product Relative Positioning</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<p>If the <em><a href="IfcProduct.html">IfcProduct</a></em> <em>Product Placement</em> is placed relative to an <em><a href="IfcPositioningElement.html">IfcPositioningElement</a></em> this relationship covers the information on which <em><a href="IfcPositioningElement.html">IfcPositioningElement</a></em> positions the <em><a href="IfcProduct.html">IfcProduct</a></em>.</p>
+</td>
+</tr>
+<tr class="inherited" data-type="concept">
+<td data-label="Name">
+<a href="../concepts/Object_Connectivity/Product_Span_Positioning/content.html">Product Span Positioning</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<p class="search-skip">
+<em>No description available.</em>
+</p>
+</td>
+</tr>
+<tr class="inherited" data-type="concept">
+<td data-label="Name">
+<a href="../concepts/Product_Shape/Product_Geometric_Representation/Box_Geometry/content.html">Box Geometry</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<p class="search-skip">
+<em>No description available.</em>
+</p>
+</td>
+</tr>
+<tr class="inherited" data-type="concept">
+<td data-label="Name">
+<a href="../concepts/Product_Shape/Product_Geometric_Representation/CoG_Geometry/content.html">CoG Geometry</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<p class="search-skip">
+<em>No description available.</em>
+</p>
+</td>
+</tr>
+<tr class="inherited" data-type="concept">
+<td data-label="Name">
+<a href="../concepts/Product_Shape/Product_Geometric_Representation/Mapped_Geometry/content.html">Mapped Geometry</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<p class="search-skip">
+<em>No description available.</em>
+</p>
+</td>
+</tr>
+<tr class="inherited" data-type="concept">
+<td data-label="Name">
+<a href="../concepts/Object_Definition/Object_Typing/content.html">Object Typing</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<aside class="inherited search-skip">
+<small>
+<i data-feather="paperclip"></i>
+                        This is a further elaboration on an inherited concept.
+                    </small>
+</aside>
+<p class="search-skip">This concept can be applied to the following resources:</p>
+<ul>
+<li>
+                        <a href="IfcTypeProduct.html">IfcTypeProduct</a>
+                    </li>
+</ul>
+</td>
+</tr>
+<tr class="inherited" data-type="concept">
+<td data-label="Name">
+<a href="../concepts/Product_Shape/Product_Placement/Product_Local_Placement/content.html">Product Local Placement</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<p class="search-skip">
+<em>No description available.</em>
+</p>
+</td>
+</tr>
+<tr class="inherited" data-type="concept">
+<td data-label="Name">
+<a href="../concepts/Product_Shape/Product_Topology_Representation/content.html">Product Topology Representation</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<p class="search-skip">
+<em>No description available.</em>
+</p>
+</td>
+</tr>
+<tr class="inherited" data-type="concept">
+<td data-label="Name">
+<a href="../concepts/Object_Definition/Property_Sets/Property_Sets_for_Objects/content.html">Property Sets for Objects</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<p class="search-skip">This concept can be applied to the following resources:</p>
+<ul>
+<li>
+                        <a href="Pset_Tolerance.html">Pset_Tolerance</a>
+                    </li>
+<li>
+                        <a href="Pset_Risk.html">Pset_Risk</a>
+                    </li>
+<li>
+                        <a href="Pset_Uncertainty.html">Pset_Uncertainty</a>
+                    </li>
+</ul>
+</td>
+</tr>
+<tr class="inherited" data-type="concept">
+<td data-label="Name">
+<a href="../concepts/Object_Definition/Quantity_Sets/content.html">Quantity Sets</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<p class="search-skip">This concept can be applied to the following resources:</p>
+<ul>
+<li>
+                        <a href="Qto_BodyGeometryValidation.html">Qto_BodyGeometryValidation</a>
+                    </li>
+</ul>
+</td>
+</tr>
+<tr class="inherited" data-type="concept">
+<td data-label="Name">
+<a href="../concepts/Product_Shape/Product_Geometric_Representation/Reference_Geometry/content.html">Reference Geometry</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<p class="search-skip">
+<em>No description available.</em>
+</p>
+</td>
+</tr>
+<tr class="inherited" data-type="concept">
+<td data-label="Name">
+<a href="../concepts/Product_Shape/Product_Geometric_Representation/Reference_Geometry/Reference_SweptSolid_Geometry/content.html">Reference SweptSolid Geometry</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<p class="search-skip">
+<em>No description available.</em>
+</p>
+</td>
+</tr>
+<tr class="inherited" data-type="concept">
+<td data-label="Name">
+<a href="../concepts/Product_Shape/Product_Geometric_Representation/Reference_Geometry/Reference_SweptSolid_Geometry/Reference_SweptSolid_PolyCurve_Geometry/content.html">Reference SweptSolid PolyCurve Geometry</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<p class="search-skip">
+<em>No description available.</em>
+</p>
+</td>
+</tr>
+<tr class="inherited" data-type="concept">
+<td data-label="Name">
+<a href="../concepts/Product_Shape/Product_Geometric_Representation/Reference_Geometry/Reference_Tessellation_Geometry/content.html">Reference Tessellation Geometry</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<p class="search-skip">
+<em>No description available.</em>
+</p>
+</td>
+</tr>
+<tr class="preview">
+<td colspan="4">
+<small class="show-inherited" data-type="concept">
+<i data-feather="eye-off"></i>
+                    Click to show 34 hidden inherited concepts
+                </small>
+<small class="hide-inherited" data-type="concept">
+<i data-feather="eye-off"></i>
+                    Click to hide 34 inherited concepts
+                </small>
+</td>
+</tr>
+<tr class="group">
+<td colspan="3">
+                <a href="IfcDistributionPort.html">IfcDistributionPort</a>
+                <small>(6)</small>
+</td>
+</tr>
+<tr>
+<td data-label="Name">
+<a href="../concepts/Object_Connectivity/Element_Connectivity/Port_Connectivity/content.html">Port Connectivity</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<p><strong><a href="IfcDistributionPort.html">IfcDistributionPort</a></strong> may be connected to other objects as follows using the indicated relationship:</p>
+<ul>
+<li><strong><a href="IfcDistributionPort.html">IfcDistributionPort</a></strong> (<a href="IfcRelConnectsPorts.html">IfcRelConnectsPorts</a>) : Indicates a connection to another port having the same type and opposite flow direction. For port connections between elements, the RelatingPort is set to a port having <em>FlowDirection=SOURCE</em> and the RelatedPort is set to a port having <em>FlowDirection=SINK</em>. For aggregation scenarios, ports on a device may be mapped to aggregated devices within, in which case ports on the outer device indicate a single FlowDirection but have an additional connection internally to a port on an aggregated inner device. Refer to <a href="IfcUnitaryEquipment.html">IfcUnitaryEquipment</a> for an example.</li>
+<li><a href="IfcDistributionElement.html">IfcDistributionElement</a> (through <a href="IfcRelConnectsPortToElement.html">IfcRelConnectsPortToElement</a>): For dynamic ports, indicates the containing element.</li>
+</ul>
+<p>Figure C illustrates distribution port connectivity.</p>
+<figure><a class="anchor" id="Figure-C-Distribution-port-connectivity"></a><img alt="Connection Use Definition" src="../figures/ifcdistributionport-connection.png"/><figcaption>
+Figure C — Distribution port connectivity<a class="link" href="#Figure-C-Distribution-port-connectivity"><i data-feather="link"></i></a></figcaption></figure>
+</td>
+</tr>
+<tr>
+<td data-label="Name">
+<a href="../concepts/Object_Assignment/Assignment_to_Group/Port_to_Distribution_System/content.html">Port to Distribution System</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<p class="search-skip">
+<em>No description available.</em>
+</p>
+</td>
+</tr>
+<tr>
+<td data-label="Name">
+<a href="../concepts/Object_Assignment/Product_Assignment/content.html">Product Assignment</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<p>The <strong><a href="IfcDistributionPort.html">IfcDistributionPort</a></strong> may be assigned to the following entities using relationships as indicated:</p>
+<ul>
+<li><a href="IfcDistributionSystem.html">IfcDistributionSystem</a> (through <a href="IfcRelAssignsToGroup.html">IfcRelAssignsToGroup</a>): Indicates a system containing interconnected devices.</li>
+<li><a href="IfcPerformanceHistory.html">IfcPerformanceHistory</a>&lt; (through <a href="IfcRelAssignsToControl.html">IfcRelAssignsToControl</a>): Indicates real time or historical information captured for the device.</li>
+</ul>
+<p class="search-skip">This concept can be applied to the following resources:</p>
+<ul>
+<li>
+                        <a href="IfcDistributionSystem.html">IfcDistributionSystem</a>
+                         - Indicates a system that is hosted by the port, as the origination.
+                    </li>
+<li>
+                        <a href="IfcDistributionCircuit.html">IfcDistributionCircuit</a>
+                         - Indicates a circuit that is switched by the port, as the origination.
+                    </li>
+</ul>
+</td>
+</tr>
+<tr>
+<td data-label="Name">
+<a href="../concepts/Product_Shape/Product_Placement/Product_Local_Placement/content.html">Product Local Placement</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<aside class="inherited search-skip">
+<small>
+<i data-feather="paperclip"></i>
+                        This is a further elaboration on an inherited concept.
+                    </small>
+</aside>
+<p>The placement of a port indicates the position and orientation of how it may connect to a compatible port on another product. The placement shall be relative to the nesting <a href="IfcDistributionElement.html">IfcDistributionElement</a>, <a href="IfcDistributionElementType.html">IfcDistributionElementType</a>, or enclosing <a href="IfcDistributionPort.html">IfcDistributionPort</a>.</p>
+<p>The Location is the midpoint of the physical connection, unless otherwise indicated by cardinal point on a material profile.</p>
+<p>The Axis points in the direction of the physical connection away from the product if FlowDirection equals SOURCE (or SOURCEANDSINK or NOTDEFINED), or points opposite direction (to the product) if the FlowDirection equals SINK.</p>
+<aside class="aside-note"><mark>NOTE</mark> The rationale for positioning the Axis in the direction of flow is to allow for the same geometry to be used, such as for connectors with polarized cross-section.</aside>
+<p>The RefDirection points in the direction of the local X axis of the material profile, where the local Y axis points up if looking towards the Axis where the local X axis points right.</p>
+<p>Upon connecting elements through ports with rigid connections, each object shall be aligned such that the effective Location, Axis, and RefDirection of each port is aligned to be equal (with exception for circular profiles where the RefDirection need not be equal).</p>
+</td>
+</tr>
+<tr>
+<td data-label="Name">
+<a href="../concepts/Object_Definition/Property_Sets/Property_Sets_for_Objects/content.html">Property Sets for Objects</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<aside class="inherited search-skip">
+<small>
+<i data-feather="paperclip"></i>
+                        This is a further elaboration on an inherited concept.
+                    </small>
+</aside>
+<p class="search-skip">This concept can be applied to the following resources:</p>
+<ul>
+<li>
+                        <a href="Pset_DistributionPortTypePipe.html">Pset_DistributionPortTypePipe</a>
+                        (only applies to <code>PIPE)
+                    </code></li>
+<li>
+                        <a href="Pset_DistributionPortTypeDuct.html">Pset_DistributionPortTypeDuct</a>
+                        (only applies to <code>DUCT)
+                    </code></li>
+<li>
+                        <a href="Pset_DistributionPortTypeCable.html">Pset_DistributionPortTypeCable</a>
+                        (only applies to <code>CABLE)
+                    </code></li>
+<li>
+                        <a href="Pset_WiredCommunicationPortCommon.html">Pset_WiredCommunicationPortCommon</a>
+                        (only applies to <code>CABLE)
+                    </code></li>
+<li>
+                        <a href="Pset_DistributionPortCommon.html">Pset_DistributionPortCommon</a>
+                    </li>
+</ul>
+</td>
+</tr>
+<tr>
+<td data-label="Name">
+<a href="../concepts/Object_Definition/Property_Sets/Property_Sets_for_Performance/content.html">Property Sets for Performance</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<p class="search-skip">This concept can be applied to the following resources:</p>
+<ul>
+<li>
+                        <a href="Pset_DistributionPortPHistoryPipe.html">Pset_DistributionPortPHistoryPipe</a>
+                        (only applies to <code>PIPE)
+                    </code></li>
+<li>
+                        <a href="Pset_DistributionPortPHistoryCable.html">Pset_DistributionPortPHistoryCable</a>
+                        (only applies to <code>CABLE)
+                    </code></li>
+<li>
+                        <a href="Pset_DistributionPortPHistoryDuct.html">Pset_DistributionPortPHistoryDuct</a>
+                        (only applies to <code>DUCT)
+                    </code></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table><figcaption>Table B<a class="link" href="#Table-B"><i data-feather="link"></i></a></figcaption></figure>
+<h2><a class="anchor" id="6.2.3.8.6-Formal-representation"></a>
+    6.2.3.8.6 Formal representation
+<a class="link" href="#6.2.3.8.6-Formal-representation"><i data-feather="link"></i></a></h2>
 <pre><code class="language-express pygments" data-highlighted="generator"><span class="tok-kd">ENTITY</span> <a href="IfcDistributionPort.html"><span class="tok-nc">IfcDistributionPort</span></a>
 <span class="tok-k">SUBTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><a href="IfcPort.html"><span class="tok-nc">IfcPort</span></a><span class="tok-p">)</span><span class="tok-p">;</span>
 <span class="tok-n">FlowDirection</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <a href="IfcFlowDirectionEnum.html"><span class="tok-nc">IfcFlowDirectionEnum</span></a><span class="tok-p">;</span>
 <span class="tok-n">PredefinedType</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <a href="IfcDistributionPortTypeEnum.html"><span class="tok-nc">IfcDistributionPortTypeEnum</span></a><span class="tok-p">;</span>
 <span class="tok-n">SystemType</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <a href="IfcDistributionSystemEnum.html"><span class="tok-nc">IfcDistributionSystemEnum</span></a><span class="tok-p">;</span>
 <span class="tok-kd">END_ENTITY</span><span class="tok-p">;</span></code></pre>
-<h2><a class="anchor" id="6.2.3.8.5-References"></a>
-    6.2.3.8.5 References
-<a class="link" href="#6.2.3.8.5-References"><i data-feather="link"></i></a></h2>
+<h2><a class="anchor" id="6.2.3.8.7-References"></a>
+    6.2.3.8.7 References
+<a class="link" href="#6.2.3.8.7-References"><i data-feather="link"></i></a></h2>
 <ul class="references">
 <li><i data-feather="paperclip"></i><a href="IfcPort.html">IfcPort</a></li>
 </ul>

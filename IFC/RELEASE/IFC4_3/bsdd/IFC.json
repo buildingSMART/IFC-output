@@ -12,7 +12,7 @@
     "MoreInfoUrl": "https://ifc43-docs.standards.buildingsmart.org/",
     "QualityAssuranceProcedure": "IFC is a standardized digital description            of built environment created by buildingSMART International and its            community members. For more information read ISO 16739 and IFC schema documentation.",
     "QualityAssuranceProcedureUrl": "https://technical.buildingsmart.org/standards/ifc/",
-    "ReleaseDate": "2026-04-28",
+    "ReleaseDate": "2026-05-26",
     "Classes": [
         {
             "Code": "IfcPcurve",
@@ -1906,14 +1906,286 @@
             "Name": "TypeProcess",
             "Definition": "",
             "ClassType": "Class",
-            "ClassProperties": []
+            "ClassProperties": [
+                {
+                    "PropertyCode": "RiskName",
+                    "Code": "RiskName_from_Risk",
+                    "PropertySet": "Pset_Risk"
+                },
+                {
+                    "PropertyCode": "RiskType",
+                    "Code": "RiskType_from_Risk",
+                    "PropertySet": "Pset_Risk"
+                },
+                {
+                    "PropertyCode": "NatureOfRisk",
+                    "Code": "NatureOfRisk_from_Risk",
+                    "PropertySet": "Pset_Risk"
+                },
+                {
+                    "PropertyCode": "RiskAssessmentMethodology",
+                    "Code": "RiskAssessmentMethodology_from_Risk",
+                    "PropertySet": "Pset_Risk"
+                },
+                {
+                    "PropertyCode": "UnmitigatedRiskLikelihood",
+                    "Code": "UnmitigatedRiskLikelihood_from_Risk",
+                    "PropertySet": "Pset_Risk"
+                },
+                {
+                    "PropertyCode": "UnmitigatedRiskConsequence",
+                    "Code": "UnmitigatedRiskConsequence_from_Risk",
+                    "PropertySet": "Pset_Risk"
+                },
+                {
+                    "PropertyCode": "UnmitigatedRiskSignificance",
+                    "Code": "UnmitigatedRiskSignificance_from_Risk",
+                    "PropertySet": "Pset_Risk"
+                },
+                {
+                    "PropertyCode": "MitigationPlanned",
+                    "Code": "MitigationPlanned_from_Risk",
+                    "PropertySet": "Pset_Risk"
+                },
+                {
+                    "PropertyCode": "MitigatedRiskLikelihood",
+                    "Code": "MitigatedRiskLikelihood_from_Risk",
+                    "PropertySet": "Pset_Risk"
+                },
+                {
+                    "PropertyCode": "MitigatedRiskConsequence",
+                    "Code": "MitigatedRiskConsequence_from_Risk",
+                    "PropertySet": "Pset_Risk"
+                },
+                {
+                    "PropertyCode": "MitigatedRiskSignificance",
+                    "Code": "MitigatedRiskSignificance_from_Risk",
+                    "PropertySet": "Pset_Risk"
+                },
+                {
+                    "PropertyCode": "MitigationProposed",
+                    "Code": "MitigationProposed_from_Risk",
+                    "PropertySet": "Pset_Risk"
+                },
+                {
+                    "PropertyCode": "AssociatedProduct",
+                    "Code": "AssociatedProduct_from_Risk",
+                    "PropertySet": "Pset_Risk"
+                },
+                {
+                    "PropertyCode": "AssociatedActivity",
+                    "Code": "AssociatedActivity_from_Risk",
+                    "PropertySet": "Pset_Risk"
+                },
+                {
+                    "PropertyCode": "AssociatedLocation",
+                    "Code": "AssociatedLocation_from_Risk",
+                    "PropertySet": "Pset_Risk"
+                }
+            ]
         },
         {
             "Code": "IfcTypeProduct",
             "Name": "TypeProduct",
             "Definition": "",
             "ClassType": "Class",
-            "ClassProperties": []
+            "ClassProperties": [
+                {
+                    "PropertyCode": "ToleranceDescription",
+                    "Code": "ToleranceDescription_from_Tolerance",
+                    "PropertySet": "Pset_Tolerance"
+                },
+                {
+                    "PropertyCode": "ToleranceBasis",
+                    "Code": "ToleranceBasis_from_Tolerance",
+                    "PropertySet": "Pset_Tolerance"
+                },
+                {
+                    "PropertyCode": "OverallTolerance",
+                    "Code": "OverallTolerance_from_Tolerance",
+                    "PropertySet": "Pset_Tolerance"
+                },
+                {
+                    "PropertyCode": "HorizontalTolerance",
+                    "Code": "HorizontalTolerance_from_Tolerance",
+                    "PropertySet": "Pset_Tolerance"
+                },
+                {
+                    "PropertyCode": "OrthogonalTolerance",
+                    "Code": "OrthogonalTolerance_from_Tolerance",
+                    "PropertySet": "Pset_Tolerance"
+                },
+                {
+                    "PropertyCode": "VerticalTolerance",
+                    "Code": "VerticalTolerance_from_Tolerance",
+                    "PropertySet": "Pset_Tolerance"
+                },
+                {
+                    "PropertyCode": "PlanarFlatness",
+                    "Code": "PlanarFlatness_from_Tolerance",
+                    "PropertySet": "Pset_Tolerance"
+                },
+                {
+                    "PropertyCode": "HorizontalFlatness",
+                    "Code": "HorizontalFlatness_from_Tolerance",
+                    "PropertySet": "Pset_Tolerance"
+                },
+                {
+                    "PropertyCode": "ElevationalFlatness",
+                    "Code": "ElevationalFlatness_from_Tolerance",
+                    "PropertySet": "Pset_Tolerance"
+                },
+                {
+                    "PropertyCode": "SideFlatness",
+                    "Code": "SideFlatness_from_Tolerance",
+                    "PropertySet": "Pset_Tolerance"
+                },
+                {
+                    "PropertyCode": "OverallOrthogonality",
+                    "Code": "OverallOrthogonality_from_Tolerance",
+                    "PropertySet": "Pset_Tolerance"
+                },
+                {
+                    "PropertyCode": "HorizontalOrthogonality",
+                    "Code": "HorizontalOrthogonality_from_Tolerance",
+                    "PropertySet": "Pset_Tolerance"
+                },
+                {
+                    "PropertyCode": "OrthogonalOrthogonality",
+                    "Code": "OrthogonalOrthogonality_from_Tolerance",
+                    "PropertySet": "Pset_Tolerance"
+                },
+                {
+                    "PropertyCode": "VerticalOrthogonality",
+                    "Code": "VerticalOrthogonality_from_Tolerance",
+                    "PropertySet": "Pset_Tolerance"
+                },
+                {
+                    "PropertyCode": "OverallStraightness",
+                    "Code": "OverallStraightness_from_Tolerance",
+                    "PropertySet": "Pset_Tolerance"
+                },
+                {
+                    "PropertyCode": "HorizontalStraightness",
+                    "Code": "HorizontalStraightness_from_Tolerance",
+                    "PropertySet": "Pset_Tolerance"
+                },
+                {
+                    "PropertyCode": "OrthogonalStraightness",
+                    "Code": "OrthogonalStraightness_from_Tolerance",
+                    "PropertySet": "Pset_Tolerance"
+                },
+                {
+                    "PropertyCode": "VerticalStraightness",
+                    "Code": "VerticalStraightness_from_Tolerance",
+                    "PropertySet": "Pset_Tolerance"
+                },
+                {
+                    "PropertyCode": "UncertaintyBasis",
+                    "Code": "UncertaintyBasis_from_Uncertainty",
+                    "PropertySet": "Pset_Uncertainty"
+                },
+                {
+                    "PropertyCode": "UncertaintyDescription",
+                    "Code": "UncertaintyDescription_from_Uncertainty",
+                    "PropertySet": "Pset_Uncertainty"
+                },
+                {
+                    "PropertyCode": "HorizontalUncertainty",
+                    "Code": "HorizontalUncertainty_from_Uncertainty",
+                    "PropertySet": "Pset_Uncertainty"
+                },
+                {
+                    "PropertyCode": "LinearUncertainty",
+                    "Code": "LinearUncertainty_from_Uncertainty",
+                    "PropertySet": "Pset_Uncertainty"
+                },
+                {
+                    "PropertyCode": "OrthogonalUncertainty",
+                    "Code": "OrthogonalUncertainty_from_Uncertainty",
+                    "PropertySet": "Pset_Uncertainty"
+                },
+                {
+                    "PropertyCode": "VerticalUncertainty",
+                    "Code": "VerticalUncertainty_from_Uncertainty",
+                    "PropertySet": "Pset_Uncertainty"
+                },
+                {
+                    "PropertyCode": "RiskName",
+                    "Code": "RiskName_from_Risk",
+                    "PropertySet": "Pset_Risk"
+                },
+                {
+                    "PropertyCode": "RiskType",
+                    "Code": "RiskType_from_Risk",
+                    "PropertySet": "Pset_Risk"
+                },
+                {
+                    "PropertyCode": "NatureOfRisk",
+                    "Code": "NatureOfRisk_from_Risk",
+                    "PropertySet": "Pset_Risk"
+                },
+                {
+                    "PropertyCode": "RiskAssessmentMethodology",
+                    "Code": "RiskAssessmentMethodology_from_Risk",
+                    "PropertySet": "Pset_Risk"
+                },
+                {
+                    "PropertyCode": "UnmitigatedRiskLikelihood",
+                    "Code": "UnmitigatedRiskLikelihood_from_Risk",
+                    "PropertySet": "Pset_Risk"
+                },
+                {
+                    "PropertyCode": "UnmitigatedRiskConsequence",
+                    "Code": "UnmitigatedRiskConsequence_from_Risk",
+                    "PropertySet": "Pset_Risk"
+                },
+                {
+                    "PropertyCode": "UnmitigatedRiskSignificance",
+                    "Code": "UnmitigatedRiskSignificance_from_Risk",
+                    "PropertySet": "Pset_Risk"
+                },
+                {
+                    "PropertyCode": "MitigationPlanned",
+                    "Code": "MitigationPlanned_from_Risk",
+                    "PropertySet": "Pset_Risk"
+                },
+                {
+                    "PropertyCode": "MitigatedRiskLikelihood",
+                    "Code": "MitigatedRiskLikelihood_from_Risk",
+                    "PropertySet": "Pset_Risk"
+                },
+                {
+                    "PropertyCode": "MitigatedRiskConsequence",
+                    "Code": "MitigatedRiskConsequence_from_Risk",
+                    "PropertySet": "Pset_Risk"
+                },
+                {
+                    "PropertyCode": "MitigatedRiskSignificance",
+                    "Code": "MitigatedRiskSignificance_from_Risk",
+                    "PropertySet": "Pset_Risk"
+                },
+                {
+                    "PropertyCode": "MitigationProposed",
+                    "Code": "MitigationProposed_from_Risk",
+                    "PropertySet": "Pset_Risk"
+                },
+                {
+                    "PropertyCode": "AssociatedProduct",
+                    "Code": "AssociatedProduct_from_Risk",
+                    "PropertySet": "Pset_Risk"
+                },
+                {
+                    "PropertyCode": "AssociatedActivity",
+                    "Code": "AssociatedActivity_from_Risk",
+                    "PropertySet": "Pset_Risk"
+                },
+                {
+                    "PropertyCode": "AssociatedLocation",
+                    "Code": "AssociatedLocation_from_Risk",
+                    "PropertySet": "Pset_Risk"
+                }
+            ]
         },
         {
             "Code": "IfcActionRequest",

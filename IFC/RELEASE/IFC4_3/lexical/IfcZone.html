@@ -18,7 +18,7 @@
                         padding-top: 0px;
                         float: left;
                     " width="100"/>
-<p style="display: inline-block; vertical-align: top;">IFC 4.3.2.20260428 (IFC4X3_ADD2)
+<p style="display: inline-block; vertical-align: top;">IFC 4.3.2.20260526 (IFC4X3_ADD2)
                             <small>under development</small>
 </p>
 <ul>
@@ -850,9 +850,608 @@
 </tr>
 </tbody>
 </table><figcaption>Table B<a class="link" href="#Table-B"><i data-feather="link"></i></a></figcaption></figure>
-<h2><a class="anchor" id="5.4.3.82.5-Formal-representation"></a>
-    5.4.3.82.5 Formal representation
-<a class="link" href="#5.4.3.82.5-Formal-representation"><i data-feather="link"></i></a></h2>
+<h2><a class="anchor" id="5.4.3.82.5-Property-sets"></a>
+    5.4.3.82.5 Property sets
+<a class="link" href="#5.4.3.82.5-Property-sets"><i data-feather="link"></i></a></h2>
+<ul class="psets">
+<li>
+            <a href="Pset_AirSideSystemInformation.html">Pset_AirSideSystemInformation</a>
+            <ul>
+<li>Description</li>
+<li>AirSideSystemType</li>
+<li>AirSideSystemDistributionType</li>
+<li>TotalAirFlow</li>
+<li>EnergyGainTotal</li>
+<li>AirFlowSensible</li>
+<li>EnergyGainSensible</li>
+<li>EnergyLoss</li>
+<li>InfiltrationDiversitySummer</li>
+<li>InfiltrationDiversityWinter</li>
+<li>ApplianceDiversity</li>
+<li>HeatingTemperatureDelta</li>
+<li>CoolingTemperatureDelta</li>
+<li>Ventilation</li>
+<li>FanPower</li>
+</ul>
+</li>
+<li>
+            <a href="Pset_Condition.html">Pset_Condition</a>
+            <ul>
+<li>AssessmentDate</li>
+<li>AssessmentCondition</li>
+<li>AssessmentDescription</li>
+<li>AssessmentType</li>
+<li>AssessmentMethod</li>
+<li>LastAssessmentReport</li>
+<li>NextAssessmentDate</li>
+<li>AssessmentFrequency</li>
+</ul>
+</li>
+<li>
+            <a href="Pset_InstallationOccurrence.html">Pset_InstallationOccurrence</a>
+            <ul>
+<li>InstallationDate</li>
+<li>AcceptanceDate</li>
+<li>PutIntoOperationDate</li>
+</ul>
+</li>
+<li>
+            <a href="Pset_MaintenanceStrategy.html">Pset_MaintenanceStrategy</a>
+            <ul>
+<li>AssetCriticality</li>
+<li>AssetFrailty</li>
+<li>AssetPriority</li>
+<li>MonitoringType</li>
+<li>AccidentResponse</li>
+</ul>
+</li>
+<li>
+            <a href="Pset_MaintenanceTriggerCondition.html">Pset_MaintenanceTriggerCondition</a>
+            <ul>
+<li>ConditionTargetPerformance</li>
+<li>ConditionMaintenanceLevel</li>
+<li>ConditionReplacementLevel</li>
+<li>ConditionDisposalLevel</li>
+</ul>
+</li>
+<li>
+            <a href="Pset_MaintenanceTriggerDuration.html">Pset_MaintenanceTriggerDuration</a>
+            <ul>
+<li>DurationTargetPerformance</li>
+<li>DurationMaintenanceLevel</li>
+<li>DurationReplacementLevel</li>
+<li>DurationDisposalLevel</li>
+</ul>
+</li>
+<li>
+            <a href="Pset_MaintenanceTriggerPerformance.html">Pset_MaintenanceTriggerPerformance</a>
+            <ul>
+<li>TargetPerformance</li>
+<li>PerformanceMaintenanceLevel</li>
+<li>ReplacementLevel</li>
+<li>DisposalLevel</li>
+</ul>
+</li>
+<li>
+            <a href="Pset_ProcessCapacity.html">Pset_ProcessCapacity</a>
+            <ul>
+<li>ProcessItem</li>
+<li>ProcessCapacity</li>
+<li>ProcessPerformance</li>
+<li>DownstreamConnections</li>
+<li>UpstreamConnections</li>
+</ul>
+</li>
+<li>
+            <a href="Pset_RepairOccurrence.html">Pset_RepairOccurrence</a>
+            <ul>
+<li>RepairContent</li>
+<li>RepairDate</li>
+<li>MeanTimeToRepair</li>
+</ul>
+</li>
+<li>
+            <a href="Pset_Risk.html">Pset_Risk</a>
+            <ul>
+<li>RiskName</li>
+<li>RiskType</li>
+<li>NatureOfRisk</li>
+<li>RiskAssessmentMethodology</li>
+<li>UnmitigatedRiskLikelihood</li>
+<li>UnmitigatedRiskConsequence</li>
+<li>UnmitigatedRiskSignificance</li>
+<li>MitigationPlanned</li>
+<li>MitigatedRiskLikelihood</li>
+<li>MitigatedRiskConsequence</li>
+<li>MitigatedRiskSignificance</li>
+<li>MitigationProposed</li>
+<li>AssociatedProduct</li>
+<li>AssociatedActivity</li>
+<li>AssociatedLocation</li>
+</ul>
+</li>
+<li>
+            <a href="Pset_ServiceLifeFactors.html">Pset_ServiceLifeFactors</a>
+            <ul>
+<li>QualityOfComponents</li>
+<li>DesignLevel</li>
+<li>WorkExecutionLevel</li>
+<li>IndoorEnvironment</li>
+<li>OutdoorEnvironment</li>
+<li>InUseConditions</li>
+<li>MaintenanceLevel</li>
+</ul>
+</li>
+<li>
+            <a href="Pset_SpaceFireSafetyRequirements.html">Pset_SpaceFireSafetyRequirements</a>
+            <ul>
+<li>FireRiskFactor</li>
+<li>FlammableStorage</li>
+<li>FireExit</li>
+<li>SprinklerProtection</li>
+<li>SprinklerProtectionAutomatic</li>
+<li>AirPressurization</li>
+</ul>
+</li>
+<li>
+            <a href="Pset_SpaceHVACDesign.html">Pset_SpaceHVACDesign</a>
+            <ul>
+<li>TemperatureSetPoint</li>
+<li>TemperatureMax</li>
+<li>TemperatureMin</li>
+<li>TemperatureSummerMax</li>
+<li>TemperatureSummerMin</li>
+<li>TemperatureWinterMax</li>
+<li>TemperatureWinterMin</li>
+<li>HumiditySetPoint</li>
+<li>HumidityMax</li>
+<li>HumidityMin</li>
+<li>HumiditySummer</li>
+<li>HumidityWinter</li>
+<li>DiscontinuedHeating</li>
+<li>NaturalVentilation</li>
+<li>NaturalVentilationRate</li>
+<li>MechanicalVentilation</li>
+<li>MechanicalVentilationRate</li>
+<li>AirConditioning</li>
+<li>AirConditioningCentral</li>
+<li>AirHandlingName</li>
+</ul>
+</li>
+<li>
+            <a href="Pset_SpaceLightingDesign.html">Pset_SpaceLightingDesign</a>
+            <ul>
+<li>ArtificialLighting</li>
+<li>Illuminance</li>
+</ul>
+</li>
+<li>
+            <a href="Pset_SpaceOccupancyRequirements.html">Pset_SpaceOccupancyRequirements</a>
+            <ul>
+<li>OccupancyType</li>
+<li>OccupancyNumber</li>
+<li>OccupancyNumberPeak</li>
+<li>OccupancyTimePerDay</li>
+<li>AreaPerOccupant</li>
+<li>MinimumHeadroom</li>
+<li>IsOutlookDesirable</li>
+</ul>
+</li>
+<li>
+            <a href="Pset_ZoneCommon.html">Pset_ZoneCommon</a>
+            <ul>
+<li>Reference</li>
+<li>IsExternal</li>
+<li>GrossPlannedArea</li>
+<li>NetPlannedArea</li>
+<li>PubliclyAccessible</li>
+<li>HandicapAccessible</li>
+</ul>
+</li>
+</ul>
+<h2><a class="anchor" id="5.4.3.82.6-Concept-usage"></a>
+    5.4.3.82.6 Concept usage
+<a class="link" href="#5.4.3.82.6-Concept-usage"><i data-feather="link"></i></a></h2>
+<figure><a class="anchor" id="Table-C"></a><table class="striped grouped concepts">
+<thead>
+<tr>
+<th>Concept</th>
+<th>Usage</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="group-inherited">
+<td colspan="3">
+                <a href="IfcRoot.html">IfcRoot</a>
+                <small>(2)</small>
+</td>
+</tr>
+<tr class="inherited" data-type="concept">
+<td data-label="Name">
+<a href="../concepts/Object_Attributes/Revision_Control/content.html">Revision Control</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<p>Ownership, history, and merge state is captured using <a href="IfcOwnerHistory.html">IfcOwnerHistory</a>.</p>
+</td>
+</tr>
+<tr class="inherited" data-type="concept">
+<td data-label="Name">
+<a href="../concepts/Object_Attributes/Software_Identity/content.html">Software Identity</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<p><a href="IfcRoot.html">IfcRoot</a> assigns the globally unique ID. In addition, it may also provide a name and description for the concept.</p>
+</td>
+</tr>
+<tr class="group-inherited">
+<td colspan="3">
+                <a href="IfcObjectDefinition.html">IfcObjectDefinition</a>
+                <small>(9)</small>
+</td>
+</tr>
+<tr class="inherited" data-type="concept">
+<td data-label="Name">
+<a href="../concepts/Object_Association/Classification_Association/content.html">Classification Association</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<p>Any object occurrence or object type can have a reference to a specific classification reference, i.e. to a particular facet within a classification system.</p>
+</td>
+</tr>
+<tr class="inherited" data-type="concept">
+<td data-label="Name">
+<a href="../concepts/Object_Composition/Aggregation/content.html">Aggregation</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<p class="search-skip">
+<em>No description available.</em>
+</p>
+</td>
+</tr>
+<tr class="inherited" data-type="concept">
+<td data-label="Name">
+<a href="../concepts/Object_Association/Approval_Association/content.html">Approval Association</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<p class="search-skip">
+<em>No description available.</em>
+</p>
+</td>
+</tr>
+<tr class="inherited" data-type="concept">
+<td data-label="Name">
+<a href="../concepts/Object_Association/Constraint_Association/content.html">Constraint Association</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<p class="search-skip">
+<em>No description available.</em>
+</p>
+</td>
+</tr>
+<tr class="inherited" data-type="concept">
+<td data-label="Name">
+<a href="../concepts/Object_Association/Document_Association/content.html">Document Association</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<p class="search-skip">
+<em>No description available.</em>
+</p>
+</td>
+</tr>
+<tr class="inherited" data-type="concept">
+<td data-label="Name">
+<a href="../concepts/Object_Association/Library_Association/content.html">Library Association</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<p class="search-skip">
+<em>No description available.</em>
+</p>
+</td>
+</tr>
+<tr class="inherited" data-type="concept">
+<td data-label="Name">
+<a href="../concepts/Object_Association/Material_Association/content.html">Material Association</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<p class="search-skip">
+<em>No description available.</em>
+</p>
+</td>
+</tr>
+<tr class="inherited" data-type="concept">
+<td data-label="Name">
+<a href="../concepts/Object_Association/Material_Association/Material_Single/content.html">Material Single</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<p class="search-skip">
+<em>No description available.</em>
+</p>
+</td>
+</tr>
+<tr class="inherited" data-type="concept">
+<td data-label="Name">
+<a href="../concepts/Object_Composition/Nesting/content.html">Nesting</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<p class="search-skip">
+<em>No description available.</em>
+</p>
+</td>
+</tr>
+<tr class="group-inherited">
+<td colspan="3">
+                <a href="IfcObject.html">IfcObject</a>
+                <small>(5)</small>
+</td>
+</tr>
+<tr class="inherited" data-type="concept">
+<td data-label="Name">
+<a href="../concepts/Object_Attributes/Object_Predefined_Type/content.html">Object Predefined Type</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<p class="search-skip">
+<em>No description available.</em>
+</p>
+</td>
+</tr>
+<tr class="inherited" data-type="concept">
+<td data-label="Name">
+<a href="../concepts/Object_Definition/Object_Typing/content.html">Object Typing</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<p>Any object occurrence can be typed by being assigned to a common object type utilizing this concept. A particular rule, restricting the applicable subtypes of <em><a href="IfcTypeObject.html">IfcTypeObject</a></em> that can be assigned, is introduced by overriding this concept at the level of subtypes of <em><a href="IfcObject.html">IfcObject</a></em>.</p>
+<p class="search-skip">This concept can be applied to the following resources:</p>
+<ul>
+<li>
+                        <a href="IfcTypeObject.html">IfcTypeObject</a>
+                    </li>
+</ul>
+</td>
+</tr>
+<tr class="inherited" data-type="concept">
+<td data-label="Name">
+<a href="../concepts/Object_Attributes/Object_User_Identity/content.html">Object User Identity</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<p>An attribute <em>Name</em> and optionally <em>Description</em> can be used for all subypes of <em><a href="IfcObject.html">IfcObject</a></em>. For those subtypes, that have an object type definition, such as <em><a href="IfcBeam.html">IfcBeam</a></em> - <em><a href="IfcBeamType.html">IfcBeamType</a></em>, the common <em>Name</em> and optionally <em>Description</em> is associated with the object type.</p>
+</td>
+</tr>
+<tr class="inherited" data-type="concept">
+<td data-label="Name">
+<a href="../concepts/Object_Definition/Property_Sets/Property_Sets_for_Objects/Property_Sets_with_Override/content.html">Property Sets with Override</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<p>Any object occurrence can hold property sets, either directly at the object occurrence as element specific property sets, or at the object type, as type property sets. In this case, the properties that are provided to the object occurrence are the combinations of element specific and type properties. In case that the same property (within the same property set) is defined both in occurrence and type properties, the property value of the occurrence property overrides the property value of the type property.</p>
+</td>
+</tr>
+<tr class="inherited" data-type="concept">
+<td data-label="Name">
+<a href="../concepts/Object_Assignment/Assignment_to_Group/content.html">Assignment to Group</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<p class="search-skip">
+<em>No description available.</em>
+</p>
+</td>
+</tr>
+<tr class="group-inherited">
+<td colspan="3">
+                <a href="IfcGroup.html">IfcGroup</a>
+                <small>(2)</small>
+</td>
+</tr>
+<tr class="inherited" data-type="concept">
+<td data-label="Name">
+<a href="../concepts/Object_Assignment/Group_Assignment/content.html">Group Assignment</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<p>The <a href="IfcGroup.html">IfcGroup</a> establishes an arbitrary collection of objects through utilizing this concept.</p>
+</td>
+</tr>
+<tr class="inherited" data-type="concept">
+<td data-label="Name">
+<a href="../concepts/Object_Definition/Property_Sets/Property_Sets_for_Objects/content.html">Property Sets for Objects</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<p class="search-skip">This concept can be applied to the following resources:</p>
+<ul>
+<li>
+                        <a href="Pset_Risk.html">Pset_Risk</a>
+                    </li>
+</ul>
+</td>
+</tr>
+<tr class="group-inherited">
+<td colspan="3">
+                <a href="IfcSystem.html">IfcSystem</a>
+                <small>(2)</small>
+</td>
+</tr>
+<tr class="inherited" data-type="concept">
+<td data-label="Name">
+<a href="../concepts/Object_Definition/Property_Sets/Property_Sets_for_Objects/content.html">Property Sets for Objects</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<p class="search-skip">This concept can be applied to the following resources:</p>
+<ul>
+<li>
+                        <a href="Pset_MaintenanceStrategy.html">Pset_MaintenanceStrategy</a>
+                    </li>
+<li>
+                        <a href="Pset_MaintenanceTriggerDuration.html">Pset_MaintenanceTriggerDuration</a>
+                    </li>
+<li>
+                        <a href="Pset_RepairOccurrence.html">Pset_RepairOccurrence</a>
+                    </li>
+<li>
+                        <a href="Pset_Condition.html">Pset_Condition</a>
+                    </li>
+<li>
+                        <a href="Pset_MaintenanceTriggerPerformance.html">Pset_MaintenanceTriggerPerformance</a>
+                    </li>
+<li>
+                        <a href="Pset_InstallationOccurrence.html">Pset_InstallationOccurrence</a>
+                    </li>
+<li>
+                        <a href="Pset_MaintenanceTriggerCondition.html">Pset_MaintenanceTriggerCondition</a>
+                    </li>
+<li>
+                        <a href="Pset_ServiceLifeFactors.html">Pset_ServiceLifeFactors</a>
+                    </li>
+</ul>
+</td>
+</tr>
+<tr class="inherited" data-type="concept">
+<td data-label="Name">
+<a href="../concepts/Object_Attributes/Object_Occurrence_Attributes/System_Element_Attributes/content.html">System Element Attributes</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<p class="search-skip">
+<em>No description available.</em>
+</p>
+</td>
+</tr>
+<tr class="preview">
+<td colspan="4">
+<small class="show-inherited" data-type="concept">
+<i data-feather="eye-off"></i>
+                    Click to show 20 hidden inherited concepts
+                </small>
+<small class="hide-inherited" data-type="concept">
+<i data-feather="eye-off"></i>
+                    Click to hide 20 inherited concepts
+                </small>
+</td>
+</tr>
+<tr class="group">
+<td colspan="3">
+                <a href="IfcZone.html">IfcZone</a>
+                <small>(2)</small>
+</td>
+</tr>
+<tr>
+<td data-label="Name">
+<a href="../concepts/Object_Assignment/Group_Assignment/content.html">Group Assignment</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<aside class="inherited search-skip">
+<small>
+<i data-feather="paperclip"></i>
+                        This is a further elaboration on an inherited concept.
+                    </small>
+</aside>
+<p>An <a href="IfcZone.html">IfcZone</a> is a spatial system under which individual <a href="IfcSpace.html">IfcSpace</a>'s (and other <a href="IfcZone.html">IfcZone</a>'s) are grouped. In contrary to the <a href="IfcSpatialZone.html">IfcSpatialZone</a> entity, <a href="IfcZone.html">IfcZone</a> is a mere grouping, it can not define an own geometric representation and placement. Therefore it cannot be used for spatial zones having a different shape and size compared to the shape and size of aggregated spaces.</p>
+<aside class="aside-note"><mark>NOTE</mark> The <a href="IfcZone.html">IfcZone</a> is regarded as the spatial system (as compared to the building service, electrical, or analytical system), the name remains <a href="IfcZone.html">IfcZone</a> for compatibility reasons, instead of using a proper naming convention, like IfcSpatialSystem.</aside><aside class="aside-note"><mark>NOTE</mark>  One of the purposes of a zone is to define a fire compartmentation. In this case it defines the geometric information about the fire compartment (through the contained spaces) and information, whether this compartment is ventilated or sprinkler protected. In addition the fire risk code and the hazard type can be added, the coding is normally defined within a national fire regulation. All that information is available within the relevant property sets. Again, if an independent shape has to be provided to the fire compartment, then the entity <a href="IfcSpatialZone.html">IfcSpatialZone</a> shall be used.</aside>
+<p>In case of a zone denoting a (fire) compartment, the following types should be used, if applicable, as values of the ObjectType attribute:</p>
+<ul>
+<li><strong>'FireCompartment'</strong>: a zone of spaces, collected to represent a single fire compartment.</li>
+<li><strong>'ElevatorShaft'</strong>: a collection of spaces within an elevator, potentially going through many storeys.</li>
+<li><strong>'RisingDuct'</strong>: A collection of vertical airspaces.</li>
+<li><strong>'RunningDuct'</strong>: A collection of horizontal airspaces.</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td data-label="Name">
+<a href="../concepts/Object_Definition/Property_Sets/Property_Sets_for_Objects/content.html">Property Sets for Objects</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<p class="search-skip">This concept can be applied to the following resources:</p>
+<ul>
+<li>
+                        <a href="Pset_ProcessCapacity.html">Pset_ProcessCapacity</a>
+                    </li>
+<li>
+                        <a href="Pset_SpaceOccupancyRequirements.html">Pset_SpaceOccupancyRequirements</a>
+                    </li>
+<li>
+                        <a href="Pset_SpaceFireSafetyRequirements.html">Pset_SpaceFireSafetyRequirements</a>
+                    </li>
+<li>
+                        <a href="Pset_ZoneCommon.html">Pset_ZoneCommon</a>
+                    </li>
+<li>
+                        <a href="Pset_AirSideSystemInformation.html">Pset_AirSideSystemInformation</a>
+                    </li>
+<li>
+                        <a href="Pset_SpaceLightingDesign.html">Pset_SpaceLightingDesign</a>
+                    </li>
+<li>
+                        <a href="Pset_SpaceHVACDesign.html">Pset_SpaceHVACDesign</a>
+                    </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table><figcaption>Table C<a class="link" href="#Table-C"><i data-feather="link"></i></a></figcaption></figure>
+<h2><a class="anchor" id="5.4.3.82.7-Formal-representation"></a>
+    5.4.3.82.7 Formal representation
+<a class="link" href="#5.4.3.82.7-Formal-representation"><i data-feather="link"></i></a></h2>
 <pre><code class="language-express pygments" data-highlighted="generator"><span class="tok-kd">ENTITY</span> <a href="IfcZone.html"><span class="tok-nc">IfcZone</span></a>
 <span class="tok-k">SUBTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><a href="IfcSystem.html"><span class="tok-nc">IfcSystem</span></a><span class="tok-p">)</span><span class="tok-p">;</span>
 <span class="tok-n">LongName</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <a href="IfcLabel.html"><span class="tok-nc">IfcLabel</span></a><span class="tok-p">;</span>
@@ -864,9 +1463,9 @@
 <span class="tok-p">(</span><span class="tok-s1">'IFC4X3_ADD2.IFCSPATIALZONE'</span> <span class="tok-nb">IN</span> <span class="tok-nb">TYPEOF</span><span class="tok-p">(</span><span class="tok-n">temp</span><span class="tok-p">)</span><span class="tok-p">)</span>
 <span class="tok-p">)</span><span class="tok-p">)</span><span class="tok-p">)</span> <span class="tok-o">=</span> <span class="tok-m">0</span><span class="tok-p">)</span><span class="tok-p">;</span>
 <span class="tok-kd">END_ENTITY</span><span class="tok-p">;</span></code></pre>
-<h2><a class="anchor" id="5.4.3.82.6-References"></a>
-    5.4.3.82.6 References
-<a class="link" href="#5.4.3.82.6-References"><i data-feather="link"></i></a></h2>
+<h2><a class="anchor" id="5.4.3.82.8-References"></a>
+    5.4.3.82.8 References
+<a class="link" href="#5.4.3.82.8-References"><i data-feather="link"></i></a></h2>
 <ul class="references">
 <li><i data-feather="paperclip"></i><a href="IfcSystem.html">IfcSystem</a></li>
 </ul>
