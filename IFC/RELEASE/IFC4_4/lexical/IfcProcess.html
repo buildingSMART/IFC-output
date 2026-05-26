@@ -809,9 +809,34 @@ A process is a set of activities that are interrelated or that interact with one
 </tr>
 </tbody>
 </table><figcaption>Table B<a class="link" href="#Table-B"><i data-feather="link"></i></a></figcaption></figure>
-<h2><a class="anchor" id="5.1.3.9.4-Concept-usage"></a>
-    5.1.3.9.4 Concept usage
-<a class="link" href="#5.1.3.9.4-Concept-usage"><i data-feather="link"></i></a></h2>
+<h2><a class="anchor" id="5.1.3.9.4-Property-sets"></a>
+    5.1.3.9.4 Property sets
+<a class="link" href="#5.1.3.9.4-Property-sets"><i data-feather="link"></i></a></h2>
+<ul class="psets">
+<li>
+            <a href="Pset_Risk.html">Pset_Risk</a>
+            <ul>
+<li>RiskName</li>
+<li>RiskType</li>
+<li>NatureOfRisk</li>
+<li>RiskAssessmentMethodology</li>
+<li>UnmitigatedRiskLikelihood</li>
+<li>UnmitigatedRiskConsequence</li>
+<li>UnmitigatedRiskSignificance</li>
+<li>MitigationPlanned</li>
+<li>MitigatedRiskLikelihood</li>
+<li>MitigatedRiskConsequence</li>
+<li>MitigatedRiskSignificance</li>
+<li>MitigationProposed</li>
+<li>AssociatedProduct</li>
+<li>AssociatedActivity</li>
+<li>AssociatedLocation</li>
+</ul>
+</li>
+</ul>
+<h2><a class="anchor" id="5.1.3.9.5-Concept-usage"></a>
+    5.1.3.9.5 Concept usage
+<a class="link" href="#5.1.3.9.5-Concept-usage"><i data-feather="link"></i></a></h2>
 <figure><a class="anchor" id="Table-C"></a><table class="striped grouped concepts">
 <thead>
 <tr>
@@ -1056,7 +1081,23 @@ A process is a set of activities that are interrelated or that interact with one
 <tr class="group">
 <td colspan="3">
                 <a href="IfcProcess.html">IfcProcess</a>
-                <small>(3)</small>
+                <small>(4)</small>
+</td>
+</tr>
+<tr>
+<td data-label="Name">
+<a href="../concepts/Object_Definition/Property_Sets/Property_Sets_for_Objects/content.html">Property Sets for Objects</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<p class="search-skip">This concept can be applied to the following resources:</p>
+<ul>
+<li>
+                        <a href="Pset_Risk.html">Pset_Risk</a>
+                    </li>
+</ul>
 </td>
 </tr>
 <tr>
@@ -1109,9 +1150,9 @@ A process is a set of activities that are interrelated or that interact with one
 </tr>
 </tbody>
 </table><figcaption>Table C<a class="link" href="#Table-C"><i data-feather="link"></i></a></figcaption></figure>
-<h2><a class="anchor" id="5.1.3.9.5-Formal-representation"></a>
-    5.1.3.9.5 Formal representation
-<a class="link" href="#5.1.3.9.5-Formal-representation"><i data-feather="link"></i></a></h2>
+<h2><a class="anchor" id="5.1.3.9.6-Formal-representation"></a>
+    5.1.3.9.6 Formal representation
+<a class="link" href="#5.1.3.9.6-Formal-representation"><i data-feather="link"></i></a></h2>
 <pre><code class="language-express pygments" data-highlighted="generator"><span class="tok-kd">ENTITY</span> <a href="IfcProcess.html"><span class="tok-nc">IfcProcess</span></a>
 <span class="tok-k">ABSTRACT</span> <span class="tok-k">SUPERTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><span class="tok-nb">ONEOF</span>
 <span class="tok-p">(</span><a href="IfcEvent.html"><span class="tok-nc">IfcEvent</span></a>
@@ -1125,9 +1166,9 @@ A process is a set of activities that are interrelated or that interact with one
 <span class="tok-n">IsSuccessorFrom</span> <span class="tok-o">:</span> <span class="tok-nb">SET</span> <span class="tok-p">[</span><span class="tok-m">0</span><span class="tok-o">:</span><span class="tok-err">?</span><span class="tok-p">]</span> <span class="tok-k">OF</span> <a href="IfcRelSequence.html"><span class="tok-nc">IfcRelSequence</span></a> <span class="tok-k">FOR</span> <span class="tok-n">RelatedProcess</span><span class="tok-p">;</span>
 <span class="tok-n">OperatesOn</span> <span class="tok-o">:</span> <span class="tok-nb">SET</span> <span class="tok-p">[</span><span class="tok-m">0</span><span class="tok-o">:</span><span class="tok-err">?</span><span class="tok-p">]</span> <span class="tok-k">OF</span> <a href="IfcRelAssignsToProcess.html"><span class="tok-nc">IfcRelAssignsToProcess</span></a> <span class="tok-k">FOR</span> <span class="tok-n">RelatingProcess</span><span class="tok-p">;</span>
 <span class="tok-kd">END_ENTITY</span><span class="tok-p">;</span></code></pre>
-<h2><a class="anchor" id="5.1.3.9.6-References"></a>
-    5.1.3.9.6 References
-<a class="link" href="#5.1.3.9.6-References"><i data-feather="link"></i></a></h2>
+<h2><a class="anchor" id="5.1.3.9.7-References"></a>
+    5.1.3.9.7 References
+<a class="link" href="#5.1.3.9.7-References"><i data-feather="link"></i></a></h2>
 <ul class="references">
 <li><i data-feather="paperclip"></i><a href="IfcEvent.html">IfcEvent</a></li>
 <li><i data-feather="paperclip"></i><a href="IfcObject.html">IfcObject</a></li>

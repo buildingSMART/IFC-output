@@ -1080,14 +1080,635 @@
 <tr>
 <td colspan="2">
 <pre><code class="language-express pygments" data-highlighted="generator"><span class="tok-p">(</span><span class="tok-nb">SIZEOF</span><span class="tok-p">(</span><span class="tok-n">IsTypedBy</span><span class="tok-p">)</span> <span class="tok-o">=</span> <span class="tok-m">0</span><span class="tok-p">)</span> <span class="tok-nb">OR</span>
-<span class="tok-p">(</span><span class="tok-s1">'IFC4X3_DEV_3022d0b.IFCCABLESEGMENTTYPE'</span> <span class="tok-nb">IN</span> <span class="tok-nb">TYPEOF</span><span class="tok-p">(</span><span class="tok-nb">SELF</span><span class="tok-o">\</span><a href="IfcObject.html"><span class="tok-nc">IfcObject</span></a><span class="tok-p">.</span><span class="tok-n">IsTypedBy</span><span class="tok-p">[</span><span class="tok-m">1</span><span class="tok-p">]</span><span class="tok-p">.</span><span class="tok-n">RelatingType</span><span class="tok-p">)</span><span class="tok-p">)</span></code></pre>
+<span class="tok-p">(</span><span class="tok-s1">'IFC4X3_DEV_a530e55.IFCCABLESEGMENTTYPE'</span> <span class="tok-nb">IN</span> <span class="tok-nb">TYPEOF</span><span class="tok-p">(</span><span class="tok-nb">SELF</span><span class="tok-o">\</span><a href="IfcObject.html"><span class="tok-nc">IfcObject</span></a><span class="tok-p">.</span><span class="tok-n">IsTypedBy</span><span class="tok-p">[</span><span class="tok-m">1</span><span class="tok-p">]</span><span class="tok-p">.</span><span class="tok-n">RelatingType</span><span class="tok-p">)</span><span class="tok-p">)</span></code></pre>
 </td>
 </tr>
 </tbody>
 </table><figcaption>Table B<a class="link" href="#Table-B"><i data-feather="link"></i></a></figcaption></figure>
-<h2><a class="anchor" id="7.4.3.9.5-Concept-usage"></a>
-    7.4.3.9.5 Concept usage
-<a class="link" href="#7.4.3.9.5-Concept-usage"><i data-feather="link"></i></a></h2>
+<h2><a class="anchor" id="7.4.3.9.5-Property-sets"></a>
+    7.4.3.9.5 Property sets
+<a class="link" href="#7.4.3.9.5-Property-sets"><i data-feather="link"></i></a></h2>
+<ul class="psets">
+<li>
+            <a href="Pset_CableSegmentConnector.html">Pset_CableSegmentConnector</a>
+            <ul>
+<li>ConnectorAColour</li>
+<li>ConnectorBColour</li>
+<li>ConnectorAType</li>
+<li>ConnectorBType</li>
+<li>ConnectorAGender</li>
+<li>ConnectorBGender</li>
+</ul>
+</li>
+<li>
+            <a href="Pset_CableSegmentOccurenceFiberSegment.html">Pset_CableSegmentOccurenceFiberSegment</a>
+            <code>FIBERSEGMENT</code>
+<ul>
+<li>InUse</li>
+</ul>
+</li>
+<li>
+            <a href="Pset_CableSegmentOccurrence.html">Pset_CableSegmentOccurrence</a>
+            <ul>
+<li>DesignAmbientTemperature</li>
+<li>UserCorrectionFactor</li>
+<li>NumberOfParallelCircuits</li>
+<li>InstallationMethod</li>
+<li>InstallationMethodFlagEnum</li>
+<li>DistanceBetweenParallelCircuits</li>
+<li>SoilConductivity</li>
+<li>CarrierStackNumber</li>
+<li>MountingMethod</li>
+<li>IsHorizontalCable</li>
+<li>IsMountedFlatCable</li>
+<li>CurrentCarryingCapacity</li>
+<li>MaximumCableLength</li>
+<li>PowerLoss</li>
+<li>SequentialCode</li>
+</ul>
+</li>
+<li>
+            <a href="Pset_CableSegmentTypeBusBarSegment.html">Pset_CableSegmentTypeBusBarSegment</a>
+            <code>BUSBARSEGMENT</code>
+<ul>
+<li>IsHorizontalBusbar</li>
+<li>NominalCurrent</li>
+<li>UltimateTensileStrength</li>
+<li>ACResistance</li>
+<li>ThermalExpansionCoefficient</li>
+<li>CurrentCarryingCapacity</li>
+<li>DCResistance</li>
+<li>MassPerLength</li>
+<li>TensileStrength</li>
+<li>YoungModulus</li>
+<li>CrossSectionalArea</li>
+<li>InsulationMethod</li>
+<li>OverallDiameter</li>
+<li>OperationalTemperatureRange</li>
+<li>RatedVoltage</li>
+</ul>
+</li>
+<li>
+            <a href="Pset_CableSegmentTypeCableSegment.html">Pset_CableSegmentTypeCableSegment</a>
+            <code>CABLESEGMENT</code>
+<ul>
+<li>Standard</li>
+<li>NumberOfCores</li>
+<li>OverallDiameter</li>
+<li>RatedTemperature</li>
+<li>ScreenDiameter</li>
+<li>HasProtectiveEarth</li>
+<li>MaximumOperatingTemperature</li>
+<li>MaximumShortCircuitTemperature</li>
+<li>SpecialConstruction</li>
+<li>Weight</li>
+<li>SelfExtinguishing60332_1</li>
+<li>SelfExtinguishing60332_3</li>
+<li>HalogenProof</li>
+<li>FunctionReliable</li>
+<li>ACResistance</li>
+<li>CurrentCarryingCapacity</li>
+<li>DCResistance</li>
+<li>MassPerLength</li>
+<li>MaximumCurrent</li>
+<li>MaximumBendingRadius</li>
+<li>NumberOfWires</li>
+<li>InsulationVoltage</li>
+<li>RatedVoltage</li>
+</ul>
+</li>
+<li>
+            <a href="Pset_CableSegmentTypeCommon.html">Pset_CableSegmentTypeCommon</a>
+            <ul>
+<li>Reference</li>
+<li>Status</li>
+</ul>
+</li>
+<li>
+            <a href="Pset_CableSegmentTypeConductorSegment.html">Pset_CableSegmentTypeConductorSegment</a>
+            <code>CONDUCTORSEGMENT</code>
+<ul>
+<li>CrossSectionalArea</li>
+<li>Function</li>
+<li>ConductorMaterial</li>
+<li>Construction</li>
+<li>ConductorShape</li>
+<li>NominalCurrent</li>
+<li>ACResistance</li>
+<li>ThermalExpansionCoefficient</li>
+<li>CurrentCarryingCapacity</li>
+<li>UltimateTensileStrength</li>
+<li>MassPerLength</li>
+<li>TensileStrength</li>
+<li>YoungModulus</li>
+<li>DCResistance</li>
+<li>OverallDiameter</li>
+<li>NumberOfCores</li>
+<li>RatedVoltage</li>
+</ul>
+</li>
+<li>
+            <a href="Pset_CableSegmentTypeContactWire.html">Pset_CableSegmentTypeContactWire</a>
+            <code>CONTACTWIRESEGMENT</code>
+<ul>
+<li>ACResistance</li>
+<li>ThermalExpansionCoefficient</li>
+<li>CurrentCarryingCapacity</li>
+<li>DCResistance</li>
+<li>MassPerLength</li>
+<li>YoungModulus</li>
+<li>CrossSectionalArea</li>
+<li>TorsionalStrength</li>
+<li>TensileStrength</li>
+</ul>
+</li>
+<li>
+            <a href="Pset_CableSegmentTypeCoreSegment.html">Pset_CableSegmentTypeCoreSegment</a>
+            <code>CORESEGMENT</code>
+<ul>
+<li>OverallDiameter</li>
+<li>RatedVoltage</li>
+<li>RatedTemperature</li>
+<li>ScreenDiameter</li>
+<li>CoreIdentifier</li>
+<li>SheathColours</li>
+<li>Weight</li>
+<li>UltimateTensileStrength</li>
+<li>SelfExtinguishing60332_1</li>
+<li>SelfExtinguishing60332_3</li>
+<li>HalogenProof</li>
+<li>FunctionReliable</li>
+<li>Standard</li>
+<li>ThermalExpansionCoefficient</li>
+<li>CurrentCarryingCapacity</li>
+<li>DCResistance</li>
+<li>LayRatio</li>
+<li>MassPerLength</li>
+<li>TensileStrength</li>
+<li>YoungModulus</li>
+<li>ACResistance</li>
+<li>StrandingMethod</li>
+</ul>
+</li>
+<li>
+            <a href="Pset_CableSegmentTypeEarthingConductor.html">Pset_CableSegmentTypeEarthingConductor</a>
+            <code>CONDUCTORSEGMENT</code>
+<ul>
+<li>ResistanceToGround</li>
+</ul>
+</li>
+<li>
+            <a href="Pset_CableSegmentTypeFiberSegment.html">Pset_CableSegmentTypeFiberSegment</a>
+            <code>FIBERSEGMENT</code>
+<ul>
+<li>FiberColour</li>
+<li>HasTightJacket</li>
+<li>FiberType</li>
+</ul>
+</li>
+<li>
+            <a href="Pset_CableSegmentTypeFiberTubeSegment.html">Pset_CableSegmentTypeFiberTubeSegment</a>
+            <code>FIBERTUBE</code>
+<ul>
+<li>FiberTubeColour</li>
+<li>NumberOfFibers</li>
+</ul>
+</li>
+<li>
+            <a href="Pset_CableSegmentTypeOpticalCableSegment.html">Pset_CableSegmentTypeOpticalCableSegment</a>
+            <code>OPTICALCABLESEGMENT</code>
+<ul>
+<li>NumberOfFibers</li>
+<li>OpticalCableStructure</li>
+<li>NumberOfMultiModeFibers</li>
+<li>NumberOfSingleModeFibers</li>
+<li>NumberOfTubes</li>
+<li>FiberMode</li>
+</ul>
+</li>
+<li>
+            <a href="Pset_CableSegmentTypeStitchWire.html">Pset_CableSegmentTypeStitchWire</a>
+            <code>STITCHWIRE</code>
+<ul>
+<li>AssemblyInstruction</li>
+<li>NominalLength</li>
+<li>MechanicalTension</li>
+<li>UltimateTensileStrength</li>
+<li>TensileStrength</li>
+</ul>
+</li>
+<li>
+            <a href="Pset_CableSegmentTypeWirePairSegment.html">Pset_CableSegmentTypeWirePairSegment</a>
+            <code>WIREPAIRSEGMENT</code>
+<ul>
+<li>CharacteristicImpedance</li>
+<li>ConductorDiameter</li>
+<li>CoreConductorDiameter</li>
+<li>JacketColour</li>
+<li>ShieldConductorDiameter</li>
+<li>WirePairType</li>
+</ul>
+</li>
+<li>
+            <a href="Pset_CoaxialCable.html">Pset_CoaxialCable</a>
+            <code>CABLESEGMENT</code>
+<ul>
+<li>CharacteristicImpedance</li>
+<li>CouplingLoss</li>
+<li>MaximumTransmissionAttenuation</li>
+<li>NumberOfCoaxialPairs</li>
+<li>PropagationSpeedCoefficient</li>
+<li>TransmissionLoss</li>
+<li>RadiantFrequency</li>
+</ul>
+</li>
+<li>
+            <a href="Pset_Condition.html">Pset_Condition</a>
+            <ul>
+<li>AssessmentDate</li>
+<li>AssessmentCondition</li>
+<li>AssessmentDescription</li>
+<li>AssessmentType</li>
+<li>AssessmentMethod</li>
+<li>LastAssessmentReport</li>
+<li>NextAssessmentDate</li>
+<li>AssessmentFrequency</li>
+</ul>
+</li>
+<li>
+            <a href="Pset_ConstructionAdministration.html">Pset_ConstructionAdministration</a>
+            <ul>
+<li>ProcurementMethod</li>
+<li>SpecificationSectionNumber</li>
+<li>SubmittalIdentifer</li>
+</ul>
+</li>
+<li>
+            <a href="Pset_ConstructionOccurence.html">Pset_ConstructionOccurence</a>
+            <ul>
+<li>InstallationDate</li>
+<li>ModelNumber</li>
+<li>TagNumber</li>
+<li>AssetIdentifier</li>
+</ul>
+</li>
+<li>
+            <a href="Pset_ElectricalDeviceCommon.html">Pset_ElectricalDeviceCommon</a>
+            <ul>
+<li>RatedCurrent</li>
+<li>RatedVoltage</li>
+<li>NominalFrequencyRange</li>
+<li>PowerFactor</li>
+<li>ConductorFunction</li>
+<li>NumberOfPoles</li>
+<li>HasProtectiveEarth</li>
+<li>InsulationStandardClass</li>
+<li>IP_Code</li>
+<li>IK_Code</li>
+<li>EarthingStyle</li>
+<li>HeatDissipation</li>
+<li>Power</li>
+<li>NominalPowerConsumption</li>
+<li>NumberOfPowerSupplyPorts</li>
+</ul>
+</li>
+<li>
+            <a href="Pset_ElectricalDeviceCompliance.html">Pset_ElectricalDeviceCompliance</a>
+            <ul>
+<li>ElectroMagneticStandardsCompliance</li>
+<li>ExplosiveAtmosphereStandardsCompliance</li>
+<li>FireProofingStandardsCompliance</li>
+<li>LightningProtectionStandardsCompliance</li>
+</ul>
+</li>
+<li>
+            <a href="Pset_ElectricalFeederLine.html">Pset_ElectricalFeederLine</a>
+            <code>CONDUCTORSEGMENT</code>
+<ul>
+<li>CurrentCarryingCapacity</li>
+<li>DesignAmbientTemperature</li>
+<li>ElectricalClearanceDistance</li>
+<li>ElectricalFeederType</li>
+</ul>
+</li>
+<li>
+            <a href="Pset_ElementKinematics.html">Pset_ElementKinematics</a>
+            <ul>
+<li>CyclicPath</li>
+<li>CyclicRange</li>
+<li>LinearPath</li>
+<li>LinearRange</li>
+<li>MaximumAngularVelocity</li>
+<li>MaximumConstantSpeed</li>
+<li>MinimumTime</li>
+</ul>
+</li>
+<li>
+            <a href="Pset_EnergyRequirements.html">Pset_EnergyRequirements</a>
+            <ul>
+<li>EnergyConsumption</li>
+<li>PowerDemand</li>
+<li>EnergySourceLabel</li>
+<li>EnergyConversionEfficiency</li>
+</ul>
+</li>
+<li>
+            <a href="Pset_EnvironmentalCondition.html">Pset_EnvironmentalCondition</a>
+            <ul>
+<li>ReferenceAirRelativeHumidity</li>
+<li>ReferenceEnvironmentTemperature</li>
+<li>MaximumAtmosphericPressure</li>
+<li>StorageTemperatureRange</li>
+<li>MaximumWindSpeed</li>
+<li>OperationalTemperatureRange</li>
+<li>MaximumRainIntensity</li>
+<li>SaltMistLevel</li>
+<li>SeismicResistance</li>
+<li>SmokeLevel</li>
+<li>MaximumSolarRadiation</li>
+</ul>
+</li>
+<li>
+            <a href="Pset_EnvironmentalEmissions.html">Pset_EnvironmentalEmissions</a>
+            <ul>
+<li>CarbonDioxideEmissions</li>
+<li>SulphurDioxideEmissions</li>
+<li>NitrogenOxidesEmissions</li>
+<li>ParticulateMatterEmissions</li>
+<li>NoiseEmissions</li>
+</ul>
+</li>
+<li>
+            <a href="Pset_EnvironmentalImpactIndicators.html">Pset_EnvironmentalImpactIndicators</a>
+            <ul>
+<li>Reference</li>
+<li>FunctionalUnitReference</li>
+<li>IndicatorsUnit</li>
+<li>LifeCyclePhase</li>
+<li>ExpectedServiceLife</li>
+<li>TotalPrimaryEnergyConsumptionPerUnit</li>
+<li>WaterConsumptionPerUnit</li>
+<li>HazardousWastePerUnit</li>
+<li>NonHazardousWastePerUnit</li>
+<li>ClimateChangePerUnit</li>
+<li>AtmosphericAcidificationPerUnit</li>
+<li>RenewableEnergyConsumptionPerUnit</li>
+<li>NonRenewableEnergyConsumptionPerUnit</li>
+<li>ResourceDepletionPerUnit</li>
+<li>InertWastePerUnit</li>
+<li>RadioactiveWastePerUnit</li>
+<li>StratosphericOzoneLayerDestructionPerUnit</li>
+<li>PhotochemicalOzoneFormationPerUnit</li>
+<li>EutrophicationPerUnit</li>
+</ul>
+</li>
+<li>
+            <a href="Pset_EnvironmentalImpactValues.html">Pset_EnvironmentalImpactValues</a>
+            <ul>
+<li>TotalPrimaryEnergyConsumption</li>
+<li>WaterConsumption</li>
+<li>HazardousWaste</li>
+<li>NonHazardousWaste</li>
+<li>ClimateChange</li>
+<li>AtmosphericAcidification</li>
+<li>RenewableEnergyConsumption</li>
+<li>NonRenewableEnergyConsumption</li>
+<li>ResourceDepletion</li>
+<li>InertWaste</li>
+<li>RadioactiveWaste</li>
+<li>StratosphericOzoneLayerDestruction</li>
+<li>PhotochemicalOzoneFormation</li>
+<li>Eutrophication</li>
+<li>LeadInTime</li>
+<li>Duration</li>
+<li>LeadOutTime</li>
+</ul>
+</li>
+<li>
+            <a href="Pset_InstallationOccurrence.html">Pset_InstallationOccurrence</a>
+            <ul>
+<li>InstallationDate</li>
+<li>AcceptanceDate</li>
+<li>PutIntoOperationDate</li>
+</ul>
+</li>
+<li>
+            <a href="Pset_MaintenanceStrategy.html">Pset_MaintenanceStrategy</a>
+            <ul>
+<li>AssetCriticality</li>
+<li>AssetFrailty</li>
+<li>AssetPriority</li>
+<li>MonitoringType</li>
+<li>AccidentResponse</li>
+</ul>
+</li>
+<li>
+            <a href="Pset_MaintenanceTriggerCondition.html">Pset_MaintenanceTriggerCondition</a>
+            <ul>
+<li>ConditionTargetPerformance</li>
+<li>ConditionMaintenanceLevel</li>
+<li>ConditionReplacementLevel</li>
+<li>ConditionDisposalLevel</li>
+</ul>
+</li>
+<li>
+            <a href="Pset_MaintenanceTriggerDuration.html">Pset_MaintenanceTriggerDuration</a>
+            <ul>
+<li>DurationTargetPerformance</li>
+<li>DurationMaintenanceLevel</li>
+<li>DurationReplacementLevel</li>
+<li>DurationDisposalLevel</li>
+</ul>
+</li>
+<li>
+            <a href="Pset_MaintenanceTriggerPerformance.html">Pset_MaintenanceTriggerPerformance</a>
+            <ul>
+<li>TargetPerformance</li>
+<li>PerformanceMaintenanceLevel</li>
+<li>ReplacementLevel</li>
+<li>DisposalLevel</li>
+</ul>
+</li>
+<li>
+            <a href="Pset_ManufacturerOccurrence.html">Pset_ManufacturerOccurrence</a>
+            <ul>
+<li>AcquisitionDate</li>
+<li>BarCode</li>
+<li>SerialNumber</li>
+<li>BatchReference</li>
+<li>AssemblyPlace</li>
+<li>ManufacturingDate</li>
+</ul>
+</li>
+<li>
+            <a href="Pset_ManufacturerTypeInformation.html">Pset_ManufacturerTypeInformation</a>
+            <ul>
+<li>GlobalTradeItemNumber</li>
+<li>ArticleNumber</li>
+<li>ModelReference</li>
+<li>ModelLabel</li>
+<li>Manufacturer</li>
+<li>ProductionYear</li>
+<li>AssemblyPlace</li>
+<li>OperationalDocument</li>
+<li>SafetyDocument</li>
+<li>PerformanceCertificate</li>
+</ul>
+</li>
+<li>
+            <a href="Pset_OpticalPigtail.html">Pset_OpticalPigtail</a>
+            <code>OPTICALCABLESEGMENT</code>
+<ul>
+<li>JacketColour</li>
+<li>FiberType</li>
+<li>ConnectorType</li>
+</ul>
+</li>
+<li>
+            <a href="Pset_PatchCordCable.html">Pset_PatchCordCable</a>
+            <code>CABLESEGMENT</code>
+<ul>
+<li>JacketColour</li>
+</ul>
+</li>
+<li>
+            <a href="Pset_PatchCordCable.html">Pset_PatchCordCable</a>
+            <code>OPTICALCABLESEGMENT</code>
+<ul>
+<li>JacketColour</li>
+</ul>
+</li>
+<li>
+            <a href="Pset_RepairOccurrence.html">Pset_RepairOccurrence</a>
+            <ul>
+<li>RepairContent</li>
+<li>RepairDate</li>
+<li>MeanTimeToRepair</li>
+</ul>
+</li>
+<li>
+            <a href="Pset_Risk.html">Pset_Risk</a>
+            <ul>
+<li>RiskName</li>
+<li>RiskType</li>
+<li>NatureOfRisk</li>
+<li>RiskAssessmentMethodology</li>
+<li>UnmitigatedRiskLikelihood</li>
+<li>UnmitigatedRiskConsequence</li>
+<li>UnmitigatedRiskSignificance</li>
+<li>MitigationPlanned</li>
+<li>MitigatedRiskLikelihood</li>
+<li>MitigatedRiskConsequence</li>
+<li>MitigatedRiskSignificance</li>
+<li>MitigationProposed</li>
+<li>AssociatedProduct</li>
+<li>AssociatedActivity</li>
+<li>AssociatedLocation</li>
+</ul>
+</li>
+<li>
+            <a href="Pset_ServiceLife.html">Pset_ServiceLife</a>
+            <ul>
+<li>ServiceLifeDuration</li>
+<li>MeanTimeBetweenFailure</li>
+</ul>
+</li>
+<li>
+            <a href="Pset_SoundGeneration.html">Pset_SoundGeneration</a>
+            <ul>
+<li>SoundCurve</li>
+</ul>
+</li>
+<li>
+            <a href="Pset_SymmetricPairCable.html">Pset_SymmetricPairCable</a>
+            <code>CABLESEGMENT</code>
+<ul>
+<li>NumberOfTwistedPairs</li>
+<li>NumberOfUntwistedPairs</li>
+</ul>
+</li>
+<li>
+            <a href="Pset_TelecomCableGeneral.html">Pset_TelecomCableGeneral</a>
+            <ul>
+<li>Attenuation</li>
+<li>FireRating</li>
+<li>IsFireResistant</li>
+<li>NominalDiameter</li>
+<li>JacketColour</li>
+<li>CableFunctionType</li>
+<li>CableArmourType</li>
+</ul>
+</li>
+<li>
+            <a href="Pset_Tolerance.html">Pset_Tolerance</a>
+            <ul>
+<li>ToleranceDescription</li>
+<li>ToleranceBasis</li>
+<li>OverallTolerance</li>
+<li>HorizontalTolerance</li>
+<li>OrthogonalTolerance</li>
+<li>VerticalTolerance</li>
+<li>PlanarFlatness</li>
+<li>HorizontalFlatness</li>
+<li>ElevationalFlatness</li>
+<li>SideFlatness</li>
+<li>OverallOrthogonality</li>
+<li>HorizontalOrthogonality</li>
+<li>OrthogonalOrthogonality</li>
+<li>VerticalOrthogonality</li>
+<li>OverallStraightness</li>
+<li>HorizontalStraightness</li>
+<li>OrthogonalStraightness</li>
+<li>VerticalStraightness</li>
+</ul>
+</li>
+<li>
+            <a href="Pset_Uncertainty.html">Pset_Uncertainty</a>
+            <ul>
+<li>UncertaintyBasis</li>
+<li>UncertaintyDescription</li>
+<li>HorizontalUncertainty</li>
+<li>LinearUncertainty</li>
+<li>OrthogonalUncertainty</li>
+<li>VerticalUncertainty</li>
+</ul>
+</li>
+<li>
+            <a href="Pset_Warranty.html">Pset_Warranty</a>
+            <ul>
+<li>WarrantyIdentifier</li>
+<li>WarrantyStartDate</li>
+<li>IsExtendedWarranty</li>
+<li>WarrantyPeriod</li>
+<li>WarrantyContent</li>
+<li>PointOfContact</li>
+<li>Exclusions</li>
+</ul>
+</li>
+<li>
+            <a href="Qto_BodyGeometryValidation.html">Qto_BodyGeometryValidation</a>
+            <ul>
+<li>GrossSurfaceArea</li>
+<li>NetSurfaceArea</li>
+<li>GrossVolume</li>
+<li>NetVolume</li>
+<li>SurfaceGenusBeforeFeatures</li>
+<li>SurfaceGenusAfterFeatures</li>
+</ul>
+</li>
+<li>
+            <a href="Qto_CableSegmentBaseQuantities.html">Qto_CableSegmentBaseQuantities</a>
+            <ul>
+<li>GrossWeight</li>
+<li>Length</li>
+<li>CrossSectionArea</li>
+<li>OuterSurfaceArea</li>
+</ul>
+</li>
+</ul>
+<h2><a class="anchor" id="7.4.3.9.6-Concept-usage"></a>
+    7.4.3.9.6 Concept usage
+<a class="link" href="#7.4.3.9.6-Concept-usage"><i data-feather="link"></i></a></h2>
 <figure><a class="anchor" id="Table-C"></a><table class="striped grouped concepts">
 <thead>
 <tr>
@@ -1320,7 +1941,7 @@
 <tr class="group-inherited">
 <td colspan="3">
                 <a href="IfcProduct.html">IfcProduct</a>
-                <small>(16)</small>
+                <small>(18)</small>
 </td>
 </tr>
 <tr class="inherited" data-type="concept">
@@ -1489,6 +2110,44 @@
 </tr>
 <tr class="inherited" data-type="concept">
 <td data-label="Name">
+<a href="../concepts/Object_Definition/Property_Sets/Property_Sets_for_Objects/content.html">Property Sets for Objects</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<p class="search-skip">This concept can be applied to the following resources:</p>
+<ul>
+<li>
+                        <a href="Pset_Tolerance.html">Pset_Tolerance</a>
+                    </li>
+<li>
+                        <a href="Pset_Risk.html">Pset_Risk</a>
+                    </li>
+<li>
+                        <a href="Pset_Uncertainty.html">Pset_Uncertainty</a>
+                    </li>
+</ul>
+</td>
+</tr>
+<tr class="inherited" data-type="concept">
+<td data-label="Name">
+<a href="../concepts/Object_Definition/Quantity_Sets/content.html">Quantity Sets</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<p class="search-skip">This concept can be applied to the following resources:</p>
+<ul>
+<li>
+                        <a href="Qto_BodyGeometryValidation.html">Qto_BodyGeometryValidation</a>
+                    </li>
+</ul>
+</td>
+</tr>
+<tr class="inherited" data-type="concept">
+<td data-label="Name">
 <a href="../concepts/Product_Shape/Product_Geometric_Representation/Reference_Geometry/content.html">Reference Geometry</a>
 </td>
 <td data-label="Usage">
@@ -1542,7 +2201,7 @@
 <tr class="group-inherited">
 <td colspan="3">
                 <a href="IfcElement.html">IfcElement</a>
-                <small>(43)</small>
+                <small>(44)</small>
 </td>
 </tr>
 <tr class="inherited" data-type="concept">
@@ -1910,6 +2569,70 @@
 </tr>
 <tr class="inherited" data-type="concept">
 <td data-label="Name">
+<a href="../concepts/Object_Definition/Property_Sets/Property_Sets_for_Objects/content.html">Property Sets for Objects</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<p class="search-skip">This concept can be applied to the following resources:</p>
+<ul>
+<li>
+                        <a href="Pset_ConstructionAdministration.html">Pset_ConstructionAdministration</a>
+                    </li>
+<li>
+                        <a href="Pset_MaintenanceStrategy.html">Pset_MaintenanceStrategy</a>
+                    </li>
+<li>
+                        <a href="Pset_MaintenanceTriggerDuration.html">Pset_MaintenanceTriggerDuration</a>
+                    </li>
+<li>
+                        <a href="Pset_EnvironmentalImpactIndicators.html">Pset_EnvironmentalImpactIndicators</a>
+                    </li>
+<li>
+                        <a href="Pset_RepairOccurrence.html">Pset_RepairOccurrence</a>
+                    </li>
+<li>
+                        <a href="Pset_Warranty.html">Pset_Warranty</a>
+                    </li>
+<li>
+                        <a href="Pset_ManufacturerOccurrence.html">Pset_ManufacturerOccurrence</a>
+                    </li>
+<li>
+                        <a href="Pset_ConstructionOccurence.html">Pset_ConstructionOccurence</a>
+                    </li>
+<li>
+                        <a href="Pset_ElementKinematics.html">Pset_ElementKinematics</a>
+                    </li>
+<li>
+                        <a href="Pset_Condition.html">Pset_Condition</a>
+                    </li>
+<li>
+                        <a href="Pset_ManufacturerTypeInformation.html">Pset_ManufacturerTypeInformation</a>
+                    </li>
+<li>
+                        <a href="Pset_MaintenanceTriggerPerformance.html">Pset_MaintenanceTriggerPerformance</a>
+                    </li>
+<li>
+                        <a href="Pset_InstallationOccurrence.html">Pset_InstallationOccurrence</a>
+                    </li>
+<li>
+                        <a href="Pset_EnvironmentalImpactValues.html">Pset_EnvironmentalImpactValues</a>
+                    </li>
+<li>
+                        <a href="Pset_MaintenanceTriggerCondition.html">Pset_MaintenanceTriggerCondition</a>
+                    </li>
+<li>
+                        <a href="Pset_ServiceLife.html">Pset_ServiceLife</a>
+                    </li>
+<li>
+                        <a href="Pset_EnvironmentalCondition.html">Pset_EnvironmentalCondition</a>
+                    </li>
+</ul>
+</td>
+</tr>
+<tr class="inherited" data-type="concept">
+<td data-label="Name">
 <a href="../concepts/Object_Composition/Surface_Feature_Adherence/content.html">Surface Feature Adherence</a>
 </td>
 <td data-label="Usage">
@@ -2125,7 +2848,7 @@
 <tr class="group-inherited">
 <td colspan="3">
                 <a href="IfcDistributionElement.html">IfcDistributionElement</a>
-                <small>(3)</small>
+                <small>(4)</small>
 </td>
 </tr>
 <tr class="inherited" data-type="concept">
@@ -2161,6 +2884,37 @@
 </tr>
 <tr class="inherited" data-type="concept">
 <td data-label="Name">
+<a href="../concepts/Object_Definition/Property_Sets/Property_Sets_for_Objects/content.html">Property Sets for Objects</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<aside class="inherited search-skip">
+<small>
+<i data-feather="paperclip"></i>
+                        This is a further elaboration on an inherited concept.
+                    </small>
+</aside>
+<p class="search-skip">This concept can be applied to the following resources:</p>
+<ul>
+<li>
+                        <a href="Pset_ElectricalDeviceCompliance.html">Pset_ElectricalDeviceCompliance</a>
+                    </li>
+<li>
+                        <a href="Pset_EnvironmentalEmissions.html">Pset_EnvironmentalEmissions</a>
+                    </li>
+<li>
+                        <a href="Pset_EnergyRequirements.html">Pset_EnergyRequirements</a>
+                    </li>
+<li>
+                        <a href="Pset_ElectricalDeviceCommon.html">Pset_ElectricalDeviceCommon</a>
+                    </li>
+</ul>
+</td>
+</tr>
+<tr class="inherited" data-type="concept">
+<td data-label="Name">
 <a href="../concepts/Object_Connectivity/Spatial_Structure/Spatial_Containment/content.html">Spatial Containment</a>
 </td>
 <td data-label="Usage">
@@ -2180,7 +2934,7 @@
 <tr class="group-inherited">
 <td colspan="3">
                 <a href="IfcDistributionFlowElement.html">IfcDistributionFlowElement</a>
-                <small>(3)</small>
+                <small>(4)</small>
 </td>
 </tr>
 <tr class="inherited" data-type="concept">
@@ -2223,6 +2977,22 @@
 <ul>
 <li>
                         <a href="IfcDistributionFlowElementType.html">IfcDistributionFlowElementType</a>
+                    </li>
+</ul>
+</td>
+</tr>
+<tr class="inherited" data-type="concept">
+<td data-label="Name">
+<a href="../concepts/Object_Definition/Property_Sets/Property_Sets_for_Objects/content.html">Property Sets for Objects</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<p class="search-skip">This concept can be applied to the following resources:</p>
+<ul>
+<li>
+                        <a href="Pset_SoundGeneration.html">Pset_SoundGeneration</a>
                     </li>
 </ul>
 </td>
@@ -2294,18 +3064,18 @@
 <td colspan="4">
 <small class="show-inherited" data-type="concept">
 <i data-feather="eye-off"></i>
-                    Click to show 84 hidden inherited concepts
+                    Click to show 89 hidden inherited concepts
                 </small>
 <small class="hide-inherited" data-type="concept">
 <i data-feather="eye-off"></i>
-                    Click to hide 84 inherited concepts
+                    Click to hide 89 inherited concepts
                 </small>
 </td>
 </tr>
 <tr class="group">
 <td colspan="3">
                 <a href="IfcCableSegment.html">IfcCableSegment</a>
-                <small>(3)</small>
+                <small>(5)</small>
 </td>
 </tr>
 <tr>
@@ -2404,11 +3174,124 @@
 </table><figcaption>Table G<a class="link" href="#Table-G"><i data-feather="link"></i></a></figcaption></figure>
 </td>
 </tr>
+<tr>
+<td data-label="Name">
+<a href="../concepts/Object_Definition/Property_Sets/Property_Sets_for_Objects/content.html">Property Sets for Objects</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<p class="search-skip">This concept can be applied to the following resources:</p>
+<ul>
+<li>
+                        <a href="Pset_CableSegmentTypeEarthingConductor.html">Pset_CableSegmentTypeEarthingConductor</a>
+                        (only applies to <code>CONDUCTORSEGMENT)
+                    </code></li>
+<li>
+                        <a href="Pset_CableSegmentTypeContactWire.html">Pset_CableSegmentTypeContactWire</a>
+                        (only applies to <code>CONTACTWIRESEGMENT)
+                    </code></li>
+<li>
+                        <a href="Pset_OpticalPigtail.html">Pset_OpticalPigtail</a>
+                        (only applies to <code>OPTICALCABLESEGMENT)
+                    </code></li>
+<li>
+                        <a href="Pset_ElectricalFeederLine.html">Pset_ElectricalFeederLine</a>
+                        (only applies to <code>CONDUCTORSEGMENT)
+                    </code></li>
+<li>
+                        <a href="Pset_CableSegmentTypeConductorSegment.html">Pset_CableSegmentTypeConductorSegment</a>
+                        (only applies to <code>CONDUCTORSEGMENT)
+                    </code></li>
+<li>
+                        <a href="Pset_CableSegmentOccurenceFiberSegment.html">Pset_CableSegmentOccurenceFiberSegment</a>
+                        (only applies to <code>FIBERSEGMENT)
+                    </code></li>
+<li>
+                        <a href="Pset_CableSegmentTypeWirePairSegment.html">Pset_CableSegmentTypeWirePairSegment</a>
+                        (only applies to <code>WIREPAIRSEGMENT)
+                    </code></li>
+<li>
+                        <a href="Pset_CableSegmentTypeBusBarSegment.html">Pset_CableSegmentTypeBusBarSegment</a>
+                        (only applies to <code>BUSBARSEGMENT)
+                    </code></li>
+<li>
+                        <a href="Pset_CableSegmentOccurrence.html">Pset_CableSegmentOccurrence</a>
+                    </li>
+<li>
+                        <a href="Pset_CableSegmentTypeCoreSegment.html">Pset_CableSegmentTypeCoreSegment</a>
+                        (only applies to <code>CORESEGMENT)
+                    </code></li>
+<li>
+                        <a href="Pset_CableSegmentTypeFiberSegment.html">Pset_CableSegmentTypeFiberSegment</a>
+                        (only applies to <code>FIBERSEGMENT)
+                    </code></li>
+<li>
+                        <a href="Pset_CableSegmentConnector.html">Pset_CableSegmentConnector</a>
+                    </li>
+<li>
+                        <a href="Pset_CableSegmentTypeFiberTubeSegment.html">Pset_CableSegmentTypeFiberTubeSegment</a>
+                        (only applies to <code>FIBERTUBE)
+                    </code></li>
+<li>
+                        <a href="Pset_CableSegmentTypeCommon.html">Pset_CableSegmentTypeCommon</a>
+                    </li>
+<li>
+                        <a href="Pset_CoaxialCable.html">Pset_CoaxialCable</a>
+                        (only applies to <code>CABLESEGMENT)
+                    </code></li>
+<li>
+                        <a href="Pset_CableSegmentTypeOpticalCableSegment.html">Pset_CableSegmentTypeOpticalCableSegment</a>
+                        (only applies to <code>OPTICALCABLESEGMENT)
+                    </code></li>
+<li>
+                        <a href="Pset_PatchCordCable.html">Pset_PatchCordCable</a>
+                        (only applies to <code>CABLESEGMENT)
+                    </code></li>
+<li>
+                        <a href="Pset_PatchCordCable.html">Pset_PatchCordCable</a>
+                        (only applies to <code>OPTICALCABLESEGMENT)
+                    </code></li>
+<li>
+                        <a href="Pset_TelecomCableGeneral.html">Pset_TelecomCableGeneral</a>
+                    </li>
+<li>
+                        <a href="Pset_SymmetricPairCable.html">Pset_SymmetricPairCable</a>
+                        (only applies to <code>CABLESEGMENT)
+                    </code></li>
+<li>
+                        <a href="Pset_CableSegmentTypeCableSegment.html">Pset_CableSegmentTypeCableSegment</a>
+                        (only applies to <code>CABLESEGMENT)
+                    </code></li>
+<li>
+                        <a href="Pset_CableSegmentTypeStitchWire.html">Pset_CableSegmentTypeStitchWire</a>
+                        (only applies to <code>STITCHWIRE)
+                    </code></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td data-label="Name">
+<a href="../concepts/Object_Definition/Quantity_Sets/content.html">Quantity Sets</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<p class="search-skip">This concept can be applied to the following resources:</p>
+<ul>
+<li>
+                        <a href="Qto_CableSegmentBaseQuantities.html">Qto_CableSegmentBaseQuantities</a>
+                    </li>
+</ul>
+</td>
+</tr>
 </tbody>
 </table><figcaption>Table C<a class="link" href="#Table-C"><i data-feather="link"></i></a></figcaption></figure>
-<h2><a class="anchor" id="7.4.3.9.6-Formal-representation"></a>
-    7.4.3.9.6 Formal representation
-<a class="link" href="#7.4.3.9.6-Formal-representation"><i data-feather="link"></i></a></h2>
+<h2><a class="anchor" id="7.4.3.9.7-Formal-representation"></a>
+    7.4.3.9.7 Formal representation
+<a class="link" href="#7.4.3.9.7-Formal-representation"><i data-feather="link"></i></a></h2>
 <pre><code class="language-express pygments" data-highlighted="generator"><span class="tok-kd">ENTITY</span> <a href="IfcCableSegment.html"><span class="tok-nc">IfcCableSegment</span></a>
 <span class="tok-k">SUBTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><a href="IfcFlowSegment.html"><span class="tok-nc">IfcFlowSegment</span></a><span class="tok-p">)</span><span class="tok-p">;</span>
 <span class="tok-n">PredefinedType</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <a href="IfcCableSegmentTypeEnum.html"><span class="tok-nc">IfcCableSegmentTypeEnum</span></a><span class="tok-p">;</span>
@@ -2417,11 +3300,11 @@
 <span class="tok-p">(</span><span class="tok-n">PredefinedType</span> <span class="tok-o">&lt;&gt;</span> <a href="IfcCableSegmentTypeEnum.html"><span class="tok-nc">IfcCableSegmentTypeEnum</span></a><span class="tok-p">.</span><span class="tok-n">USERDEFINED</span><span class="tok-p">)</span> <span class="tok-nb">OR</span>
 <span class="tok-p">(</span><span class="tok-p">(</span><span class="tok-n">PredefinedType</span> <span class="tok-o">=</span> <a href="IfcCableSegmentTypeEnum.html"><span class="tok-nc">IfcCableSegmentTypeEnum</span></a><span class="tok-p">.</span><span class="tok-n">USERDEFINED</span><span class="tok-p">)</span> <span class="tok-nb">AND</span> <span class="tok-nb">EXISTS</span> <span class="tok-p">(</span><span class="tok-nb">SELF</span><span class="tok-o">\</span><a href="IfcObject.html"><span class="tok-nc">IfcObject</span></a><span class="tok-p">.</span><span class="tok-n">ObjectType</span><span class="tok-p">)</span><span class="tok-p">)</span><span class="tok-p">;</span>
 <span class="tok-n">CorrectTypeAssigned</span> <span class="tok-o">:</span> <span class="tok-p">(</span><span class="tok-nb">SIZEOF</span><span class="tok-p">(</span><span class="tok-n">IsTypedBy</span><span class="tok-p">)</span> <span class="tok-o">=</span> <span class="tok-m">0</span><span class="tok-p">)</span> <span class="tok-nb">OR</span>
-<span class="tok-p">(</span><span class="tok-s1">'IFC4X3_DEV_3022d0b.IFCCABLESEGMENTTYPE'</span> <span class="tok-nb">IN</span> <span class="tok-nb">TYPEOF</span><span class="tok-p">(</span><span class="tok-nb">SELF</span><span class="tok-o">\</span><a href="IfcObject.html"><span class="tok-nc">IfcObject</span></a><span class="tok-p">.</span><span class="tok-n">IsTypedBy</span><span class="tok-p">[</span><span class="tok-m">1</span><span class="tok-p">]</span><span class="tok-p">.</span><span class="tok-n">RelatingType</span><span class="tok-p">)</span><span class="tok-p">)</span><span class="tok-p">;</span>
+<span class="tok-p">(</span><span class="tok-s1">'IFC4X3_DEV_a530e55.IFCCABLESEGMENTTYPE'</span> <span class="tok-nb">IN</span> <span class="tok-nb">TYPEOF</span><span class="tok-p">(</span><span class="tok-nb">SELF</span><span class="tok-o">\</span><a href="IfcObject.html"><span class="tok-nc">IfcObject</span></a><span class="tok-p">.</span><span class="tok-n">IsTypedBy</span><span class="tok-p">[</span><span class="tok-m">1</span><span class="tok-p">]</span><span class="tok-p">.</span><span class="tok-n">RelatingType</span><span class="tok-p">)</span><span class="tok-p">)</span><span class="tok-p">;</span>
 <span class="tok-kd">END_ENTITY</span><span class="tok-p">;</span></code></pre>
-<h2><a class="anchor" id="7.4.3.9.7-References"></a>
-    7.4.3.9.7 References
-<a class="link" href="#7.4.3.9.7-References"><i data-feather="link"></i></a></h2>
+<h2><a class="anchor" id="7.4.3.9.8-References"></a>
+    7.4.3.9.8 References
+<a class="link" href="#7.4.3.9.8-References"><i data-feather="link"></i></a></h2>
 <ul class="references">
 <li><i data-feather="paperclip"></i><a href="IfcFlowSegment.html">IfcFlowSegment</a></li>
 </ul>

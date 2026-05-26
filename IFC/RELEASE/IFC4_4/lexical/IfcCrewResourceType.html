@@ -874,9 +874,27 @@
 </tr>
 </tbody>
 </table><figcaption>Table B<a class="link" href="#Table-B"><i data-feather="link"></i></a></figcaption></figure>
-<h2><a class="anchor" id="7.3.3.10.5-Concept-usage"></a>
-    7.3.3.10.5 Concept usage
-<a class="link" href="#7.3.3.10.5-Concept-usage"><i data-feather="link"></i></a></h2>
+<h2><a class="anchor" id="7.3.3.10.5-Property-sets"></a>
+    7.3.3.10.5 Property sets
+<a class="link" href="#7.3.3.10.5-Property-sets"><i data-feather="link"></i></a></h2>
+<ul class="psets">
+<li>
+            <a href="Pset_ConstructionResource.html">Pset_ConstructionResource</a>
+            <ul>
+<li>ScheduleWorkProgression</li>
+<li>ActualWorkTime</li>
+<li>RemainingWorkProgression</li>
+<li>ScheduleCost</li>
+<li>ActualCost</li>
+<li>RemainingCost</li>
+<li>ScheduleCompletion</li>
+<li>ActualCompletion</li>
+</ul>
+</li>
+</ul>
+<h2><a class="anchor" id="7.3.3.10.6-Concept-usage"></a>
+    7.3.3.10.6 Concept usage
+<a class="link" href="#7.3.3.10.6-Concept-usage"><i data-feather="link"></i></a></h2>
 <figure><a class="anchor" id="Table-C"></a><table class="striped grouped concepts">
 <thead>
 <tr>
@@ -1067,23 +1085,45 @@
 </p>
 </td>
 </tr>
+<tr class="group-inherited">
+<td colspan="3">
+                <a href="IfcConstructionResourceType.html">IfcConstructionResourceType</a>
+                <small>(1)</small>
+</td>
+</tr>
+<tr class="inherited" data-type="concept">
+<td data-label="Name">
+<a href="../concepts/Object_Definition/Property_Sets/Property_Sets_for_Objects/content.html">Property Sets for Objects</a>
+</td>
+<td data-label="Usage">
+                General
+            </td>
+<td data-label="Description">
+<p class="search-skip">This concept can be applied to the following resources:</p>
+<ul>
+<li>
+                        <a href="Pset_ConstructionResource.html">Pset_ConstructionResource</a>
+                    </li>
+</ul>
+</td>
+</tr>
 <tr class="preview">
 <td colspan="4">
 <small class="show-inherited" data-type="concept">
 <i data-feather="eye-off"></i>
-                    Click to show 13 hidden inherited concepts
+                    Click to show 14 hidden inherited concepts
                 </small>
 <small class="hide-inherited" data-type="concept">
 <i data-feather="eye-off"></i>
-                    Click to hide 13 inherited concepts
+                    Click to hide 14 inherited concepts
                 </small>
 </td>
 </tr>
 </tbody>
 </table><figcaption>Table C<a class="link" href="#Table-C"><i data-feather="link"></i></a></figcaption></figure>
-<h2><a class="anchor" id="7.3.3.10.6-Formal-representation"></a>
-    7.3.3.10.6 Formal representation
-<a class="link" href="#7.3.3.10.6-Formal-representation"><i data-feather="link"></i></a></h2>
+<h2><a class="anchor" id="7.3.3.10.7-Formal-representation"></a>
+    7.3.3.10.7 Formal representation
+<a class="link" href="#7.3.3.10.7-Formal-representation"><i data-feather="link"></i></a></h2>
 <pre><code class="language-express pygments" data-highlighted="generator"><span class="tok-kd">ENTITY</span> <a href="IfcCrewResourceType.html"><span class="tok-nc">IfcCrewResourceType</span></a>
 <span class="tok-k">SUBTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><a href="IfcConstructionResourceType.html"><span class="tok-nc">IfcConstructionResourceType</span></a><span class="tok-p">)</span><span class="tok-p">;</span>
 <span class="tok-n">PredefinedType</span> <span class="tok-o">:</span> <a href="IfcCrewResourceTypeEnum.html"><span class="tok-nc">IfcCrewResourceTypeEnum</span></a><span class="tok-p">;</span>
@@ -1091,9 +1131,9 @@
 <span class="tok-n">CorrectPredefinedType</span> <span class="tok-o">:</span> <span class="tok-p">(</span><span class="tok-n">PredefinedType</span> <span class="tok-o">&lt;&gt;</span> <a href="IfcCrewResourceTypeEnum.html"><span class="tok-nc">IfcCrewResourceTypeEnum</span></a><span class="tok-p">.</span><span class="tok-n">USERDEFINED</span><span class="tok-p">)</span> <span class="tok-nb">OR</span>
 <span class="tok-p">(</span><span class="tok-p">(</span><span class="tok-n">PredefinedType</span> <span class="tok-o">=</span> <a href="IfcCrewResourceTypeEnum.html"><span class="tok-nc">IfcCrewResourceTypeEnum</span></a><span class="tok-p">.</span><span class="tok-n">USERDEFINED</span><span class="tok-p">)</span> <span class="tok-nb">AND</span> <span class="tok-nb">EXISTS</span> <span class="tok-p">(</span><span class="tok-nb">SELF</span><span class="tok-o">\</span><a href="IfcTypeResource.html"><span class="tok-nc">IfcTypeResource</span></a><span class="tok-p">.</span><span class="tok-n">ResourceType</span><span class="tok-p">)</span><span class="tok-p">)</span><span class="tok-p">;</span>
 <span class="tok-kd">END_ENTITY</span><span class="tok-p">;</span></code></pre>
-<h2><a class="anchor" id="7.3.3.10.7-References"></a>
-    7.3.3.10.7 References
-<a class="link" href="#7.3.3.10.7-References"><i data-feather="link"></i></a></h2>
+<h2><a class="anchor" id="7.3.3.10.8-References"></a>
+    7.3.3.10.8 References
+<a class="link" href="#7.3.3.10.8-References"><i data-feather="link"></i></a></h2>
 <ul class="references">
 <li><i data-feather="paperclip"></i><a href="IfcConstructionResourceType.html">IfcConstructionResourceType</a></li>
 </ul>
