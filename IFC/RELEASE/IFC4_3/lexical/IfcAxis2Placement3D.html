@@ -18,7 +18,7 @@
                         padding-top: 0px;
                         float: left;
                     " width="100"/>
-<p style="display: inline-block; vertical-align: top;">IFC 4.3.2.20260616 (IFC4X3_ADD2)
+<p style="display: inline-block; vertical-align: top;">IFC 4.3.2.20260619 (IFC4X3_ADD2)
                             <small>under development</small>
 </p>
 <ul>
@@ -523,7 +523,8 @@
 <p>The <em><a href="IfcAxis2Placement3D.html">IfcAxis2Placement3D</a></em> provides location and orientations to place items in a three-dimensional space. The attribute <em>Axis</em> defines the Z direction, <em>RefDirection</em> the X direction. The Y direction is derived.</p>
 <!-- end of short definition -->
 <aside class="aside-note"><mark>NOTE</mark> The <em>RefDirection</em> does not have to be orthogonal to <em>Axis</em>.</aside>
-<p>If the attribute values for <em>Axis</em> and <em>RefDirection</em> are not given, the placement defaults to P[1] (x-axis) as [1.,0.,0.], P[2] (y-axis) as [0.,1.,0.] and P[3] (z-axis) as [0.,0.,1.].</p>
+<p>If both the attribute values for <em>Axis</em> and <em>RefDirection</em> are not given, the placement defaults to P[1] (x-axis) as [1.,0.,0.], P[2] (y-axis) as [0.,1.,0.] and P[3] (z-axis) as [0.,0.,1.]. See also the function <em><a href="IfcBuildAxes.html">IfcBuildAxes</a></em> that computes the derived attribute <em>P</em>, based on <em>Axis</em> and <em>RefDirection</em>.</p>
+<aside class="aside-note"><mark>NOTE</mark> If one of the two values (<em>Axis</em> or <em>RefDirection</em>) in not given, the <em>AxisAndRefDirProvision</em> formal proposition is violated.</aside>
 <figure><a class="anchor" id="Figure-A-Axis2-placement-3D"></a><img alt="axis2 placement 2D" src="../figures/ifcaxis2placement3d-layout1.gif"/><figcaption>Figure A — Axis2 placement 3D<a class="link" href="#Figure-A-Axis2-placement-3D"><i data-feather="link"></i></a></figcaption></figure>
 
 <p>Figure A illustrates the definition of the <em><a href="IfcAxis2Placement3D.html">IfcAxis2Placement3D</a></em> within the three-dimensional coordinate system.</p>
@@ -702,7 +703,7 @@ The location and orientation in three dimensional space of three mutually perpen
             </td>
 <td data-label="Type">OPTIONAL <a href="IfcDirection.html">IfcDirection</a></td>
 <td data-label="Description">
-<p>The direction used to determine the direction of the local X Axis. If necessary an adjustment is made to maintain orthogonality to the Axis direction. If Axis and/or RefDirection is omitted, these directions are taken from the geometric coordinate system.</p>
+<p>The direction used to determine the direction of the local X Axis. If necessary an adjustment is made to maintain orthogonality to the Axis direction.</p>
 </td>
 </tr>
 <tr>
