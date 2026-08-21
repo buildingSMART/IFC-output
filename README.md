@@ -1,6 +1,6 @@
 # IFC4.x output
 
-This repository contains generated and published artifacts for the **IFC 4.x** family of Industry Foundation Classes (IFC) specifications.
+This repository contains generated and published artifacts for the Industry Foundation Classes (IFC) specifications.
 
 The contents are derived from buildingSMART specification sources and are intended to provide machine-readable outputs such as HTML pages, EXPRESS schemas, XML schemas, property set definitions, and related generated artifacts.
 
