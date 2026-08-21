@@ -1,4 +1,4 @@
-# IFC4.x output
+# IFC output
 
 This repository contains generated and published artifacts for the Industry Foundation Classes (IFC) specifications.
 
