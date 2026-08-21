@@ -53,6 +53,5 @@ Normative and historical IFC releases, including downloadable packages and indiv
 
 ## License
 
-IFC is licensed under the **Creative Commons Attribution-NoDerivatives 4.0 International License (CC BY-ND 4.0)**.
+Copyright © buildingSMART International Ltd. All Rights reserved until formal release. Final IFC is licensed under the **Creative Commons Attribution-NoDerivatives 4.0 International License (CC BY-ND 4.0)**.
 
-Copyright © buildingSMART International Ltd.
